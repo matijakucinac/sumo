@@ -471,6 +471,27 @@ on("ready", function(){
     var totalSteps;
     var currentStep;
     var presentedErrorLog = false;
+    let progressTimer = null;
+
+    function errorMessage(error) {
+        if (presentedErrorLog == false) {
+            window.alert("Server connection failed (" + error + "). Please (re-)open the OSM Web Wizard by using osmWebWizard.py or the link in your start menu.");
+            presentedErrorLog = true;
+        }
+    }
+
+    async function safeFetch(url, options) {
+        try {
+            const response = await fetch(url, options);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            return response;
+        } catch (err) {
+            errorMessage(err);
+            throw err;
+        }
+    }
 
     /**
      * @function
@@ -485,48 +506,59 @@ on("ready", function(){
             socket = new WebSocket("ws://" + address + ":" + PORT);
         } catch(e){
             // connection failed, wait five seconds, then try again
-	    setTimeout(connectSocket, 5000);
+            setTimeout(connectSocket, 5000);
             return;
         }
 
-	socket.onerror = function(error) {
-	    if (presentedErrorLog == false) {
-		window.alert("Socket connection failed. Please open the OSM WebWizard by using osmWebWizard.py or the link in your start menu.");
-		presentedErrorLog = true;
-	    }
-	};
+        socket.onerror = errorMessage;
 
         // whenever the socket closes (e.g. restart) try to reconnect
         socket.addEventListener("close", connectSocket);
-        socket.addEventListener("message", function(evt){
-            var message = evt.data;
-            // get the first space
-            var index = message.indexOf(" ");
-            // split the message type from the message
-            var type = message.substr(0, index);
-            message = message.substr(index + 1);
-
-            if(type === "zip"){
-                showZip(message);
-            } else if(type === "report"){
-                currentStep++;
-                elem("#status > span").textContent = message;
-                elem("#status > div").style.width = (100 * currentStep / totalSteps) + "%";
-
-                if(currentStep === totalSteps){
-                    setTimeout(function(){
-                        elem("#status").style.display = "none";
-                    elem("#export-button").style.display = "block";
-                    }, 2000);
-                }
-            } else if(type === "steps"){
-                totalSteps = parseInt(message);
-                currentStep = 0;
-            }
-        });
+        socket.addEventListener("message", messageHandler);
     }
 
-    connectSocket();
+    function messageHandler(evt){
+        var message = evt.data;
+        // get the first space
+        var index = message.indexOf(" ");
+        // split the message type from the message
+        var type = message.substr(0, index);
+        message = message.substr(index + 1);
+
+        if(type === "zip"){
+            showZip(message);
+        } else if(type === "report"){
+            currentStep++;
+            elem("#status > span").textContent = message;
+            elem("#status > div").style.width = (100 * currentStep / totalSteps) + "%";
+
+            if(currentStep === totalSteps){
+                setTimeout(function(){
+                    elem("#status").style.display = "none";
+                    elem("#export-button").style.display = "block";
+                }, 2000);
+                if (progressTimer) {
+                    clearInterval(progressTimer);
+                    progressTimer = null;
+                }
+            }
+        } else if(type === "steps"){
+            totalSteps = parseInt(message);
+            currentStep = 0;
+        }
+    }
+
+    if (window.location.protocol == "file:") {
+        connectSocket();
+    }
+
+    async function pollProgress() {
+        const r = await fetch("/progress");
+        const d = await r.json();
+        if (d.data) {
+            messageHandler(d);
+        }
+    }
 
     /**
      * @function
@@ -599,10 +631,20 @@ on("ready", function(){
             }
         });
 
-        try {
-            socket.send(JSON.stringify(data));
-        } catch(e){
-            return;
+        if (window.location.protocol == "file:") {
+            try {
+                socket.send(JSON.stringify(data));
+            } catch(e){
+                return;
+            }
+        } else {
+            safeFetch("/build", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            })
+            // poll for messages
+            progressTimer = setInterval(pollProgress, 500);
         }
 
         elem("#status").style.display = "block";
