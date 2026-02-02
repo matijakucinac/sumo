@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-01-30 20:36+0000\n"
+"PO-Revision-Date: 2026-02-02 10:51+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -6176,6 +6176,8 @@ msgstr ""
 #: src/microsim/trigger/MSLaneSpeedTrigger.cpp:166
 msgid "Invalid or unsorted time entry in vss '%'."
 msgstr ""
+"Entrada de tiempo no válida o desordenada en la señal de velocidad variable "
+"'%'."
 
 #: src/microsim/trigger/MSLaneSpeedTrigger.cpp:182
 msgid "Time % was set twice for vss '%'; replacing first entry."
@@ -6311,11 +6313,11 @@ msgstr ""
 
 #: src/microsim/trigger/MSTriggeredRerouter.cpp:259
 msgid "rerouter '%': No via edge id given."
-msgstr ""
+msgstr "rerouter '%': No se proporcionó un ID de arista intermedia."
 
 #: src/microsim/trigger/MSTriggeredRerouter.cpp:263
 msgid "rerouter '%': Via Edge '%' is not known."
-msgstr ""
+msgstr "rerouter '%': La arista intermedia '%' no es conocida."
 
 #: src/microsim/trigger/MSTriggeredRerouter.cpp:272
 msgid ""
@@ -6966,16 +6968,21 @@ msgid ""
 "Ensures that generated ids do not included any of the typed IDs from FILE "
 "(sumo-gui selection file format)"
 msgstr ""
+"Asegura que los IDs generados no incluyan ninguno de los IDs especificados "
+"en FILE (formato de archivo de selección de sumo-gui)"
 
 #: src/netbuild/NBFrame.cpp:136
 msgid ""
 "Ensures that objects with typed IDs from FILE (sumo-gui selection file "
 "format) are not renamed"
 msgstr ""
+"Asegura que los objetos con IDs especificados en FILE (formato de archivo de "
+"selección de sumo-gui) no sean renombrados"
 
 #: src/netbuild/NBFrame.cpp:140
 msgid "Removes vehicle class restrictions from imported edges"
 msgstr ""
+"Elimina las restricciones de clase de vehículo de las aristas importadas"
 
 #: src/netbuild/NBFrame.cpp:144
 msgid "Disables building turnarounds"
@@ -7057,12 +7064,16 @@ msgid ""
 "Straighten edge geometries to avoid turning radii less than geometry.min-"
 "radius"
 msgstr ""
+"Enderezar las geometrías de las aristas para evitar radios de giro menores "
+"que geometry.min-radius"
 
 #: src/netbuild/NBFrame.cpp:217
 msgid ""
 "Straighten edge geometries to avoid turning radii less than geometry.min-"
 "radius (only railways)"
 msgstr ""
+"Enderezar las geometrías de las aristas para evitar radios de giro menores "
+"que geometry.min-radius (solo para ferrocarriles)"
 
 #: src/netbuild/NBFrame.cpp:220
 msgid ""
