@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-01-08 18:58+0000\n"
+"PO-Revision-Date: 2026-02-02 10:51+0000\n"
 "Last-Translator: MuteJack <coldman1224@outlook.com>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/eclipse-sumo/sumo-gui-netedit/ko/>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/eclipse-sumo/sumo-"
+"gui-netedit/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: src/gui/GUIApplicationWindow.cpp:314 src/gui/GUIApplicationWindow.cpp:317
 #: src/gui/GUIApplicationWindow.cpp:2298 src/gui/GUIApplicationWindow.cpp:2299
@@ -3547,27 +3548,22 @@ msgid "Save the network to another file."
 msgstr "Network를 다른 파일로 저장합니다."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:251
-#, fuzzy
 msgid "Save Plain XML..."
-msgstr "Plain XML로 저장..."
+msgstr "평문 XML로 저장..."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:251
-#, fuzzy
 msgid "Save a plain XML representation of the network."
-msgstr "Network의 Plain XML 표현을 저장합니다."
+msgstr "Network의 평문 XML 표현을 저장합니다."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:255
-#, fuzzy
 msgid "Save Joined Junctions..."
 msgstr "Joined Junctions 저장..."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:255
-#, fuzzy
 msgid "Save log of joined junctions (allows reproduction of joins)."
-msgstr "연결된 교차로의 로그를 저장합니다 (연결 재현 가능)."
+msgstr "연결된 Junction의 로그를 저장합니다 (연결 재현 가능)."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:262
-#, fuzzy
 msgid "Reload"
 msgstr "다시 불러오기"
 
@@ -3593,17 +3589,14 @@ msgid "Traffic Lights"
 msgstr "신호등"
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:285
-#, fuzzy
 msgid "Edge Types"
-msgstr "Edge Types"
+msgstr "Edge 유형"
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:289
-#, fuzzy
 msgid "Additionals and Shapes"
 msgstr "Additionals and Shapes"
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:293
-#, fuzzy
 msgid "Demand Elements"
 msgstr "Demand Elements"
 
@@ -3633,60 +3626,49 @@ msgstr "Network를 닫습니다."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:364
 #: src/netedit/GNEViewNetHelper.cpp:2272
-#, fuzzy
 msgid "Save Netedit Config"
 msgstr "Netedit config 저장"
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:364
-#, fuzzy
 msgid "Save netedit configuration file."
 msgstr "netedit config 파일을 저장합니다."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:368
-#, fuzzy
 msgid "Save Netedit Config As..."
-msgstr "Netedit config 다른 이름으로 저장..."
+msgstr "Netedit Config 다른 이름으로 저장..."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:368
-#, fuzzy
 msgid "Save netedit configuration in a new file."
 msgstr "netedit config을 새 파일로 저장합니다."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:374
-#, fuzzy
 msgid "Reload Netedit Config"
-msgstr "Netedit config 다시 불러오기"
+msgstr "Netedit Config 다시 불러오기"
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:374
-#, fuzzy
 msgid "Reload netedit configuration."
 msgstr "netedit config을 다시 불러옵니다."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:382
 #: src/netedit/GNEViewNetHelper.cpp:2277
-#, fuzzy
 msgid "Save Sumo Config"
-msgstr "Sumo config 저장"
+msgstr "Sumo Config 저장"
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:382
-#, fuzzy
 msgid "Save sumo configuration file."
 msgstr "sumo config 파일을 저장합니다."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:386
-#, fuzzy
 msgid "Save Sumo Config As..."
-msgstr "Sumo config 다른 이름으로 저장..."
+msgstr "Sumo Config 다른 이름으로 저장..."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:386
-#, fuzzy
 msgid "Save sumo configuration in a new file."
-msgstr "sumo config을 새 파일로 저장합니다."
+msgstr "sumo config를 새 파일로 저장합니다."
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:392
-#, fuzzy
 msgid "Reload Sumo Config"
-msgstr "Sumo config 다시 불러오기"
+msgstr "Sumo Config 다시 불러오기"
 
 #: src/netedit/GNEApplicationWindowHelper.cpp:392
 #, fuzzy
@@ -5562,12 +5544,10 @@ msgid "It will be joined with the other selected junctions. Continue?"
 msgstr "다른 선택된 교차로와 연결됩니다. 계속하시겠습니까?"
 
 #: src/netedit/GNENet.cpp:1762 src/netedit/GNENet.cpp:1768
-#, fuzzy
 msgid "Clear crossings"
 msgstr "횡단보도 지우기"
 
 #: src/netedit/GNENet.cpp:1763
-#, fuzzy
 msgid "There are no invalid crossings to remove."
 msgstr "제거할 잘못된 횡단보도가 없습니다."
 
@@ -5591,29 +5571,25 @@ msgid "clear unused routes"
 msgstr "사용하지 않는 route 제거"
 
 #: src/netedit/GNENet.cpp:1870
-#, fuzzy
 msgid "merge routes"
-msgstr "route 병합(merge)"
+msgstr "route 병합"
 
 #: src/netedit/GNENet.cpp:1924
-#, fuzzy
 msgid "adjust person plans"
 msgstr "보행자 계획 조정"
 
 #: src/netedit/GNENet.cpp:1964
-#, fuzzy
 msgid "remove invalid demand elements"
 msgstr "잘못된 Demand 요소 제거"
 
 #: src/netedit/GNENet.cpp:1979
-#, fuzzy
 msgid "replace junction by geometry"
-msgstr "지오메트리로 교차로 대체"
+msgstr "교차로를 Geometry로 대체"
 
 #: src/netedit/GNENet.cpp:2015
 #, fuzzy
 msgid "Junction isn't removable"
-msgstr "교차로를 제거할 수 없음"
+msgstr "Jucntion은 제거 불가합니다"
 
 #: src/netedit/GNENet.cpp:2027
 #, fuzzy
@@ -5621,9 +5597,8 @@ msgid "split junction"
 msgstr "교차로 분할"
 
 #: src/netedit/GNENet.cpp:2065
-#, fuzzy
 msgid "Could not rename split node to '%'"
-msgstr "분할된 노드의 이름을 '%'(으)로 변경할 수 없습니다"
+msgstr "분할 노드의 이름을 '%'(으)로 변경할 수 없습니다"
 
 #: src/netedit/GNENet.cpp:2107
 #, fuzzy
@@ -5656,7 +5631,6 @@ msgid "clear meanData elements"
 msgstr "meanData 요소 지우기"
 
 #: src/netedit/GNENet.cpp:2513 src/netedit/GNENet.cpp:2606
-#, fuzzy
 msgid "Duplicated ID"
 msgstr "중복된 ID"
 
@@ -5665,7 +5639,6 @@ msgid "Network size exceeds 1 Lightyear. Please reconsider your inputs."
 msgstr "Network 크기가 1광년을 초과합니다. 입력을 재검토하세요."
 
 #: src/netedit/GNENetHelper.cpp:1550
-#, fuzzy
 msgid "Default vType doesn't exist"
 msgstr "기본 vType이 존재하지 않음"
 
@@ -5675,29 +5648,24 @@ msgid "network"
 msgstr "Network"
 
 #: src/netedit/GNENetHelper.cpp:3546
-#, fuzzy
 msgid "additional elements"
 msgstr "추가 요소"
 
 #: src/netedit/GNENetHelper.cpp:3578
-#, fuzzy
 msgid "demand elements"
 msgstr "Demand 요소"
 
 #: src/netedit/GNENetHelper.cpp:3610
-#, fuzzy
 msgid "data elements"
 msgstr "데이터 요소"
 
 #: src/netedit/GNENetHelper.cpp:3642
-#, fuzzy
 msgid "meanData elements"
 msgstr "meanData 요소"
 
 #: src/netedit/GNENetHelper.cpp:3690
-#, fuzzy
 msgid "Redo replace in TLS"
-msgstr "TLS에서 교체 다시 실행"
+msgstr "Redo replace in TLS"
 
 #: src/netedit/GNENetHelper.cpp:3696
 #, fuzzy
@@ -5717,22 +5685,21 @@ msgid "Attribute '%' doesn't exist"
 msgstr "속성 '%' 존재하지 않음"
 
 #: src/netedit/GNETagProperties.cpp:364
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid index '%' used in getAttributeProperties(int)"
 msgstr "getAttributeProperties(int)에서 잘못된 인덱스 '%' 사용됨"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:91
-#, fuzzy, c-format
+#, c-format
 msgid "Property for tag '%' not defined"
 msgstr "태그 '%'의 속성이 정의되지 않음"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:104
-#, fuzzy, c-format
+#, c-format
 msgid "TagPropertySet for tag '%' not defined"
 msgstr "태그 '%'의 TagPropertySet이 정의되지 않음"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:382
-#, fuzzy
 msgid "Root"
 msgstr "루트"
 
@@ -5817,7 +5784,7 @@ msgstr "차량"
 #: src/netedit/elements/demand/GNEVehicle.cpp:281
 #, fuzzy
 msgid "Flows"
-msgstr "흐름"
+msgstr "Flows"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:470
 #, fuzzy
@@ -5896,9 +5863,8 @@ msgstr "데이터"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:575
 #: src/netedit/frames/network/GNECrossingFrame.cpp:67
-#, fuzzy
 msgid "Junction"
-msgstr "교차로"
+msgstr "Junction"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:582
 #: src/netedit/GNETagPropertiesDatabase.cpp:1420
@@ -5914,7 +5880,7 @@ msgstr "노드의 선택적 유형"
 #: src/netedit/GNETagPropertiesDatabase.cpp:593
 #, fuzzy
 msgid "A custom shape for that node"
-msgstr "해당 노드의 사용자 정의 형태"
+msgstr "해당 노드의 사용자 정의 Shape"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:598
 #, fuzzy
@@ -5962,7 +5928,6 @@ msgid "Whether this junction is part of a roundabout"
 msgstr "이 교차로가 회전교차로의 일부인지 여부"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:666
-#, fuzzy
 msgid "EdgeType"
 msgstr "Edge 유형"
 
@@ -6015,18 +5980,15 @@ msgid "LaneType"
 msgstr "차로 유형"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:729
-#, fuzzy
 msgid "The maximum speed allowed on the lane in m/s"
-msgstr "차로에서 허용되는 최대 속도 (m/s)"
+msgstr "차로에서 허용되는 최대 속도 [m/s]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:737
-#, fuzzy
 msgid ""
 "Lane width for all lanes of this type in meters (used for visualization)"
-msgstr "이 유형의 모든 차로 폭 (미터) (시각화용)"
+msgstr "해당 유형의 모든 차로 폭 [m] (시각화용)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:749
-#, fuzzy
 msgid "Edge"
 msgstr "Edge"
 
