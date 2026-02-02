@@ -64,10 +64,8 @@ spec:
       steps {
         container('ubuntu-sumo') {
           sh '''
-            git config --global advice.detachedHead false
-
             # Cloning JuPedSim
-            git clone -q --depth 1 --branch v1.3.1 https://github.com/PedestrianDynamics/jupedsim.git
+            git -c advice.detachedHead=false clone -q --depth 1 --branch v1.3.1 https://github.com/PedestrianDynamics/jupedsim.git
 
             # Building JuPedSim
             cmake -Wno-dev -D CMAKE_INSTALL_PREFIX=jupedsim-install -B jupedsim-build jupedsim
