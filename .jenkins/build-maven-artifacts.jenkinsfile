@@ -64,8 +64,6 @@ spec:
       steps {
         container('ubuntu-sumo') {
           sh '''
-            ls -la
-            git describe
             # Cloning JuPedSim
             git clone -q --depth 1 --branch v1.3.1 https://github.com/PedestrianDynamics/jupedsim.git
 
@@ -76,10 +74,10 @@ spec:
 
             # Creating virtual env for Python for the whole process
             python3 -m venv sumo_build_env
-            source sumo_build_env/bin/activate
+            . sumo_build_env/bin/activate
             python -m pip install --quiet -r tools/requirements.txt -r tools/req_dev.txt
 
-            # Building SUMO & TraaS
+            # Building libsumo and libtraci
             export SUMO_HOME=\${WORKSPACE}
             cmake -D JUPEDSIM_CUSTOMDIR=\${WORKSPACE}/jupedsim-install -D CMAKE_BUILD_TYPE=Release -B sumo-build .
             cmake --build sumo-build -j1 --target libsumo libtraci
