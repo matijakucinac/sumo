@@ -41,6 +41,7 @@ jobs:
 
       - name: Building sumolib and traci wheels
         run: |
+          sudo apt-get update
           sudo apt-get install $(cat build_config/build_req_deb.txt)
           python tools/build_config/version.py --pep440 build_config/pyproject/sumolib.toml pyproject.toml
           python -m build
