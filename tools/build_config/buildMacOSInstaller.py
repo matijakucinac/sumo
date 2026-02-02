@@ -20,7 +20,6 @@
 
 import os
 import plistlib
-import re
 import shutil
 import subprocess
 import sys
@@ -43,15 +42,6 @@ try:
 except ImportError:
     print("Error: dmgbuild module is not installed. Please install it using 'pip install dmgbuild'.")
     sys.exit(1)
-
-
-def transform_pep440_version(version):
-    post_pattern = re.compile(r"^(.*)\.post\d+$")
-    match = post_pattern.match(version)
-    if match:
-        return f"{match.group(1)}-git"
-    else:
-        return version
 
 
 def parse_args(def_dmg_name, def_pkg_name):
@@ -490,7 +480,9 @@ def main():
     base_id = "org.eclipse.sumo"
     default_framework_name = "EclipseSUMO"
     default_framework_long_name = "Eclipse SUMO"
-    version = transform_pep440_version(get_pep440_version())
+    version = get_pep440_version()
+    if ".post" in version:
+        version = "git"
     default_pkg_name = f"sumo-{version}.pkg"
     default_dmg_name = f"sumo-{version}.dmg"
 
