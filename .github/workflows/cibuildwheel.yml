@@ -47,7 +47,7 @@ jobs:
           python tools/build_config/version.py --pep440 build_config/pyproject/traci.toml pyproject.toml
           python -m build
           python tools/build_config/version.py --pep440 build_config/pyproject/sumo-data.toml pyproject.toml
-          python -m build
+          python -m build --wheel
 
       - uses: actions/upload-artifact@v6
         with:
