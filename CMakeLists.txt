@@ -682,7 +682,9 @@ if (${CMAKE_VERSION} VERSION_GREATER 3.6.0)
             PATTERN "__pycache__" EXCLUDE
             PATTERN "*.pyc" EXCLUDE)
     if (PROJ_DATA_DIR)
-        install(DIRECTORY ${PROJ_DATA_DIR}/ DESTINATION ${DATA_PATH}data/proj COMPONENT proj_data EXCLUDE_FROM_ALL)
+        install(DIRECTORY ${PROJ_DATA_DIR}/ DESTINATION ${DATA_PATH}data/proj COMPONENT proj_data EXCLUDE_FROM_ALL
+                PATTERN "*.tif" EXCLUDE
+                PATTERN "*.txt" EXCLUDE)
     endif ()
 endif ()
 install(CODE "
