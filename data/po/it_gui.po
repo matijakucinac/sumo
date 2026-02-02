@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-01-27 18:05+0000\n"
+"PO-Revision-Date: 2026-02-02 18:13+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/it/>\n"
@@ -10525,7 +10525,7 @@ msgstr ""
 
 #: src/netedit/dialogs/elements/GNERerouterDialog.cpp:59
 msgid ". There are overlapping intervals."
-msgstr ""
+msgstr ". Ci sono intervalli sovrapposti."
 
 #: src/netedit/dialogs/elements/GNERerouterIntervalDialog.cpp:76
 msgid "Error updating % of % '%'"
@@ -10570,10 +10570,11 @@ msgstr "cambia % valori"
 #: src/netedit/dialogs/elements/GNEVariableSpeedSignDialog.cpp:58
 msgid "VariableSpeedSign steps of % '%' cannot be saved"
 msgstr ""
+"I passi del limite dinamico di velocità % '%' non possono essere salvati"
 
 #: src/netedit/dialogs/elements/GNEVariableSpeedSignDialog.cpp:59
 msgid "Steps has to be sorted."
-msgstr ""
+msgstr "I passi devono essere ordinati."
 
 #: src/netedit/dialogs/elements/GNEVehicleTypeDialog.cpp:492
 msgid "Invalid row type"
@@ -10600,7 +10601,7 @@ msgstr "% non può essere aggiornato perché l'attributo % è invalido."
 #: src/netedit/dialogs/file/GNEFileDialog.cpp:46
 #, c-format
 msgid "Save % as"
-msgstr ""
+msgstr "Salva % in"
 
 #: src/netedit/dialogs/file/GNEFileDialog.cpp:135
 msgid "Open %"
@@ -10635,7 +10636,7 @@ msgstr "Errore durante la copia di un file"
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:242
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:260
 msgid "Unable to copy file: %"
-msgstr ""
+msgstr "Impossibile di copiare il file: %"
 
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:243
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:289
@@ -10651,7 +10652,7 @@ msgstr "Sovrascrivi file"
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:249
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:295
 msgid "The destination file: %"
-msgstr ""
+msgstr "Il file di destinazione: %"
 
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:250
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:296
@@ -10696,7 +10697,7 @@ msgstr "Errore nel cancellare un file"
 
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:334
 msgid "Unable to delete file: %"
-msgstr ""
+msgstr "Impossibile di rimuovere il file: %"
 
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:335
 msgid "Check file permissions"
@@ -10829,19 +10830,19 @@ msgstr "Cancella..."
 
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:773
 msgid "The selected file: %"
-msgstr ""
+msgstr "Il file selezionato: %"
 
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:788
 msgid "File doesn't exist"
-msgstr ""
+msgstr "Il file non esiste"
 
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:789
 msgid "The selected file '%'"
-msgstr ""
+msgstr "Il file selezionato '%'"
 
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:790
 msgid "doesn't exist"
-msgstr ""
+msgstr "non esiste"
 
 #: src/netedit/dialogs/file/GNEFileSelector.cpp:868
 msgid "Create New Directory"
