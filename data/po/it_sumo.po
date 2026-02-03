@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-01-25 17:27+0000\n"
+"PO-Revision-Date: 2026-02-03 19:38+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/it/>\n"
@@ -5602,7 +5602,7 @@ msgstr "Frazione di passo di simulazione negativa per '%' sulla corsia '%'."
 #: src/microsim/output/MSMeanData.cpp:561
 #: src/microsim/output/MSMeanData.cpp:613
 msgid "aggregated meanData output not yet implemented for trackVehicles"
-msgstr ""
+msgstr "uscita di meanData aggregato finora non disponibile per trackVehicles"
 
 #: src/microsim/output/MSStopOut.cpp:100
 msgid ""
@@ -8545,6 +8545,8 @@ msgstr ""
 msgid ""
 "Could not re-assign PT stop '%'. May need option --railway.topology.repair"
 msgstr ""
+"Non ho potuto riassegnare la fermata di trasporto pubblico '%'. Magari "
+"bisogna usare l'opzione --railway.topology.repair"
 
 #: src/netbuild/NBPTLineCont.cpp:198
 msgid "PT stop '%' has been moved to edge '%'."
@@ -10274,6 +10276,8 @@ msgstr ""
 msgid ""
 "PT line '%' in relation % has a gap of % stops, only keeping first part."
 msgstr ""
+"Per la linea di trasporto pubblico '%' nella relazione % esiste un buco di % "
+"fermate per cui si manterrà solamente la prima parte della linea."
 
 #: src/netimport/NIImporter_OpenStreetMap.cpp:2711
 msgid ""
@@ -11737,6 +11741,8 @@ msgid ""
 "DlrNavteq node data will be written in (floating point) cartesian "
 "coordinates"
 msgstr ""
+"I dati dei nodi DlrNavteq verranno scritti in coordinate cartesiane (numeri "
+"in virgola mobile)"
 
 #: src/netwrite/NWWriter_DlrNavteq.cpp:156
 #: src/netwrite/NWWriter_DlrNavteq.cpp:163
@@ -11900,7 +11906,7 @@ msgstr "Nessun veicolo è stato caricato."
 
 #: src/od/ODAmitranHandler.cpp:48
 msgid "Invalid duration for timeSlice starting %."
-msgstr ""
+msgstr "Durata invalida dell'intervallo che ha inizio a %."
 
 #: src/od/ODDistrictCont.cpp:57
 #, c-format
@@ -12474,6 +12480,8 @@ msgstr ""
 #: src/router/ROFrame.cpp:163
 msgid "Backtrack on route if the detour is longer than the gap by FACTOR"
 msgstr ""
+"Torna indietro nell'itinerario se la deviazione oltrepassa la linea d'aria "
+"di FATTORE"
 
 #: src/router/ROFrame.cpp:175
 msgid "Aggregate routing queries with the same origin"
@@ -13907,6 +13915,8 @@ msgstr "Tipo di veicolo interno invalido"
 #: src/utils/handlers/RouteHandler.cpp:1190
 msgid "Attributes '%' and '%' cannot be loaded simultaneously. Ignoring '%'"
 msgstr ""
+"Gli attributi '%' e '%' non possono essere caricati allo stesso tempo. '%' "
+"va essere ignorato"
 
 #: src/utils/handlers/RouteHandler.cpp:1238
 msgid "A stop must be defined either with an edge or with an lane, not both"
