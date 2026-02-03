@@ -202,7 +202,7 @@ class Builder(object):
             if 'roadTypes' in self.data:
                 osmArgs += ["-r", json.dumps(self.data["roadTypes"])]
             # cannot write config by calling osmGet.get because saving config triggers sys.exit()
-            subprocess.call([osmGet.__file__] + osmArgs + ['-C', self.files['ogc']])
+            subprocess.call([sys.executable, osmGet.__file__] + osmArgs + ['-C', self.files['ogc']])
             osmGet.get(osmArgs)
 
         if not os.path.exists(self.files["osm"]):
