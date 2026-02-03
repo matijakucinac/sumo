@@ -9,11 +9,6 @@ pipeline {
         GITHUB_TOKEN = credentials('github-bot-token')
     }
     stages {
-        stage('Clean Workspace') {
-          steps {
-            cleanWs()
-          }
-        }
         stage('Building SUMO & JuPedSim') {
           steps {
               sh '''
