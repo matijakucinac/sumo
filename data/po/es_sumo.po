@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-02 10:51+0000\n"
+"PO-Revision-Date: 2026-02-03 10:06+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -13252,6 +13252,8 @@ msgstr "'%' debe definirse dentro de la definición de un '%' (se encontró %)."
 msgid ""
 "Could not build % with ID '%' in netedit; '%' ist not a valid vType ID."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; '%' no es un ID de tipo de "
+"vehículo válido."
 
 #: src/utils/handlers/CommonHandler.cpp:197
 msgid ""
@@ -13266,6 +13268,8 @@ msgid ""
 "Could not build % with ID '%' in netedit; Cannot have multiple from-to "
 "attributes."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; no se pueden tener múltiples "
+"atributos from-to."
 
 #: src/utils/handlers/CommonHandler.cpp:203
 msgid ""
@@ -13287,12 +13291,16 @@ msgstr ""
 msgid ""
 "Could not build % with ID '%' in netedit; Attribute % cannot be negative."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; el atributo % no puede ser "
+"negativo."
 
 #: src/utils/handlers/CommonHandler.cpp:271
 msgid ""
 "Could not build % with ID '%' in netedit; Attribute % must be greather than "
 "zero."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; el atributo % debe ser mayor que "
+"cero."
 
 #: src/utils/handlers/CommonHandler.cpp:283
 #: src/utils/handlers/CommonHandler.cpp:301
@@ -13300,6 +13308,8 @@ msgid ""
 "Could not build % with ID '%' in netedit; Attribute % cannot be negative "
 "(%)."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; el atributo % no puede ser "
+"negativo (%)."
 
 #: src/utils/handlers/CommonHandler.cpp:289
 #: src/utils/handlers/CommonHandler.cpp:307
@@ -13307,16 +13317,18 @@ msgid ""
 "Could not build % with ID '%' in netedit; Attribute % must be greather than "
 "zero (%)."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; el atributo % debe ser mayor que "
+"cero (%)."
 
 #: src/utils/handlers/CommonHandler.cpp:320
 msgid "Could not build % with ID '%' in netedit; % is invalid % ()"
-msgstr ""
+msgstr "No se pudo crear % con ID '%' en netedit; % no es válido % ()"
 
 #: src/utils/handlers/CommonHandler.cpp:328
 #: src/utils/handlers/CommonHandler.cpp:340
 #: src/utils/handlers/CommonHandler.cpp:352
 msgid "Could not build %; ID cannot be empty"
-msgstr ""
+msgstr "No se pudo crear %; el ID no puede estar vacío"
 
 #: src/utils/handlers/CommonHandler.cpp:330
 #: src/utils/handlers/CommonHandler.cpp:354
@@ -13331,6 +13343,8 @@ msgid ""
 "Could not build % with ID '%' in netedit; detector ID contains invalid "
 "characters."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; el ID del detector contiene "
+"caracteres no válidos."
 
 #: src/utils/handlers/CommonHandler.cpp:363
 msgid "Overwriting % with ID '%'"
@@ -13340,33 +13354,36 @@ msgstr "Sobrescribiendo % con ID '%'"
 msgid ""
 "Could not build % with ID '%' in netedit; Found another % with the same ID."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; se encontró otro % con el mismo ID."
 
 #: src/utils/handlers/CommonHandler.cpp:384
 msgid "Could not build % with ID '%' in netedit; Invalid position over lane."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; posición no válida sobre el carril."
 
 #: src/utils/handlers/CommonHandler.cpp:390
 msgid "Could not build % with ID '%' in netedit; List of lanes isn't valid."
 msgstr ""
+"No se pudo crear % con ID '%' en netedit; la lista de carriles no es válida."
 
 #: src/utils/handlers/CommonHandler.cpp:397
 #: src/utils/handlers/CommonHandler.cpp:399
 msgid ""
 "Could not build % with ID '%' in netedit; % parent with ID '%' doesn't "
 "exist."
-msgstr ""
+msgstr "No se pudo crear % con ID '%' en netedit; % padre con ID '%' no existe."
 
 #: src/utils/handlers/CommonHandler.cpp:407
 #: src/utils/handlers/CommonHandler.cpp:409
 #, c-format
 msgid "Could not build % in netedit; % parent with ID '%' doesn't exist."
-msgstr ""
+msgstr "No se pudo crear % en netedit; % padre con ID '%' no existe."
 
 #: src/utils/handlers/CommonHandler.cpp:417
 #: src/utils/handlers/CommonHandler.cpp:419
 #, c-format
 msgid "Could not build % in netedit; % parent doesn't exist."
-msgstr ""
+msgstr "No se pudo crear % en netedit; % padre no existe."
 
 #: src/utils/handlers/CommonHandler.cpp:435
 msgid " or "
@@ -13383,10 +13400,11 @@ msgstr "Los elementos MeanData no pueden cargar atributos como parámetros"
 #: src/utils/handlers/MeanDataHandler.cpp:183
 msgid "The netstate type 'hbefa' is deprecated. Using 'emissions' instead."
 msgstr ""
+"El tipo de netstate 'hbefa' está obsoleto. Se usará 'emissions' en su lugar."
 
 #: src/utils/handlers/RouteHandler.cpp:629
 msgid "an embedded route cannot have their own ID"
-msgstr ""
+msgstr "una ruta incrustada no puede tener su propio ID"
 
 #: src/utils/handlers/RouteHandler.cpp:709
 #: src/utils/handlers/RouteHandler.cpp:799
@@ -13404,10 +13422,12 @@ msgstr ""
 #: src/utils/handlers/RouteHandler.cpp:977
 msgid "Speed and duration attributes cannot be defined together in walks"
 msgstr ""
+"Los atributos 'speed' y 'duration' no pueden definirse juntos en caminatas"
 
 #: src/utils/handlers/RouteHandler.cpp:1096
 msgid "Speed and duration attributes cannot be defined together in tranships"
 msgstr ""
+"Los atributos 'speed' y 'duration' no pueden definirse juntos en transbordos"
 
 #: src/utils/handlers/RouteHandler.cpp:1139
 #: src/utils/vehicle/SUMORouteHandler.cpp:206
