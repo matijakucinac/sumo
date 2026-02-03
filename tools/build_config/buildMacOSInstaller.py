@@ -50,7 +50,7 @@ def parse_args(def_dmg_name, def_pkg_name):
     def_output_apps_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "apps"))
     def_output_fw_pkg_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "framework-pkg"))
     def_output_apps_pkg_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "apps-pkg"))
-    def_output_pkg_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..",
+    def_output_pkg_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..",
                                                        "installer", def_pkg_name))
     def_output_dmg_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", def_dmg_name))
 
