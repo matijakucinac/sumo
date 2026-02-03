@@ -25,14 +25,17 @@ pipeline {
                 cmake --build jupedsim-build -j16 --config Release
                 cmake --install jupedsim-build --config Release
 
+                # Cloning SUMO
+                git -c advice.detachedHead=false clone -q --filter=tree:0 --branch main https://github.com/eclipse-sumo/sumo.git
+                export SUMO_HOME=\${WORKSPACE}/sumo
+
                 # Creating virtual env for Python for the whole process
                 /opt/homebrew/bin/python3.13 -m venv sumo_build_env
                 . sumo_build_env/bin/activate
-                python -m pip install --quiet -r tools/requirements.txt -r tools/req_dev.txt
+                python -m pip install --quiet -r sumo/tools/requirements.txt -r sumo/tools/req_dev.txt
 
                 # Building SUMO & TraaS
-                export SUMO_HOME=\${WORKSPACE}
-                cmake -D JUPEDSIM_CUSTOMDIR=\${WORKSPACE}/jupedsim-install -B sumo-build .
+                cmake -Wno-dev -D CMAKE_INSTALL_PREFIX=sumo-install -B sumo-build sumo
                 cmake --build sumo-build -j16
                 cmake --build sumo-build --target traas
               '''
@@ -45,13 +48,13 @@ pipeline {
                     . sumo_build_env/bin/activate
                     # Creating the EclipseSUMO framework directory
                     export DYLD_LIBRARY_PATH="${WORKSPACE}/jupedsim-install/lib"
-                    python tools/build_config/buildMacOSInstaller.py --create-framework-dir \
+                    python sumo/tools/build_config/buildMacOSInstaller.py --create-framework-dir \
                             --build-dir sumo-build \
                             --framework-dir framework
                     zip -q -r --symlinks framework-unsigned.zip framework
 
                     # Creating the EclipseSUMO launcher apps directory
-                    python tools/build_config/buildMacOSInstaller.py --create-apps-dir --apps-dir apps
+                    python sumo/tools/build_config/buildMacOSInstaller.py --create-apps-dir --apps-dir apps
                     zip -q -r --symlinks apps-unsigned.zip apps
                 '''
                 stash name: 'framework-unsigned', includes: 'framework-unsigned.zip'
@@ -133,13 +136,13 @@ pipeline {
                         unzip -q -o apps-signed.zip -d "${WORKSPACE}"
 
                         rm -rf framework-pkg
-                        python tools/build_config/buildMacOSInstaller.py --create-framework-pkg \
+                        python sumo/tools/build_config/buildMacOSInstaller.py --create-framework-pkg \
                               --framework-dir framework \
                               --framework-pkg-dir framework-pkg
                         zip -q -r --symlinks "framework-pkg-unsigned.zip" framework-pkg
 
                         rm -rf apps-pkg
-                        python tools/build_config/buildMacOSInstaller.py --create-apps-pkg \
+                        python sumo/tools/build_config/buildMacOSInstaller.py --create-apps-pkg \
                               --apps-dir apps \
                               --apps-pkg-dir apps-pkg
                         zip -q -r --symlinks "apps-pkg-unsigned.zip" apps-pkg
@@ -229,7 +232,7 @@ pipeline {
                         unzip -q -o apps-pkg-signed.zip -d "${WORKSPACE}"
 
                         rm -rf installer
-                        python tools/build_config/buildMacOSInstaller.py --create-installer-pkg \
+                        python sumo/tools/build_config/buildMacOSInstaller.py --create-installer-pkg \
                             --framework-pkg-dir framework-pkg \
                             --apps-pkg-dir apps-pkg
                     """
