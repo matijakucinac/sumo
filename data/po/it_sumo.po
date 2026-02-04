@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-03 19:38+0000\n"
+"PO-Revision-Date: 2026-02-05 07:33+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/it/>\n"
@@ -14360,7 +14360,7 @@ msgstr "Il caricamento di forme da % è fallito."
 
 #: src/utils/tests/InternalTest.cpp:318
 msgid "Could not open attributes enum file '%'."
-msgstr ""
+msgstr "Non ho potuto caricare il file elenco '%'."
 
 #: src/utils/tests/InternalTest.cpp:332
 #, c-format
@@ -14718,6 +14718,8 @@ msgstr ""
 #: src/utils/xml/CommonXMLStructure.cpp:1220
 msgid "Trying to get undefined parent '%' in SUMOBaseObject '%'"
 msgstr ""
+"Provando ad accedere all'elemento padre non definito '%' del SUMOBaseObject "
+"'%'"
 
 #: src/utils/xml/CommonXMLStructure.cpp:1237
 msgid "Undefined vehicleType parameter"
@@ -14734,6 +14736,7 @@ msgstr "Parametro di fermata indefinito"
 #: src/utils/xml/CommonXMLStructure.cpp:1524
 msgid "Trying to get undefined % attribute '%' in SUMOBaseObject '%'"
 msgstr ""
+"Provando ad accedere all'attributo non definito '%' del  SUMOBaseObject '%'"
 
 #: src/utils/xml/GenericHandler.cpp:83 src/utils/xml/GenericSAXHandler.cpp:105
 msgid "Found root element '%' in file '%' (expected '%')."
