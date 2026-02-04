@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-03 19:38+0000\n"
+"PO-Revision-Date: 2026-02-05 07:33+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -6108,6 +6108,7 @@ msgstr "ID da zona de estacionamento"
 #: src/netedit/GNETagPropertiesDatabase.cpp:2103
 msgid "Enable or disable visibility for parking area reroutes"
 msgstr ""
+"Ativar ou desativar a visibilidade para desvios de áreas de estacionamento"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:2115
 msgid "RouteProbabilityReroute"
@@ -7798,6 +7799,8 @@ msgid ""
 "EIDM parameter how many vehicles are taken into the preview calculation of "
 "the driver (at least always 1!) [-]"
 msgstr ""
+"Parâmetro EIDM de quantos veículos são levados em conta no cálculo de "
+"visualização prévia do condutor (pelo menos sempre 1!) [-]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6833
 #: src/netedit/GNETagPropertiesDatabase.cpp:6839
@@ -13443,6 +13446,8 @@ msgid ""
 "- The 'Match Attribute' controls allow to specify a set of objects which are"
 " then applied to the current selection"
 msgstr ""
+"- Os controles de 'Atributo de correspondência' permitem especificar um "
+"conjunto de objetos que são então aplicados à seleção atual"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:320
 msgid "  according to the current 'Modification Mode'."
@@ -13484,6 +13489,9 @@ msgid ""
 "- For string attributes the match expression must consist of a comparison "
 "operator ('', '=', '!', '^') and a string."
 msgstr ""
+"- Para atributos de cadeia de texto, a expressão de correspondência deve "
+"consistir em um operador de comparação ('*', '=', '!', '^') e uma cadeia de "
+"texto."
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:330
 msgid ""
