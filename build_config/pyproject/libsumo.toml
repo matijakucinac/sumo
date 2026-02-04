@@ -43,4 +43,4 @@ before-all = ""
 [[tool.cibuildwheel.overrides]]
 select = "*-macosx_*"
 inherit.repair-wheel-command = "append"
-repair-wheel-command = "find {dest_dir} \( -name "*.dylib" -o -name "*.so" \) -exec strip -x -S {} \;"
+repair-wheel-command = '''find {dest_dir} \( -name "*.dylib" -o -name "*.so" \) -exec strip -x -S {} \;'''
