@@ -100,7 +100,7 @@ public:
         return secondaryShape ? myLengthGeometryFactor2 :  myLengthGeometryFactor;
     }
 
-    void updateMesoGUISegments();
+    void updateMesoGUISegments() override;
 
     /// @name Access to vehicles
     /// @{

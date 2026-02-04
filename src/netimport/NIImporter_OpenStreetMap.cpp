@@ -2685,8 +2685,8 @@ NIImporter_OpenStreetMap::RelationHandler::myEndElement(int element) {
                     if (!NBNetBuilder::transformCoordinate(ptPos)) {
                         WRITE_ERRORF("Unable to project coordinates for node '%'.", n->id);
                     }
-                    SumoXMLTag element = isRailway(n->permissions) ? SUMO_TAG_TRAIN_STOP : SUMO_TAG_BUS_STOP;
-                    ptStop = std::make_shared<NBPTStop>(element, toString(n->id), ptPos, "", "", n->ptStopLength, n->name, n->permissions);
+                    const SumoXMLTag stopElement = isRailway(n->permissions) ? SUMO_TAG_TRAIN_STOP : SUMO_TAG_BUS_STOP;
+                    ptStop = std::make_shared<NBPTStop>(stopElement, toString(n->id), ptPos, "", "", n->ptStopLength, n->name, n->permissions);
                     myNBPTStopCont->insert(ptStop);
                     if (myStopAreas.count(n->id)) {
                         ptStop->setIsMultipleStopPositions(false, myStopAreas[n->id]);
