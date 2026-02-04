@@ -157,6 +157,7 @@ fi
 if test -e $PREFIX/upload.sh && test ${FILEPREFIX::10} == "clangMacOS"; then
   cd $PREFIX
   base=$(basename $SUMO_REPORT)
-  tar czf $base.tar.gz ${FILEPREFIX}*.log $(find $base -type f -mtime -2)
+  # --disable-copyfile prevents some ._-files to be added by macOS; find -L copies symlinks
+  tar --disable-copyfile -czhf $base.tar.gz ${FILEPREFIX}*.log $(find -L $base -type f -mtime -2)
   ./upload.sh $base.tar.gz
 fi
