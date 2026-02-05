@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-02 18:13+0000\n"
+"PO-Revision-Date: 2026-02-05 20:16+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/it/>\n"
@@ -3069,7 +3069,7 @@ msgstr "Il salvataggio degli elementi di domanda è fallito"
 
 #: src/netedit/GNEApplicationWindow.cpp:4254
 msgid "Route elements"
-msgstr ""
+msgstr "Elementi di itinerari"
 
 #: src/netedit/GNEApplicationWindow.cpp:4274
 msgid "Route elements file in unified file"
@@ -3163,7 +3163,7 @@ msgstr "Il salvataggio degli elementi di domanda è fallito!"
 
 #: src/netedit/GNEApplicationWindow.cpp:4608
 msgid "MeanData elements"
-msgstr ""
+msgstr "Elementi MeanData"
 
 #: src/netedit/GNEApplicationWindow.cpp:4628
 msgid "MeanData elements file in unified file"
@@ -3175,11 +3175,11 @@ msgstr "salvataggio unificato degli elementi di dati in '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4876
 msgid "% additional elements from '%'"
-msgstr ""
+msgstr "% elementi addizionali da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4883
 msgid "% additionals from '%'."
-msgstr ""
+msgstr "% elementi addizionali da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4894
 #: src/netedit/GNEApplicationWindow.cpp:4943
@@ -3189,19 +3189,19 @@ msgstr ""
 
 #: src/netedit/GNEApplicationWindow.cpp:4925
 msgid "% demand elements from '%'"
-msgstr ""
+msgstr "% elementi di domanda da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4932
 msgid "% demand elements from '%'."
-msgstr ""
+msgstr "% elementi di domanda da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4973
 msgid "% data elements from '%'"
-msgstr ""
+msgstr "% elementi di dati da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4980
 msgid "% data elements from '%'."
-msgstr ""
+msgstr "% elementi di dati da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4991
 #: src/netedit/GNEApplicationWindow.cpp:5039
@@ -3211,16 +3211,16 @@ msgstr ""
 
 #: src/netedit/GNEApplicationWindow.cpp:5021
 msgid "% meanData elements from '%'"
-msgstr ""
+msgstr "% elementi meanData da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:5028
 msgid "% meanData elements from '%'."
-msgstr ""
+msgstr "% elementi meanData da '%."
 
 #: src/netedit/GNEApplicationWindow.cpp:5065
 #: src/netedit/GNEApplicationWindow.cpp:5066
 msgid "% TLS programs from '%'."
-msgstr ""
+msgstr "% programmi di semafori da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:5099
 #: src/netedit/GNEApplicationWindow.cpp:5100
@@ -5123,7 +5123,7 @@ msgstr "elementi di dati"
 
 #: src/netedit/GNENetHelper.cpp:3642
 msgid "meanData elements"
-msgstr ""
+msgstr "elementi meanData"
 
 #: src/netedit/GNENetHelper.cpp:3690
 msgid "Redo replace in TLS"
@@ -5867,6 +5867,8 @@ msgstr ""
 #: src/netedit/GNETagPropertiesDatabase.cpp:1401
 msgid "Visual placement to the left of the lane (in righthand networks)"
 msgstr ""
+"Posizionamento visuale sulla sinistra della corsia (in reti di guida a "
+"destra)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:1414
 msgid "ParkingSpace"
