@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-05 07:33+0000\n"
+"PO-Revision-Date: 2026-02-05 20:19+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/it/>\n"
@@ -14736,7 +14736,7 @@ msgstr "Parametro di fermata indefinito"
 #: src/utils/xml/CommonXMLStructure.cpp:1524
 msgid "Trying to get undefined % attribute '%' in SUMOBaseObject '%'"
 msgstr ""
-"Provando ad accedere all'attributo non definito '%' del  SUMOBaseObject '%'"
+"Provando ad accedere all'attributo non definito '%' del SUMOBaseObject '%'"
 
 #: src/utils/xml/GenericHandler.cpp:83 src/utils/xml/GenericSAXHandler.cpp:105
 msgid "Found root element '%' in file '%' (expected '%')."
