@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-04 11:19+0000\n"
+"PO-Revision-Date: 2026-02-05 07:33+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -3848,7 +3848,7 @@ msgstr ""
 
 #: src/microsim/MSVehicle.cpp:1902
 msgid "Vehicle '%' to split from vehicle '%' is not known. time=%."
-msgstr ""
+msgstr "El vehículo '%' a separar del vehículo '%' no es conocido. tiempo=%."
 
 #: src/microsim/MSVehicle.cpp:2034 src/microsim/MSVehicle.cpp:2041
 msgid ""
@@ -3955,7 +3955,7 @@ msgstr "singular "
 
 #: src/microsim/MSVehicleType.cpp:441
 msgid "could not add %type %"
-msgstr ""
+msgstr "no se pudo agregar el tipo %%"
 
 #: src/microsim/MSVehicleType.cpp:475
 #, c-format
@@ -4455,7 +4455,7 @@ msgstr ""
 
 #: src/microsim/devices/MSDevice_Routing.cpp:53
 msgid "The period with which the vehicle shall be rerouted"
-msgstr ""
+msgstr "El período con el que el vehículo será reenrutado"
 
 #: src/microsim/devices/MSDevice_Routing.cpp:57
 msgid "The rerouting period before depart"
@@ -8298,6 +8298,8 @@ msgstr ""
 msgid ""
 "Could not re-assign PT stop '%'. May need option --railway.topology.repair"
 msgstr ""
+"No se pudo reasignar la parada de transporte público '%'. Puede ser "
+"necesaria la opción --railway.topology.repair"
 
 #: src/netbuild/NBPTLineCont.cpp:198
 msgid "PT stop '%' has been moved to edge '%'."
@@ -8342,6 +8344,9 @@ msgid ""
 "Could not create reverse-direction stop for superposed edge '%' (origStop "
 "'%'). Stop id '%' already in use by stop on edge '%'."
 msgstr ""
+"No se pudo crear una parada en sentido inverso para la arista superpuesta "
+"'%' (parada original '%'). El ID de parada '%' ya está en uso por una parada "
+"en la arista '%'."
 
 #: src/netbuild/NBPTStopCont.cpp:171
 #, c-format
@@ -8440,12 +8445,14 @@ msgstr ""
 
 #: src/netconvert_main.cpp:53
 msgid "generate net with options read from file"
-msgstr ""
+msgstr "generar la red con opciones leídas desde el archivo"
 
 #: src/netconvert_main.cpp:55
 msgid ""
 "generate net with given nodes, edges, and edge types doing verbose output"
 msgstr ""
+"generar la red con los nodos, aristas y tipos de arista dados, mostrando "
+"salida detallada"
 
 #: src/netconvert_main.cpp:98
 msgid ""
@@ -8621,35 +8628,37 @@ msgstr "El número de intentos para crear cada nodo"
 
 #: src/netgen/NGFrame.cpp:182
 msgid "Probability for roads to continue at each node"
-msgstr ""
+msgstr "Probabilidad de que las vías continúen en cada nodo"
 
 #: src/netgen/NGFrame.cpp:187
 msgid "Probability for a node having at most 1 neighbor"
-msgstr ""
+msgstr "Probabilidad de que un nodo tenga como máximo 1 vecino"
 
 #: src/netgen/NGFrame.cpp:192
 msgid "Probability for a node having at most 2 neighbors"
-msgstr ""
+msgstr "Probabilidad de que un nodo tenga como máximo 2 vecinos"
 
 #: src/netgen/NGFrame.cpp:197
 msgid "Probability for a node having at most 3 neighbors"
-msgstr ""
+msgstr "Probabilidad de que un nodo tenga como máximo 3 vecinos"
 
 #: src/netgen/NGFrame.cpp:202
 msgid "Probability for a node having at most 4 neighbors"
-msgstr ""
+msgstr "Probabilidad de que un nodo tenga como máximo 4 vecinos"
 
 #: src/netgen/NGFrame.cpp:207
 msgid "Probability for a node having at most 5 neighbors"
-msgstr ""
+msgstr "Probabilidad de que un nodo tenga como máximo 5 vecinos"
 
 #: src/netgen/NGFrame.cpp:212
 msgid "Probability for a node having at most 6 neighbors"
-msgstr ""
+msgstr "Probabilidad de que un nodo tenga como máximo 6 vecinos"
 
 #: src/netgen/NGFrame.cpp:215
 msgid "Place nodes on a regular grid with spacing rand.min-distance"
 msgstr ""
+"Colocar los nodos en una cuadrícula regular con una distancia rand.min-"
+"distance"
 
 #: src/netgen/NGFrame.cpp:235
 msgid "You have to specify the type of network to generate."
@@ -8666,11 +8675,11 @@ msgstr ""
 
 #: src/netgen/NGFrame.cpp:277
 msgid "Option 'rand.connectivity' requires a value below 0.999"
-msgstr ""
+msgstr "La opción 'rand.connectivity' requiere un valor inferior a 0.999"
 
 #: src/netgen/netgen_main.cpp:61
 msgid "create net from given configuration"
-msgstr ""
+msgstr "crear una red con la configuración dada"
 
 #: src/netgen/netgen_main.cpp:62
 msgid "create grid net"
@@ -8712,6 +8721,8 @@ msgid ""
 "The radius of spider networks should be at least % for the given lanenumber,"
 " lanewidth and junction radius"
 msgstr ""
+"El radio de las redes tipo telaraña debe ser de al menos % para el número de "
+"carriles, ancho de carril y radio de cruce dados"
 
 #: src/netgen/netgen_main.cpp:180
 msgid ""
@@ -8727,6 +8738,8 @@ msgid ""
 "The distance between nodes should be at least % for the given lanenumber, "
 "lanewidth and junction radius"
 msgstr ""
+"La distancia entre nodos debe ser de al menos % para el número de carriles, "
+"ancho de carril y radio de cruce dados"
 
 #: src/netgen/netgen_main.cpp:194 src/netgen/netgen_main.cpp:199
 #, c-format
@@ -8734,6 +8747,8 @@ msgid ""
 "The length of attached streets should be at least % for the given "
 "lanenumber, lanewidth and junction radius"
 msgstr ""
+"La longitud de las calles conectadas debe ser de al menos % para el número "
+"de carriles, ancho de carril y radio de cruce dados"
 
 #: src/netgen/netgen_main.cpp:234
 msgid ""
