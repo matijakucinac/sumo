@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-05 20:16+0000\n"
+"PO-Revision-Date: 2026-02-05 20:19+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/it/>\n"
@@ -3179,7 +3179,7 @@ msgstr "% elementi addizionali da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4883
 msgid "% additionals from '%'."
-msgstr "% elementi addizionali da '%'"
+msgstr "% elementi addizionali da '%'."
 
 #: src/netedit/GNEApplicationWindow.cpp:4894
 #: src/netedit/GNEApplicationWindow.cpp:4943
@@ -3193,7 +3193,7 @@ msgstr "% elementi di domanda da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4932
 msgid "% demand elements from '%'."
-msgstr "% elementi di domanda da '%'"
+msgstr "% elementi di domanda da '%'."
 
 #: src/netedit/GNEApplicationWindow.cpp:4973
 msgid "% data elements from '%'"
@@ -3201,7 +3201,7 @@ msgstr "% elementi di dati da '%'"
 
 #: src/netedit/GNEApplicationWindow.cpp:4980
 msgid "% data elements from '%'."
-msgstr "% elementi di dati da '%'"
+msgstr "% elementi di dati da '%'."
 
 #: src/netedit/GNEApplicationWindow.cpp:4991
 #: src/netedit/GNEApplicationWindow.cpp:5039
@@ -3220,7 +3220,7 @@ msgstr "% elementi meanData da '%."
 #: src/netedit/GNEApplicationWindow.cpp:5065
 #: src/netedit/GNEApplicationWindow.cpp:5066
 msgid "% TLS programs from '%'."
-msgstr "% programmi di semafori da '%'"
+msgstr "% programmi di semafori da '%'."
 
 #: src/netedit/GNEApplicationWindow.cpp:5099
 #: src/netedit/GNEApplicationWindow.cpp:5100
