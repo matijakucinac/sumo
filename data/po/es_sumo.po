@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-05 07:33+0000\n"
+"PO-Revision-Date: 2026-02-06 10:47+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -8774,7 +8774,7 @@ msgstr "   % aristas generadas."
 
 #: src/netgen/netgen_main.cpp:277
 msgid " Removed % traffic lights at geometry-like nodes"
-msgstr ""
+msgstr " Se eliminaron % semáforos en nodos de tipo geométrico"
 
 #: src/netimport/NIFrame.cpp:53
 msgid "Read SUMO-net from FILE"
@@ -8864,7 +8864,7 @@ msgstr "Leer mapa de altura de GeoTIFF"
 #: src/netimport/NIFrame.cpp:145 src/od2trips_main.cpp:159
 #: src/polyconvert/polyconvert_main.cpp:203
 msgid "Continue on broken input"
-msgstr ""
+msgstr "Continuar aun si la entrada tenga errores"
 
 #: src/netimport/NIFrame.cpp:148
 msgid "Continue on invalid connections"
@@ -8938,10 +8938,14 @@ msgid ""
 "Maximum grade threshold in % at 50km/h when reconstructing elevation based "
 "on layer data. The value is scaled according to road speed."
 msgstr ""
+"Umbral máximo de pendiente en % a 50 km/h al reconstruir la elevación basada "
+"en datos de capa. El valor se escala según la velocidad de la vía."
 
 #: src/netimport/NIFrame.cpp:194
 msgid "Whether one-way roads should be spread to the side instead of centered"
 msgstr ""
+"Si las vías de un solo sentido deben desplazarse hacia un lado en lugar de "
+"centrarse"
 
 #: src/netimport/NIFrame.cpp:197
 msgid "Import lane-specific access restrictions"
@@ -8961,6 +8965,8 @@ msgid ""
 "Default to building two sidewalks on oneway streets (may affect divided "
 "roads)"
 msgstr ""
+"Crear por defecto dos aceras en calles de un solo sentido (puede afectar a "
+"vías divididas)"
 
 #: src/netimport/NIFrame.cpp:210
 msgid "Import crossings"
@@ -9065,10 +9071,12 @@ msgid ""
 "Distance threshold for determining whether distinct shapes are connected "
 "(used when from-id and to-id are not available)"
 msgstr ""
+"Umbral de distancia para determinar si formas distintas están conectadas (se "
+"usa cuando from-id y to-id no están disponibles)"
 
 #: src/netimport/NIFrame.cpp:285
 msgid "Add the list of field names as edge params"
-msgstr ""
+msgstr "Agregar la lista de nombres de campos como parámetros de arista"
 
 #: src/netimport/NIFrame.cpp:289
 msgid "Uses edge type defaults on problems"
@@ -9120,7 +9128,7 @@ msgstr "Usar prioridades de los tipos"
 
 #: src/netimport/NIFrame.cpp:335
 msgid "Uses lane numbers from types"
-msgstr ""
+msgstr "Usar los números de carril de los tipos"
 
 #: src/netimport/NIFrame.cpp:338
 msgid "Uses speeds from types"
@@ -9132,7 +9140,7 @@ msgstr "Establece la velocidad del conector"
 
 #: src/netimport/NIFrame.cpp:345
 msgid "Sets connector lane number"
-msgstr ""
+msgstr "Establece el número de carril del conector"
 
 #: src/netimport/NIFrame.cpp:348
 msgid "Excludes connectors"
@@ -9170,11 +9178,15 @@ msgid ""
 "Allow stop lines to be built beyond the start of the junction if the "
 "geometries allow so"
 msgstr ""
+"Permitir que las líneas de parada se construyan más allá del inicio del "
+"cruce si las geometrías lo permiten"
 
 #: src/netimport/NIFrame.cpp:371
 msgid ""
 "The minimum lane width for determining start or end of variable-width lanes"
 msgstr ""
+"El ancho mínimo de carril para determinar el inicio o el final de carriles "
+"de ancho variable"
 
 #: src/netimport/NIFrame.cpp:373
 msgid "Import internal lane shapes"
@@ -9537,11 +9549,11 @@ msgstr "Formato erróneo para el período de capacidad; se requiere 'hh:mm:ss'."
 
 #: src/netimport/NIImporter_MATSim.cpp:269
 msgid "Could not find from-node for edge '%'."
-msgstr ""
+msgstr "No se pudo encontrar el nodo de origen para la arista '%'."
 
 #: src/netimport/NIImporter_MATSim.cpp:272
 msgid "Could not find to-node for edge '%'."
-msgstr ""
+msgstr "No se pudo encontrar el nodo destino para la arista '%'."
 
 #: src/netimport/NIImporter_MATSim.cpp:281
 msgid "Ignoring edge % which has no lanes."
@@ -9550,6 +9562,7 @@ msgstr "Ignorando la arista % que no tiene carriles."
 #: src/netimport/NIImporter_MATSim.cpp:292
 msgid "Could not add intermediate node to split loop edge '%'."
 msgstr ""
+"No se pudo agregar un nodo intermedio para dividir la arista en bucle '%'."
 
 #: src/netimport/NIImporter_OpenDrive.cpp:227
 msgid "Could not find signal reference '%'."
@@ -9569,6 +9582,7 @@ msgstr ""
 #, c-format
 msgid "Junction '%' has no valid inner edges to determine its position."
 msgstr ""
+"El cruce '%' no tiene aristas internas válidas para determinar su posición."
 
 #: src/netimport/NIImporter_OpenDrive.cpp:294
 msgid "Could not determine position for junction '%'."
