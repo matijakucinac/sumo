@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-09 13:39+0000\n"
+"PO-Revision-Date: 2026-02-09 14:14+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -11707,7 +11707,7 @@ msgstr "Usando formato GEO"
 
 #: src/netedit/elements/additional/GNERerouter.cpp:114
 msgid "' needs at least one edge"
-msgstr ""
+msgstr "' precisa de pelo menos uma aresta"
 
 #: src/netedit/elements/additional/GNETAZ.cpp:250
 #: src/netedit/elements/network/GNELane.cpp:549
@@ -11716,7 +11716,7 @@ msgstr "Definir ponto de geometria personalizado"
 
 #: src/netedit/elements/additional/GNEVariableSpeedSign.cpp:98
 msgid "' needs at least one lane"
-msgstr ""
+msgstr "' precisa de pelo menos uma faixa"
 
 #: src/netedit/elements/data/GNEDataHandler.cpp:65
 msgid "add data set"
@@ -11724,7 +11724,7 @@ msgstr "adicionar conjunto de dados"
 
 #: src/netedit/elements/data/GNEDataHandler.cpp:89
 msgid "add data set and data interval"
-msgstr ""
+msgstr "Adicionar conjunto de dados e intervalo de dados"
 
 #: src/netedit/elements/data/GNEDataHandler.cpp:105
 msgid "add data interval"
@@ -13151,7 +13151,7 @@ msgstr "Clique em:"
 #: src/netedit/frames/GNEPlanCreator.cpp:854
 #: src/netedit/frames/GNEPlanCreator.cpp:894
 msgid "Only two from-to elements are allowed"
-msgstr ""
+msgstr "Apenas elementos from-to são permitidos"
 
 #: src/netedit/frames/GNEPlanCreator.cpp:887
 msgid "Double stoppingPlaces aren't allowed"
