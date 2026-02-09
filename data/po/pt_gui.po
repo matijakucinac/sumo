@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-09 12:27+0000\n"
+"PO-Revision-Date: 2026-02-09 13:39+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -7470,11 +7470,11 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6318
 msgid "Width of rendered image in meters"
-msgstr ""
+msgstr "Largura da imagem renderizada em metros"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6324
 msgid "Height of rendered image in meters"
-msgstr ""
+msgstr "Altura da imagem renderizada em metros"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6343
 msgid ""
@@ -7549,7 +7549,7 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6434
 msgid "The model used for changing lanes"
-msgstr ""
+msgstr "O modelo usado para troca de faixa"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6441
 msgid "The model used for car-following"
@@ -7595,7 +7595,7 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6498
 msgid "3D model file for this class"
-msgstr ""
+msgstr "arquivo de modelo 3D para essa classe"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6536
 msgid "The lane on which the vehicle shall be inserted"
@@ -10342,7 +10342,7 @@ msgstr ""
 
 #: src/netedit/dialogs/elements/GNERerouterDialog.cpp:59
 msgid ". There are overlapping intervals."
-msgstr ""
+msgstr ". Existem intervalos sobrepostos."
 
 #: src/netedit/dialogs/elements/GNERerouterIntervalDialog.cpp:76
 msgid "Error updating % of % '%'"
@@ -10390,7 +10390,7 @@ msgstr ""
 
 #: src/netedit/dialogs/elements/GNEVariableSpeedSignDialog.cpp:59
 msgid "Steps has to be sorted."
-msgstr ""
+msgstr "As etapas precisam ser ordenadas."
 
 #: src/netedit/dialogs/elements/GNEVehicleTypeDialog.cpp:492
 msgid "Invalid row type"
@@ -10797,11 +10797,11 @@ msgstr ""
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:107
 #, c-format
 msgid "change % of invalid additionals"
-msgstr ""
+msgstr "alterar % de adicionais inválidos"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:115
 msgid "fix positions of invalid additionals"
-msgstr ""
+msgstr "corrigir posições dos elementos adicionais"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:123
 msgid "select invalid additionals"
@@ -10847,7 +10847,7 @@ msgstr "Remover rotas inválidas"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:67
 msgid "Remove invalid routes and save"
-msgstr ""
+msgstr "Remover rotas inválidas e salvar"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:71
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:72
@@ -10888,7 +10888,7 @@ msgstr "Remover veículos inválidos"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:191
 msgid "Remove invalid vehicles and save"
-msgstr ""
+msgstr "Remover veículos inválidos e salvar"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:195
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:196
@@ -11631,7 +11631,7 @@ msgstr "Simplificar forma"
 #: src/netedit/elements/network/GNENetworkElement.cpp:335
 #: src/netedit/elements/network/GNENetworkElement.cpp:346
 msgid "Replace current shape with a rectangle"
-msgstr ""
+msgstr "Substituir formato atual por um retângulo"
 
 #: src/netedit/elements/additional/GNEPoly.cpp:273
 #: src/netedit/elements/network/GNENetworkElement.cpp:341
@@ -11665,7 +11665,7 @@ msgstr "Triangular polígono"
 
 #: src/netedit/elements/additional/GNEPoly.cpp:280
 msgid "Convert the current polygon in triangles"
-msgstr ""
+msgstr "Converter o polígono atual em triângulos"
 
 #: src/netedit/elements/additional/GNEPoly.cpp:291
 msgid "Remove geometry point"
@@ -12719,7 +12719,7 @@ msgstr "Abrir janela de elemento"
 
 #: src/netedit/frames/GNEAttributesEditorType.cpp:86
 msgid "Open specific element edit dialog"
-msgstr ""
+msgstr "Abrir janela de edição do elemento específico"
 
 #: src/netedit/frames/GNEAttributesEditorType.cpp:92
 msgid "Open help attributes dialog"
@@ -13201,15 +13201,15 @@ msgstr "Coluna inválida"
 
 #: src/netedit/frames/GNETLSTable.cpp:286
 msgid "Invalid row in table test"
-msgstr ""
+msgstr "Fila inválida no teste de mesa"
 
 #: src/netedit/frames/GNETLSTable.cpp:288
 msgid "Invalid column in table test"
-msgstr ""
+msgstr "Coluna inválida no teste de mesa"
 
 #: src/netedit/frames/GNETLSTable.cpp:317
 msgid "Unknown operation in table test"
-msgstr ""
+msgstr "Operação desconhecida no teste de mesa"
 
 #: src/netedit/frames/GNETLSTable.cpp:642
 msgid "Accumulated: "
@@ -13440,7 +13440,7 @@ msgstr ""
 
 #: src/netedit/frames/common/GNEGroupBoxModule.cpp:78
 msgid "Shrink frame to default width"
-msgstr ""
+msgstr "Reduzir o quadro para a largura padrão"
 
 #: src/netedit/frames/common/GNEInspectorFrame.cpp:64
 msgid "Templates"
@@ -17301,7 +17301,7 @@ msgstr "Mudar idioma para espanhol. (es)"
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:354
 msgid "Change language to portuguese. (pt)"
-msgstr ""
+msgstr "Trocar idioma para português. (pt)"
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:356
 msgid "Change language to french. (fr)"
@@ -17329,11 +17329,11 @@ msgstr "Trocar idioma para húngaro. (hu)"
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:368
 msgid "Change language to japanese. (ja)"
-msgstr ""
+msgstr "trocar idioma para japonês. (ja)"
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:370
 msgid "Change language to korean. (ko)"
-msgstr ""
+msgstr "Trocar idioma para coreano. (ko)"
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:384
 msgid "german"
