@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-07 13:01+0000\n"
+"PO-Revision-Date: 2026-02-09 12:27+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -16256,7 +16256,7 @@ msgstr "por tempo de espera acumulado"
 
 #: src/utils/gui/settings/GUIVisualizationSettings.cpp:1239
 msgid "by time since lane change"
-msgstr ""
+msgstr "por tempo desde a troca de faixa"
 
 #: src/utils/gui/settings/GUIVisualizationSettings.cpp:1248
 #: src/utils/gui/settings/GUIVisualizationSettings.cpp:1757
@@ -17169,11 +17169,11 @@ msgstr "Desenhar limites"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2527
 msgid "Force draw for rectangle selection"
-msgstr ""
+msgstr "Forçar desenho para a seleção retangular"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2530
 msgid "Disable dotted contours during selection/deletion"
-msgstr ""
+msgstr "Desabilitar contornos pontilhados durante a seleção/exclusão"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2533
 msgid "Recalculate boundaries"
@@ -17189,7 +17189,7 @@ msgstr "Visualização 3D"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2547
 msgid "Ignore color scheme for vehicles"
-msgstr ""
+msgstr "Ignorar esquemas de cores para os veículos"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2549
 msgid "Show TLS link markers"
@@ -17249,7 +17249,7 @@ msgstr "Localizar Estruturas"
 
 #: src/utils/gui/windows/GUIGlChildWindow.cpp:135
 msgid "Locate structures within the network."
-msgstr ""
+msgstr "Localizar estruturas na rede."
 
 #: src/utils/gui/windows/GUIGlChildWindow.cpp:139
 msgid "Toggle View Tooltips"
@@ -17325,7 +17325,7 @@ msgstr "Mudar idioma para turco. (tr)"
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:366
 msgid "Change language to hungarian. (hu)"
-msgstr ""
+msgstr "Trocar idioma para húngaro. (hu)"
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:368
 msgid "Change language to japanese. (ja)"
