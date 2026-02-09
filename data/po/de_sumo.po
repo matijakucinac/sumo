@@ -8,9 +8,10 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-01-25 12:59+0000\n"
+"PO-Revision-Date: 2026-02-09 19:28+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/eclipse-sumo/applications/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/eclipse-sumo/"
+"applications/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2539,11 +2540,13 @@ msgstr "Gleissignale standardmäßig im Moving-Block-Modus betreiben"
 
 #: src/microsim/MSFrame.cpp:514
 msgid "List vehicle classes that default to moving-block operations"
-msgstr ""
+msgstr "Fahrzeugklassen, die einen wandernden Raumabstand benutzen, aufzeigen"
 
 #: src/microsim/MSFrame.cpp:517
 msgid "Maximum signal distance above which zipper conflicts are ignored"
 msgstr ""
+"Maximaler Signalabstand, oberhalb dessen Einfädelungskonflikte ignoriert "
+"werden"
 
 #: src/microsim/MSFrame.cpp:520
 msgid "Do not build blocks longer than FLOAT and issue a warning instead"
@@ -8407,6 +8410,8 @@ msgstr "Doppelter Halt '%' mit dem Namen '%' von Linie %' entfernt."
 #: src/netbuild/NBPTLine.cpp:367
 msgid "Removed stop '%' named '%' from line '%' because edge '%' is missing."
 msgstr ""
+"Der Halt '%' (bezeichnet als '%') wurde von der Linie '%' entfernt, weil die "
+"Kante '%' fehlt."
 
 #: src/netbuild/NBPTLine.cpp:375
 msgid "not part of the route"
@@ -8455,6 +8460,8 @@ msgstr ""
 msgid ""
 "Could not re-assign PT stop '%'. May need option --railway.topology.repair"
 msgstr ""
+"Der ÖV-Halt '%' konnte nicht wieder zugewiesen werden. Die Option --"
+"railway.topology.repair könnte helfen"
 
 #: src/netbuild/NBPTLineCont.cpp:198
 msgid "PT stop '%' has been moved to edge '%'."
@@ -10167,6 +10174,8 @@ msgstr ""
 msgid ""
 "PT line '%' in relation % has a gap of % stops, only keeping first part."
 msgstr ""
+"Die ÖV-Linie '%' in Relation % hat eine Lücke von % Halten, weshalb nur der "
+"erste Teil beibehalten wird."
 
 #: src/netimport/NIImporter_OpenStreetMap.cpp:2711
 msgid ""
@@ -13794,6 +13803,8 @@ msgstr "Ungültiger eingelesener eingebetteter VType"
 #: src/utils/handlers/RouteHandler.cpp:1190
 msgid "Attributes '%' and '%' cannot be loaded simultaneously. Ignoring '%'"
 msgstr ""
+"Die Attribute '%' und '%' können nicht gleichzeitig geladen werden. '%' wird "
+"ignoriert"
 
 #: src/utils/handlers/RouteHandler.cpp:1238
 msgid "A stop must be defined either with an edge or with an lane, not both"
