@@ -702,6 +702,8 @@ def main(options):
 
     barOffset = 0
     barWidth = options.barbin / (len(data.items()) + 1)
+    barTicks = []  # ticks for non-numeric bar plots
+    barLabels = []  # labels for non-numeric bar plots
     hadData = False
 
     for dataID, d in data.items():
@@ -758,15 +760,15 @@ def main(options):
                         center = [x + barOffset * barWidth for x in xvalues]
                     else:
                         center = [x + barOffset * barWidth for x in range(len(xvalues))]
-                        plt.xticks(range(len(xvalues)), xvalues)
                     plt.bar(center, yvalues, width=barWidth, label=dataID)
                 else:
                     if numericYCount > 0:
                         center = [y + barOffset * barWidth for y in yvalues]
                     else:
                         center = [y + barOffset * barWidth for y in range(len(yvalues))]
-                        plt.yticks(range(len(yvalues)), yvalues)
                     plt.barh(center, xvalues, height=barWidth, label=dataID)
+                barTicks += center
+                barLabels += [dataID] * len(center)
                 barOffset += 1
 
             else:
@@ -788,6 +790,11 @@ def main(options):
         else:
             plt.yticks(range(len(labels)), labels)
         plt.boxplot(boxdata, vert=options.xattr == BOX_ATTR)
+
+    elif options.barplot and numericXCount == 0:
+        plt.xticks(barTicks, barLabels)
+    elif options.hbarplot and numericYCount == 0:
+        plt.yticks(barTicks, barLabels)
 
     if options.invertYAxis and hadData:
         plt.axis([minX, maxX, maxY, minY])
