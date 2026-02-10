@@ -29,6 +29,7 @@
 #include <utils/emissions/EnergyParams.h>
 #include <utils/emissions/PollutantsInterface.h>
 #include <utils/vehicle/SUMOVehicle.h>
+#include <utils/foxtools/MFXOptionalLock.h>
 #include "MSRoute.h"
 #include "MSMoveReminder.h"
 #include "MSVehicleType.h"
@@ -623,6 +624,9 @@ public:
      */
     virtual void replaceVehicleType(const MSVehicleType* type);
 
+    virtual std::unique_ptr<MFXOptionalLock> getScopeLock() {
+        return std::make_unique<MFXNoOpLock>();
+    }
 
     /** @brief Replaces the current vehicle type with a new one used by this vehicle only
      *

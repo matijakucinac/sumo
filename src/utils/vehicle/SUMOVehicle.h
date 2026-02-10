@@ -48,6 +48,7 @@ class MSVehicleDevice;
 class SUMOSAXAttributes;
 class EnergyParams;
 class PositionVector;
+class MFXOptionalLock;
 
 typedef std::vector<const MSEdge*> ConstMSEdgeVector;
 
@@ -393,6 +394,8 @@ public:
 
     /// @brief get bounding rectangle
     virtual PositionVector getBoundingBox(double offset = 0) const = 0;
+
+    virtual std::unique_ptr<MFXOptionalLock> getScopeLock() = 0;
 
     /// @name parking memory io
     //@{

@@ -26,6 +26,7 @@
 #include <vector>
 #include <set>
 #include <string>
+#include <utils/foxtools/MFXLock.h>
 #include <guisim/GUIBaseVehicle.h>
 #include <mesosim/MEVehicle.h>
 
@@ -142,4 +143,9 @@ public:
 
     /// @brief whether this vehicle is selected in the GUI
     bool isSelected() const override;
+
+    std::unique_ptr<MFXOptionalLock> getScopeLock() override {
+        return std::make_unique<MFXLock>(myLock);
+    }
+
 };

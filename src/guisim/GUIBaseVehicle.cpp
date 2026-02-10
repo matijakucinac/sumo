@@ -1096,6 +1096,7 @@ GUIBaseVehicle::getContainerPosition(int containerIndex) const {
 
 void
 GUIBaseVehicle::drawAction_drawPersonsAndContainers(const GUIVisualizationSettings& s) const {
+    FXMutexLock locker(myLock);
     if (myVehicle.myPersonDevice != nullptr) {
         const std::vector<MSTransportable*>& ps = myVehicle.myPersonDevice->getTransportables();
         int personIndex = 0;
