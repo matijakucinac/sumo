@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-09 14:14+0000\n"
+"PO-Revision-Date: 2026-02-10 14:47+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/es/>\n"
@@ -11048,7 +11048,7 @@ msgstr "Seleccionar rutas no válidas"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:77
 msgid "Select invalid routes and stop saving"
-msgstr ""
+msgstr "Seleccionar las rutas no válidas y detener el guardado"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:81
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:82
@@ -13778,6 +13778,8 @@ msgid ""
 "     '' (no operator) matches if string is a substring of that object's "
 "attribute."
 msgstr ""
+"     '' (sin operador) coincide si la cadena es una subcadena del atributo "
+"de ese objeto."
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:331
 msgid "     '=' matches if string is an exact match."
@@ -14312,7 +14314,7 @@ msgstr "Hasta TAZ"
 #: src/netedit/frames/data/GNETAZRelDataFrame.cpp:177
 #, c-format
 msgid "A % must be defined within an dataSet."
-msgstr ""
+msgstr "Un % debe definirse dentro de un set de datos."
 
 #: src/netedit/frames/data/GNETAZRelDataFrame.cpp:179
 #, c-format
@@ -15866,12 +15868,12 @@ msgstr "cargar formas desde '"
 #: src/netedit/tools/GNENetDiffTool.cpp:164
 #, c-format
 msgid "Loading of shape file '%' failed"
-msgstr ""
+msgstr "Falló la carga del archivo de formas '%'"
 
 #: src/netedit/tools/GNENetDiffTool.cpp:167
 #, c-format
 msgid "Loading of shape file '%' successfully"
-msgstr ""
+msgstr "Carga del archivo de formas '%' completada exitosamente"
 
 #: src/netedit/tools/GNEPythonTool.cpp:43
 msgid "Execute python tool '"
