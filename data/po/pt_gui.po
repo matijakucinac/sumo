@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-09 19:29+0000\n"
+"PO-Revision-Date: 2026-02-10 14:47+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -7466,7 +7466,7 @@ msgstr "ícone de pontos de interesse"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6312
 msgid "The layer of the POI for drawing and selecting"
-msgstr ""
+msgstr "A camada do ponto de interesse para desenhar e selecionar"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6318
 msgid "Width of rendered image in meters"
@@ -7521,15 +7521,19 @@ msgid ""
 "The vehicle's expected multiplicator for lane speed limits (or a "
 "distribution specifier)"
 msgstr ""
+"O multiplicador esperado do veículo para limites de velocidade de faixa (ou "
+"um especificador de distribuição)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6397
 msgid "The vehicle's desired maximum velocity (interacts with speedFactor)."
-msgstr ""
+msgstr "A velocidade máxima desejada para o veículo (interage com speedFactor)."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6398
 msgid ""
 "Applicable when no speed limit applies (bicycles, some motorways) [m/s]"
 msgstr ""
+"Aplicável quando não há limite de velocidade (bicicletas, algumas rodovias) "
+"[m/s]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6403
 msgid "An abstract emission class"
@@ -7541,11 +7545,11 @@ msgstr "Como esse veículo é renderizado"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6415
 msgid "The vehicle's width [m] (only used for drawing)"
-msgstr ""
+msgstr "A largura do veículo [m] (usado somente para desenho)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6421
 msgid "The vehicle's height [m] (only used for drawing)"
-msgstr ""
+msgstr "A altura do veículo [m] (usado somente para desenho)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6427
 msgid "The parking badges assigned to the vehicle"
@@ -7564,38 +7568,44 @@ msgid ""
 "The number of persons (excluding an autonomous driver) the vehicle can "
 "transport"
 msgstr ""
+"O número de pessoas (excluindo um motorista autônomo) que o veículo pode "
+"transportar"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6453
 msgid "The number of containers the vehicle can transport"
-msgstr ""
+msgstr "O número de containers que o veículo pode transportar"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6458
 msgid "The time required by a person to board the vehicle"
-msgstr ""
+msgstr "O tempo necessário para a pessoa embarcar no veículo"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6464
 msgid "The time required to load a container onto the vehicle"
-msgstr ""
+msgstr "O tempo necessário para carregar um container no veículo"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6470
 msgid "The preferred lateral alignment when using the sublane-model"
-msgstr ""
+msgstr "O alinhamento lateral preferido ao usar o modelo de sub-faixa"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6477
 msgid ""
 "The minimum lateral gap at a speed difference of 50km/h when using the "
 "sublane-model"
 msgstr ""
+"O espaçamento lateral mínimo a uma diferença de velocidade de 50 km/h quando "
+"se utiliza o modelo de sub-faixa"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6483
 msgid "The maximum lateral speed when using the sublane-model"
-msgstr ""
+msgstr "A velocidade lateral máxima ao usar o modelo de sub-faixa"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6489
 msgid ""
 "The interval length for which vehicle performs its decision logic "
 "(acceleration and lane-changing)"
 msgstr ""
+"A duração do intervalo em que o veículo realiza sua lógica de decisão "
+"(aceleração e troca de faixa)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6498
 msgid "3D model file for this class"
@@ -7603,27 +7613,27 @@ msgstr "arquivo de modelo 3D para essa classe"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6536
 msgid "The lane on which the vehicle shall be inserted"
-msgstr ""
+msgstr "A faixa em que o veículo deve ser inserido"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6542
 msgid "The position at which the vehicle shall enter the net"
-msgstr ""
+msgstr "A posição em que o veículo deve entrar na rede"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6548
 msgid "The speed with which the vehicle shall enter the network"
-msgstr ""
+msgstr "A velocidade em que o veículo deve entrar na rede"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6554
 msgid "The lane at which the vehicle shall leave the network"
-msgstr ""
+msgstr "A faixa em que o veículo deve sair da rede"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6560
 msgid "The position at which the vehicle shall leave the network"
-msgstr ""
+msgstr "A posição em que o veículo deve sair da rede"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6566
 msgid "The speed with which the vehicle shall leave the network"
-msgstr ""
+msgstr "A velocidade em que o veículo deve sair da rede"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6572
 msgid ""
@@ -7635,22 +7645,23 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6577
 msgid "The number of occupied seats when the vehicle is inserted"
-msgstr ""
+msgstr "O número de assentos ocupados quando o veículo é inserido"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6583
 msgid "The number of occupied container places when the vehicle is inserted"
-msgstr ""
+msgstr "O número de vagas de containers ocupadas quando o veículo é inserido"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6589
 msgid ""
 "The lateral position on the departure lane at which the vehicle shall enter "
 "the net"
 msgstr ""
+"A posição lateral na faixa de partida em que o veículo deve entrar na rede"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6595
 msgid ""
 "The lateral position on the arrival lane at which the vehicle shall arrive"
-msgstr ""
+msgstr "A posição lateral na faixa de chegada em que o veículo deve chegar"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6601
 msgid "Insertion checks"
@@ -7675,7 +7686,7 @@ msgstr "probabilidade de emitir um fluxo a cada segundo"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6639
 msgid "(not together with vehsPerHour or period)"
-msgstr ""
+msgstr "(não deve ser usado junto com vehhPerHour ou período)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6645
 msgid "Number of flows per hour, equally spaced"
@@ -7683,7 +7694,7 @@ msgstr "Número de fluxos por hora, igualmente espaçados"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6646
 msgid "(not together with period or probability or poisson)"
-msgstr ""
+msgstr "(não deve ser usado junto com período, probabilidade ou poisson)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6652
 msgid "Insert equally spaced flows at that period"
@@ -7691,39 +7702,42 @@ msgstr "Inserir fluxos igualmente espaçados nesse período"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6653
 msgid "(not together with vehsPerHour or probability or poisson)"
-msgstr ""
+msgstr "(não deve ser usado junto com vehsPerHour, probabilidade ou poisson)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6660
 msgid "(not together with vehsPerHour or period or poisson)"
-msgstr ""
+msgstr "(não deve ser usado junto com vehsPerHour, período ou poisson)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6666
 msgid ""
 "Insert flow expected vehicles per second with poisson distributed insertion "
 "rate"
 msgstr ""
+"Inserir o fluxo esperado de veículos por segundo com a taxa de inserção da "
+"distribuição de Poisson"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6667
 msgid "(not together with period or vehsPerHour or probability)"
-msgstr ""
+msgstr "(não deve ser usado junto com período, vehsPerHour ou probabilidade)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6678
 msgid "The acceleration ability of vehicles of this type [m/s^2]"
-msgstr ""
+msgstr "A capacidade de aceleração dos veículos desse tipo [m/s^2]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6684
 msgid "The deceleration ability of vehicles of this type [m/s^2]"
-msgstr ""
+msgstr "A capacidade de desaceleração dos veículos desse tipo [m/s^2]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6690
 msgid ""
 "The apparent deceleration of the vehicle as used by the standard model "
 "[m/s^2]"
 msgstr ""
+"A desaceleração aparente do veículo utilizada pelo modelo padrão [m/s^2]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6696
 msgid "The maximal physically possible deceleration for the vehicle [m/s^2]"
-msgstr ""
+msgstr "A desaceleração máxima fisicamente possível para esse veículo [m/s^2]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6704
 #: src/netedit/GNETagPropertiesDatabase.cpp:6711
@@ -7756,19 +7770,19 @@ msgstr "Parâmetro de antecipação / visualização EIDM [s]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6748
 msgid "EIDM AP Reaction Time parameter [s]"
-msgstr ""
+msgstr "Parâmetro de tempo de reação EIDM AP [s]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6754
 msgid "EIDM Wiener Process parameter for the Driving Error [s]"
-msgstr ""
+msgstr "Parâmetro do processo de Wiener EIDM para o erro de condução [s]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6760
 msgid "EIDM Wiener Process parameter for the Estimation Error [s]"
-msgstr ""
+msgstr "Parâmetro do processo de Wiener EIDM para o erro de estimação [s]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6766
 msgid "EIDM Coolness parameter of the Enhanced IDM [-]"
-msgstr ""
+msgstr "Parâmetro de serenidade EIDM do IDM melhorado [-]"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6773
 msgid "EIDM leader speed estimation error parameter [-]"
@@ -7940,12 +7954,16 @@ msgid ""
 "This value configures driving imperfection (dawdling) while passing a minor "
 "link."
 msgstr ""
+"Este valor configura a imperfeição de condução (lentidão) ao passar por uma "
+"via secundária."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7007
 msgid ""
 "This value defines the minimum time gap when passing ahead of a prioritized "
 "vehicle. "
 msgstr ""
+"Este valor define o intervalo de tempo mínimo ao passar à frente de um "
+"veículo prioritário. "
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7013
 msgid "Willingess of drivers to impede vehicles with higher priority"
