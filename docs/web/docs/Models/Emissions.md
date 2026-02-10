@@ -136,6 +136,16 @@ modeled using the HBEFA3 based model).
     <td class="tg-c3ow">x</td>
   </tr>
   <tr>
+    <td class="tg-0pky">MMP's Electric Vehicle Emission Model<br><code>emissionClass="MMPEVEM"</code></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">x</td>
+  </tr>
+  <tr>
     <td class="tg-lboi">No Emissions<br><code>emissionClass="Zero"</code></td>
     <td class="tg-c3ow">-</td>
     <td class="tg-c3ow">-</td>
