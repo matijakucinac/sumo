@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-10 18:07+0000\n"
+"PO-Revision-Date: 2026-02-11 09:45+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -8713,11 +8713,11 @@ msgstr "% requer mudança para o modo de rede. Continuar?"
 
 #: src/netedit/GNEViewNet.cpp:967
 msgid "% requires switch to demand mode. Continue?"
-msgstr ""
+msgstr "% requer mudança para o modo de demanda. Continuar?"
 
 #: src/netedit/GNEViewNet.cpp:969
 msgid "% requires switch to data mode. Continue?"
-msgstr ""
+msgstr "% requer mudança para o modo de dados. Continuar?"
 
 #: src/netedit/GNEViewNet.cpp:975
 msgid "Confirm switch mode"
@@ -10048,7 +10048,7 @@ msgstr ""
 
 #: src/netedit/dialogs/GNEParametersDialog.cpp:412
 msgid "- Duplicated and empty Keys aren't valid."
-msgstr ""
+msgstr "- Chaves duplicadas ou vazias não são válidas."
 
 #: src/netedit/dialogs/GNEParametersDialog.cpp:413
 msgid "- Whitespace and certain characters aren't allowed (@$%^&/|\\....)"
@@ -10109,7 +10109,7 @@ msgstr "Parâmetros duplicados"
 
 #: src/netedit/dialogs/GNEParametersDialog.cpp:534
 msgid "Parameters with the same key aren't allowed"
-msgstr ""
+msgstr "Parâmetros com a mesma chave não são permitidos"
 
 #: src/netedit/dialogs/GNEParametersDialog.cpp:556
 #: src/netedit/frames/GNEAttributesEditor.cpp:35
@@ -10301,11 +10301,11 @@ msgstr "Sobrescrever % '%'"
 
 #: src/netedit/dialogs/basic/GNEOverwriteElement.cpp:41
 msgid "There is already a % '%'. Overwrite?"
-msgstr ""
+msgstr "Já existe um % '%'. Sobrescrever?"
 
 #: src/netedit/dialogs/basic/GNEOverwriteElement.cpp:44
 msgid "Apply this solution to all conflicted elements"
-msgstr ""
+msgstr "Aplicar essa solução a todos os elementos em conflito"
 
 #: src/netedit/dialogs/elements/GNEAttributeCarrierDialog.cpp:66
 #: src/netedit/frames/GNEAttributesEditorRow.cpp:673
@@ -10402,7 +10402,7 @@ msgstr ""
 #: src/netedit/dialogs/elements/GNERerouterIntervalDialog.cpp:83
 #, c-format
 msgid "at least one % must be defined."
-msgstr ""
+msgstr "pelo menos um % deve ser definido."
 
 #: src/netedit/dialogs/elements/GNERerouterIntervalDialog.cpp:131
 #: src/netedit/dialogs/elements/GNERerouterIntervalDialog.cpp:193
@@ -10856,7 +10856,7 @@ msgstr "selecionar adicionais inválidos"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:169
 msgid "Select a solution for Multilane E2 detectors"
-msgstr ""
+msgstr "Selecionar solução para detectores multifaixas E2"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:172
 msgid "Build connections between lanes"
@@ -11048,7 +11048,7 @@ msgstr "Salvamento concluído"
 
 #: src/netedit/dialogs/fix/GNEFixElementsDialog.h:240
 msgid "List of conflicted items was successfully saved"
-msgstr ""
+msgstr "Lista de itens em conflito salva com sucesso"
 
 #: src/netedit/dialogs/fix/GNEFixElementsDialog.h:245
 msgid "Saving list of conflicted items failed"
@@ -12299,7 +12299,7 @@ msgstr "% > comprimento da faixa"
 
 #: src/netedit/elements/moving/GNEMoveElementLaneSingle.cpp:224
 msgid "% > (length of lane - EPS)"
-msgstr ""
+msgstr "% > (comprimento da faixa - EPS)"
 
 #: src/netedit/elements/moving/GNEMoveElementPlan.cpp:127
 #: src/netedit/elements/moving/GNEMoveElementVehicle.cpp:193
@@ -13550,7 +13550,7 @@ msgstr ""
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:325
 msgid "- The empty expression matches all objects"
-msgstr ""
+msgstr "- A expressão vazia coincide com todos os objetos"
 
 #: src/netedit/frames/common/GNEMatchAttribute.cpp:326
 msgid ""
