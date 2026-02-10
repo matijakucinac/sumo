@@ -82,9 +82,10 @@ jobs:
       shell: bash
       run: |
         ls python-wheels
+        source testenv/*/activate
+        python -m pip install --no-index -f python-wheels sumo_data
         WHEEL=$(ls python-wheels/eclipse_sumo*${{ matrix.manylinux }}*$(uname -m).whl)
         echo wheel=$WHEEL
-        source testenv/*/activate
         python -m pip install $WHEEL
         python -c "import sumo; print('SUMO_HOME=' + sumo.SUMO_HOME)" >> $GITHUB_ENV
 
