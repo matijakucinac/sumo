@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-10 14:47+0000\n"
+"PO-Revision-Date: 2026-02-10 18:07+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -7967,48 +7967,60 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7013
 msgid "Willingess of drivers to impede vehicles with higher priority"
-msgstr ""
+msgstr "Disposição dos condutores de obstruir veículos com maior prioridade"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7024
 msgid ""
 "The eagerness for performing strategic lane changing. Higher values result "
 "in earlier lane-changing."
 msgstr ""
+"A ânsia por realizar mudanças estratégicas de faixa. Valores mais altos "
+"resultam em mudanças de faixa mais precoces."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7030
 msgid ""
 "The willingness for performing cooperative lane changing. Lower values "
 "result in reduced cooperation."
 msgstr ""
+"A ânsia por realizar mudanças de faixa cooperativas. Valores mais baixo "
+"resultam em cooperação reduzida."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7036
 msgid ""
 "The eagerness for performing lane changing to gain speed. Higher values "
 "result in more lane-changing."
 msgstr ""
+"A ânsia por realizar mudanças de faixa para ganhar velocidade. Valores mais "
+"altos resultam em mais mudanças de faixa."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7042
 msgid ""
 "The eagerness for following the obligation to keep right. Higher values "
 "result in earlier lane-changing."
 msgstr ""
+"A ânsia por seguir a obrigação de manter-se à direita. Valores mais altos "
+"resultam em mudanças de faixa mais precoces."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7048
 msgid ""
 "The eagerness for using the configured lateral alignment within the lane."
-msgstr ""
+msgstr "A ânsia por utilizar o alinhamento lateral configurado dentro da faixa."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7049
 msgid ""
 "Higher values result in increased willingness to sacrifice speed for "
 "alignment."
 msgstr ""
+"Valores mais altos resultam em uma maior disposição a sacrificar velocidade "
+"por alinhamento."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7055
 msgid ""
 "The eagerness for overtaking through the opposite-direction lane. Higher "
 "values result in more lane-changing."
 msgstr ""
+"A ânsia por realizar ultrapassagens pela faixa de sentido oposto. Valores "
+"mais altos resultam em mais mudanças de faixa."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7061
 msgid "Willingness to encroach laterally on other drivers."
@@ -8190,7 +8202,7 @@ msgstr "lista de arestas consecutivas"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7297
 msgid "Arrival position on the last edge"
-msgstr ""
+msgstr "Posição de chegada na última aresta"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7304
 msgid "Route ID"
@@ -8198,7 +8210,7 @@ msgstr "ID da rota"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7309
 msgid "Arrival position on the destination edge"
-msgstr ""
+msgstr "Posição de chegada na aresta destino"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7325
 msgid "Bus stop ID"
@@ -8438,31 +8450,35 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7785
 msgid "space separated list of vehicle type ids to consider"
-msgstr ""
+msgstr "lista separada por espaços de IDs de tipos de veículos a considerar"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7790
 msgid ""
 "whether aggregation should be performed over all vehicles that entered the "
 "edge/lane in the aggregation interval"
 msgstr ""
+"se a agregação deve ser realizada sobre todos os veículos que entraram na "
+"aresta/faixa no intervalo de agregação"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7798
 msgid "List of attribute names that shall be written"
-msgstr ""
+msgstr "Lista de nomes de atributos que deverão ser escritos"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7803
 msgid "Restrict output to the given list of edge ids"
-msgstr ""
+msgstr "Restringir a saída para a lista de IDs de aresta fornecida"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7808
 msgid "Restrict output to the given list of edges given in file"
-msgstr ""
+msgstr "Restringir a saída para a lista de IDs de aresta fornecida no arquivo"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7814
 msgid ""
 "Whether the traffic statistic of all edges shall be aggregated into a single"
 " value"
 msgstr ""
+"Se as estatísticas de tráfego de todas as arestas devem ser agregadas em um "
+"único valor"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7825
 #: src/netedit/GNETagPropertiesDatabase.cpp:7830
@@ -8476,33 +8492,38 @@ msgstr "Nome opcional para %"
 #: src/netedit/GNETagPropertiesDatabase.cpp:7851
 #: src/netedit/GNETagPropertiesDatabase.cpp:7857
 msgid "The id of an edge in the simulation network"
-msgstr ""
+msgstr "O ID de uma aresta na rede simulada"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7868
 #: src/netedit/GNETagPropertiesDatabase.cpp:7874
 #, c-format
 msgid "The name of the lane the % shall be located at"
-msgstr ""
+msgstr "O nome da aresta em que % deve ser localziar"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7884
 msgid ""
 "If set, no error will be reported if element is placed behind the lane."
 msgstr ""
+"Se definido, nenhum erro será reportado se o elemento está posicionado atrás "
+"da faixa."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7885
 msgid ""
 "Instead, it will be placed 0.1 meters from the lanes end or at position 0.1,"
 msgstr ""
+"Em vez disso, será colocado a 0.1 metros do fim da faixa ou na posição 0.1,"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7886
 msgid ""
 "if the position was negative and larger than the lanes length after "
 "multiplication with - 1"
 msgstr ""
+"se a posição for negativa e maior que o comprimento da faixa após a "
+"multiplicação por -1"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7896
 msgid "Space separated list of vehicle type ids to consider"
-msgstr ""
+msgstr "Lista separada por espaços dos IDs de tipos de veículos a considerar"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7905
 msgid "The path to the output file"
@@ -8510,18 +8531,20 @@ msgstr "O caminho do arquivo de saída"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7915
 msgid "Path to the output file for writing information"
-msgstr ""
+msgstr "Caminho para o arquivo de saída para salvar informação"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7927
 #: src/netedit/GNETagPropertiesDatabase.cpp:7932
 msgid "A bitmap to use for rendering this %"
-msgstr ""
+msgstr "Um bitmap para ser usado na renderização deste %"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7943
 msgid ""
 "The departure time of the (first) % which is generated using this trip "
 "definition"
 msgstr ""
+"O horário de partida do (primeiro) % que é gerado usando esta definição de "
+"viagem"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7953
 msgid ""
@@ -8686,7 +8709,7 @@ msgstr ""
 
 #: src/netedit/GNEViewNet.cpp:965
 msgid "% requires switch to network mode. Continue?"
-msgstr ""
+msgstr "% requer mudança para o modo de rede. Continuar?"
 
 #: src/netedit/GNEViewNet.cpp:967
 msgid "% requires switch to demand mode. Continue?"
@@ -9565,6 +9588,8 @@ msgstr "Modo de relaçãp das TAZ"
 #: src/netedit/GNEViewNetHelper.cpp:4184
 msgid "Mode for creating TAZ relation datas. (Z)"
 msgstr ""
+"Modo para criação de relações entre Zonas de Análise de Tráfego (TAZRelDatas)"
+". (Z)"
 
 #: src/netedit/GNEViewNetHelper.cpp:4189
 msgid "MeanData mode"
@@ -9838,7 +9863,7 @@ msgstr ""
 
 #: src/netedit/dialogs/GNEAboutDialog.cpp:48
 msgid "Graphical editor for road networks and infrastructure."
-msgstr ""
+msgstr "Editor gráfico de redes viárias e infraestrutura."
 
 #: src/netedit/dialogs/GNEColorDialog.cpp:43
 #: src/netedit/dialogs/GNEColorDialog.cpp:53
@@ -10048,7 +10073,7 @@ msgstr "A chave de parâmetro não pode ser vazia"
 #: src/netedit/dialogs/GNEParametersDialog.cpp:451
 #, c-format
 msgid "Key '%' of Parameter contains invalid characters"
-msgstr ""
+msgstr "A chave '%' do parâmetro contém caracteres inválidos"
 
 #: src/netedit/dialogs/GNEParametersDialog.cpp:454
 #, c-format
@@ -10147,7 +10172,7 @@ msgstr "Classe de veículo padrão"
 
 #: src/netedit/dialogs/GNEVClassesDialog.cpp:302
 msgid "A passenger car assigned for private use"
-msgstr ""
+msgstr "Um automóvel de passageiros atribuido ao uso privado"
 
 #: src/netedit/dialogs/GNEVClassesDialog.cpp:303
 msgid "Vehicle for hire with a driver"
@@ -10175,7 +10200,7 @@ msgstr "Caminhão com reboque"
 
 #: src/netedit/dialogs/GNEVClassesDialog.cpp:309
 msgid "Vehicle designated to respond to an emergency"
-msgstr ""
+msgstr "Veículo designado para responder uma emergência"
 
 #: src/netedit/dialogs/GNEVClassesDialog.cpp:310
 msgid "Two- or three-wheeled motor vehicle"
@@ -10191,7 +10216,7 @@ msgstr "Veículo de tração humana com pedais"
 
 #: src/netedit/dialogs/GNEVClassesDialog.cpp:315
 msgid "An electric scooter or a kick scooter"
-msgstr ""
+msgstr "Uma scooter elétrica ou manual"
 
 #: src/netedit/dialogs/GNEVClassesDialog.cpp:316
 msgid "Person traveling on foot"
@@ -10847,7 +10872,7 @@ msgstr "Remover detectores E2 inválidos"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:178
 msgid "Remove Multilane E2 Detectors with non-connected lanes"
-msgstr ""
+msgstr "Remover detectores multifaixa E2 com faixas desconectadas"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:213
 msgid "fix multilane additionals problems"
@@ -12478,7 +12503,7 @@ msgstr "Ângulo: "
 
 #: src/netedit/elements/network/GNELane.cpp:648
 msgid "Lane Parametric Length cannot be never 0"
-msgstr ""
+msgstr "O comprimento paramétrico da faixa não pode ser zero"
 
 #: src/netedit/elements/network/GNELane.cpp:841
 msgid "Opposite lane '%' does not connect the same nodes as edge '%'!"
@@ -12524,6 +12549,7 @@ msgstr "Reestabelecer ambos pontos finais da geometria"
 #: src/netedit/elements/network/GNELane.cpp:2015
 msgid "Restore geometry endpoints of all selected edges"
 msgstr ""
+"Reestabelecer pontos finais geométricos de todas as arestas selecionadas"
 
 #: src/netedit/elements/network/GNELane.cpp:2018
 msgid "Restore geometry endpoint (shift-click)"
@@ -12729,7 +12755,7 @@ msgstr "Inspecionar % elemento pai"
 
 #: src/netedit/frames/GNEAttributesEditorRow.cpp:714
 msgid "Open dialog to select an existent file"
-msgstr ""
+msgstr "Abrir janela para selecionar um arquivo existente"
 
 #: src/netedit/frames/GNEAttributesEditorRow.cpp:716
 msgid "Open dialog to select or create an existent file"
@@ -12823,7 +12849,7 @@ msgstr "Faixa inválida"
 
 #: src/netedit/frames/GNEConsecutiveSelector.cpp:149
 msgid "Lane path needs at least two lanes"
-msgstr ""
+msgstr "Um caminho das faixas deve ter pelo menos duas faixas"
 
 #: src/netedit/frames/GNEConsecutiveSelector.cpp:169
 msgid "route creation"
@@ -12889,7 +12915,7 @@ msgstr "Hierarquia"
 #: src/netedit/frames/GNEElementTree.cpp:201
 #, c-format
 msgid "Default Vehicle Type '%' cannot be removed"
-msgstr ""
+msgstr "O tipo de veículo padrão '%' não pode ser removido"
 
 #: src/netedit/frames/GNEElementTree.cpp:308
 msgid "Edge: %"
@@ -13000,7 +13026,7 @@ msgstr "   para inspecionar próximo elemento"
 
 #: src/netedit/frames/GNEOverlappedInspection.cpp:241
 msgid " - Shift + Click in the same"
-msgstr ""
+msgstr " - Shift + Clique na mesma"
 
 #: src/netedit/frames/GNEOverlappedInspection.cpp:242
 msgid "   position to inspect"
@@ -13687,7 +13713,7 @@ msgstr "Aplicar valor de Z"
 
 #: src/netedit/frames/common/GNEMoveFrame.cpp:305
 msgid "Apply Z value to all selected junctions"
-msgstr ""
+msgstr "Aplicar valor Z a todas as junções selecionadas"
 
 #: src/netedit/frames/common/GNEMoveFrame.cpp:543
 msgid "- Num geometry points: "
@@ -13833,7 +13859,7 @@ msgstr "manter"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:162
 msgid "Restrict previous selection by the current selection"
-msgstr ""
+msgstr "Restringir a seleção anterior pela seleção atual"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:164
 msgid "replace"
@@ -13841,7 +13867,7 @@ msgstr "substituir"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:164
 msgid "Replace previous selection by the current selection"
-msgstr ""
+msgstr "Substituir a seleção anterior pela seleção atual"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:219
 msgid "Visual Scaling"
@@ -14057,7 +14083,7 @@ msgstr "Criar relação TAZ"
 
 #: src/netedit/frames/data/GNETAZRelDataFrame.cpp:56
 msgid "Click fromTaz and toTaz (confirm hotkey <ENTER>)"
-msgstr ""
+msgstr "Clique em fromTaz e toTaz (tecla de atalho de confirmação <ENTER>)"
 
 #: src/netedit/frames/data/GNETAZRelDataFrame.cpp:58
 msgid "Clear selected TAZs (hotkey <ESC>)"
@@ -14302,7 +14328,7 @@ msgstr ""
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:83
 msgid "Select two edges to create a trip."
-msgstr ""
+msgstr "Selecione duas arestas para criar uma viagem."
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:87
 msgid "Select two edges to create a vehicle with embedded route."
@@ -14310,11 +14336,12 @@ msgstr ""
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:91
 msgid "Select two junctions to create a trip."
-msgstr ""
+msgstr "Selecionar duas junções para criar uma viagem."
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:95
 msgid "Select two TAZS to create a trip."
 msgstr ""
+"Selecionar duas zonas de análise de tráfego (TAZ) para criar uma viagem."
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:100
 msgid "Click over a route to create a routeFlow."
@@ -14322,7 +14349,7 @@ msgstr ""
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:104
 msgid "Select two edges to create a flow."
-msgstr ""
+msgstr "Selecionar duas arestas para criar um fluxo."
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:108
 msgid "Select two edges to create a flow with embedded route."
@@ -14330,11 +14357,11 @@ msgstr ""
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:112
 msgid "Select two junctions to create a flow."
-msgstr ""
+msgstr "Selecionar duas junções para criar um fluxo."
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:116
 msgid "Select two TAZs to create a flow."
-msgstr ""
+msgstr "Selecionar duas zonas de análise de tráfego (TAZ) para criar um fluxo."
 
 #: src/netedit/frames/demand/GNEVehicleFrame.cpp:197
 msgid "Current selected vehicle isn't valid."
@@ -14399,6 +14426,7 @@ msgstr ""
 #: src/netedit/frames/network/GNEAdditionalFrame.cpp:216
 msgid "Currently unsupported. Create calibratorFlows using calibrator dialog"
 msgstr ""
+"Atualmente não suportado. Crie calibratorFlows usando a janela do calibrador"
 
 #: src/netedit/frames/network/GNEAdditionalFrame.cpp:286
 msgid "E2 multilane detectors need at least two consecutive lanes"
@@ -14496,7 +14524,7 @@ msgstr "Limpar selecionados"
 
 #: src/netedit/frames/network/GNEConnectorFrame.cpp:170
 msgid "Clears all connections of all selected objects"
-msgstr ""
+msgstr "Elimina todas as conexões de todos os objetos selecionados"
 
 #: src/netedit/frames/network/GNEConnectorFrame.cpp:173
 msgid "Reset Selected"
@@ -14751,7 +14779,7 @@ msgstr ""
 
 #: src/netedit/frames/network/GNECrossingFrame.cpp:506
 msgid "Click over junction to mark candidate edges."
-msgstr ""
+msgstr "Clique sobre uma junção para marcar as arestas candidatas."
 
 #: src/netedit/frames/network/GNECrossingFrame.cpp:506
 msgid "Click over candidate edges for selecting."
@@ -14918,7 +14946,7 @@ msgstr "A forma do polígono não pode ser vazia"
 
 #: src/netedit/frames/network/GNEShapeFrame.cpp:467
 msgid "POILane can be only placed over lanes"
-msgstr ""
+msgstr "POILane só pode ser colocado sobre faixas"
 
 #: src/netedit/frames/network/GNETAZFrame.cpp:149
 msgid "TAZ"
@@ -15078,7 +15106,7 @@ msgstr "  Selecionar Origens/Destinos."
 
 #: src/netedit/frames/network/GNETAZFrame.cpp:660
 msgid "Press ESC to clear the current selection."
-msgstr ""
+msgstr "Pressione ESC para limpar a seleção atual."
 
 #: src/netedit/frames/network/GNETAZFrame.cpp:838
 #: src/netedit/frames/network/GNETAZFrame.cpp:841
@@ -15169,7 +15197,7 @@ msgstr "Cor por Origem - Destino"
 
 #: src/netedit/frames/network/GNETAZFrame.cpp:1453
 msgid "TAZ shape needs at least three points"
-msgstr ""
+msgstr "O formato da TAZ precisa ter pelo menos três pontos"
 
 #: src/netedit/frames/network/GNETAZFrame.cpp:1497
 #, c-format
@@ -15233,7 +15261,7 @@ msgstr "Ativar modo de atribuição de E1"
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:575
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:576
 msgid "Assign E1 detectors to the current TLS"
-msgstr ""
+msgstr "Atribuir detectores E1 ao semáforo atual"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:576
 msgid "Disable assign E1 mode"
@@ -15384,7 +15412,7 @@ msgstr ""
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1590
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1606
 msgid "Traffic Light cannot be created because junction"
-msgstr ""
+msgstr "O semáforo não pode ser criado porque o cruzamento"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1591
 msgid "must have at least one connection."
@@ -15392,7 +15420,7 @@ msgstr "deve ter pelo menos uma conexão."
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1607
 msgid "must have at least one controlled connection."
-msgstr ""
+msgstr "deve ter pelo menos uma conexão controlada."
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1655
 msgid "reset current program"
@@ -15404,11 +15432,11 @@ msgstr "Reiniciar semáforo"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1822
 msgid "duplicate program '%' of traffic light '%'"
-msgstr ""
+msgstr "duplicar programa '%\" do semáforo '%'"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1866
 msgid "Traffic Light does not control any links"
-msgstr ""
+msgstr "O semáforo não controla nenhum cruzamento"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1878
 msgid "Phases"
@@ -15509,7 +15537,7 @@ msgstr "' para tLogic '"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:2919
 msgid "No programs found for traffic light '"
-msgstr ""
+msgstr "Nenhum programa foi encontrado para o semáforo '"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:2938
 msgid "Save TLS Program as"
@@ -15673,7 +15701,7 @@ msgstr "Item '%' não encontrado\n"
 #: src/utils/gui/div/GUISelectedStorage.cpp:244
 #, c-format
 msgid "% objects ignored, % objects not found\n"
-msgstr ""
+msgstr "% objetos foram ignorados, % objetos não foram encontrados\n"
 
 #: src/utils/gui/div/GUISelectedStorage.cpp:255
 msgid "Could not open '%'.\n"
@@ -15705,7 +15733,7 @@ msgstr "Não foi possível alocar o quadro de vídeo!"
 
 #: src/utils/gui/div/GUIVideoEncoder.h:148
 msgid "Could not allocate the video frame data!"
-msgstr ""
+msgstr "Não foi possível alocar os dados do quadro de vídeo!"
 
 #: src/utils/gui/div/GUIVideoEncoder.h:155
 msgid "Failed to open output file!"
@@ -16732,7 +16760,7 @@ msgstr "Fundo"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:1739
 msgid "Draw with constant size when zoomed out"
-msgstr ""
+msgstr "Desenhar com tamanho constante ao usar o zoom"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:1744
 msgid "Minimum Size"
@@ -17179,7 +17207,7 @@ msgstr "Desabilitar ocultar por zoom"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2515
 msgid "Disable hiding edges with high zoom out"
-msgstr ""
+msgstr "Desativar a ocultação de arestas com zoom muito reduzido"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2518
 msgid "Dither"
@@ -17220,6 +17248,7 @@ msgstr "Mostrar marcadores de enlace do semáforo"
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2552
 msgid "Show domes around TLS models from decals"
 msgstr ""
+"Mostrar cúpulas ao redor de modelos de semáforo (TLS) a partir de decalques"
 
 #: src/utils/gui/windows/GUIDialog_ViewSettings.cpp:2555
 msgid "Show auto-generated TLS models"
