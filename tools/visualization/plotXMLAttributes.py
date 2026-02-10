@@ -760,15 +760,16 @@ def main(options):
                         center = [x + barOffset * barWidth for x in xvalues]
                     else:
                         center = [x + barOffset * barWidth for x in range(len(xvalues))]
+                        barLabels += xvalues
                     plt.bar(center, yvalues, width=barWidth, label=dataID)
                 else:
                     if numericYCount > 0:
                         center = [y + barOffset * barWidth for y in yvalues]
                     else:
                         center = [y + barOffset * barWidth for y in range(len(yvalues))]
+                        barLabels += yvalues
                     plt.barh(center, xvalues, height=barWidth, label=dataID)
                 barTicks += center
-                barLabels += [dataID] * len(center)
                 barOffset += 1
 
             else:
