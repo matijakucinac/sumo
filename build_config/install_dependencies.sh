@@ -32,6 +32,12 @@ source /etc/os-release
 case "$ID" in
     ubuntu|debian)
         apt-get -y install $(cat $SCRIPT_DIR/build_req_deb.txt)
+        # Adding parquet support libraries
+        curl -fL -o apache-arrow-apt-source-latest-$(lsb_release --codename --short).deb https://packages.apache.org/artifactory/arrow/$(lsb_release --id --short | tr 'A-Z' 'a-z')/apache-arrow-apt-source-latest-$(lsb_release --codename --short).deb
+        apt-get -y install ./apache-arrow-apt-source-latest-$(lsb_release --codename --short).deb
+        rm ./apache-arrow-apt-source-latest-*.deb
+        apt-get -qq update
+        apt-get -y install libarrow-dev libparquet-dev
         ;;
     centos)
         if [[ "$VERSION_ID" == "7" ]]; then
