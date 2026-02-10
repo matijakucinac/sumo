@@ -98,6 +98,19 @@ FXIMPLEMENT(GNEPythonToolDialogElements::SumoConfigArgument,    GNEPythonToolDia
 // member method definitions
 // ===========================================================================
 
+GNEFileDialog::OpenMode
+GNEPythonToolDialogElements::getOpenMode(const Option* o) {
+    GNEFileDialog::OpenMode openMode = GNEFileDialog::OpenMode::LOAD_SINGLE;
+    if (o->getListSeparator() != "") {
+        openMode = GNEFileDialog::OpenMode::LOAD_MULTIPLE;
+    }
+    if (o->getSubTopic() == "output") {
+        openMode = GNEFileDialog::OpenMode::SAVE;
+    }
+    return openMode;
+}
+
+
 // ---------------------------------------------------------------------------
 // GNEPythonToolDialogElements::Category - methods
 // ---------------------------------------------------------------------------
@@ -205,15 +218,11 @@ GNEPythonToolDialogElements::FileNameArgument::reset() {
 
 long
 GNEPythonToolDialogElements::FileNameArgument::onCmdOpenFilename(FXObject*, FXSelector, void*) {
-    // get open mode
-    GNEFileDialog::OpenMode openMode = GNEFileDialog::OpenMode::SAVE;
-    if (myOption->getListSeparator() != "") {
-        openMode = GNEFileDialog::OpenMode::LOAD_MULTIPLE;
-    }
     // get file
     const GNEFileDialog xmlFileDialog(myToolDialogParent->getApplicationWindow(), myToolDialogParent,
                                       TL("XML file"),
-                                      SUMOXMLDefinitions::XMLFileExtensions.getStrings(), openMode,
+                                      SUMOXMLDefinitions::XMLFileExtensions.getStrings(), 
+                                      getOpenMode(myOption),
                                       GNEFileDialog::ConfigType::NETEDIT);
     // check that file is valid
     if (xmlFileDialog.getResult() == GNEDialog::Result::ACCEPT) {
@@ -351,15 +360,11 @@ GNEPythonToolDialogElements::NetworkArgument::NetworkArgument(GNEPythonToolDialo
 
 long
 GNEPythonToolDialogElements::NetworkArgument::onCmdOpenFilename(FXObject*, FXSelector, void*) {
-    // get open mode
-    GNEFileDialog::OpenMode openMode = GNEFileDialog::OpenMode::SAVE;
-    if (myOption->getListSeparator() != "") {
-        openMode = GNEFileDialog::OpenMode::LOAD_MULTIPLE;
-    }
     // get network file
     const GNEFileDialog networkFileDialog(myToolDialogParent->getApplicationWindow(), myToolDialogParent,
                                           TL("network file"),
-                                          SUMOXMLDefinitions::NetFileExtensions.getStrings(), openMode,
+                                          SUMOXMLDefinitions::NetFileExtensions.getStrings(),
+                                          getOpenMode(myOption),
                                           GNEFileDialog::ConfigType::NETEDIT);
     // check that file is valid
     if (networkFileDialog.getResult() == GNEDialog::Result::ACCEPT) {
@@ -402,15 +407,11 @@ GNEPythonToolDialogElements::AdditionalArgument::AdditionalArgument(GNEPythonToo
 
 long
 GNEPythonToolDialogElements::AdditionalArgument::onCmdOpenFilename(FXObject*, FXSelector, void*) {
-    // get open mode
-    GNEFileDialog::OpenMode openMode = GNEFileDialog::OpenMode::SAVE;
-    if (myOption->getListSeparator() != "") {
-        openMode = GNEFileDialog::OpenMode::LOAD_MULTIPLE;
-    }
     // get additional file
     const GNEFileDialog additionalFileDialog(myToolDialogParent->getApplicationWindow(), myToolDialogParent,
             TL("Additional elements file"),
-            SUMOXMLDefinitions::AdditionalFileExtensions.getStrings(), openMode,
+            SUMOXMLDefinitions::AdditionalFileExtensions.getStrings(),
+            getOpenMode(myOption),
             GNEFileDialog::ConfigType::NETEDIT);
     // check that file is valid
     if (additionalFileDialog.getResult() == GNEDialog::Result::ACCEPT) {
@@ -453,15 +454,11 @@ GNEPythonToolDialogElements::RouteArgument::RouteArgument(GNEPythonToolDialog* t
 
 long
 GNEPythonToolDialogElements::RouteArgument::onCmdOpenFilename(FXObject*, FXSelector, void*) {
-    // get open mode
-    GNEFileDialog::OpenMode openMode = GNEFileDialog::OpenMode::SAVE;
-    if (myOption->getListSeparator() != "") {
-        openMode = GNEFileDialog::OpenMode::LOAD_MULTIPLE;
-    }
     // get route file
     const GNEFileDialog routeFileDialog(myToolDialogParent->getApplicationWindow(), myToolDialogParent,
                                         TL("Route elements file"),
-                                        SUMOXMLDefinitions::RouteFileExtensions.getStrings(), openMode,
+                                        SUMOXMLDefinitions::RouteFileExtensions.getStrings(),
+                                        getOpenMode(myOption),
                                         GNEFileDialog::ConfigType::NETEDIT);
     // check that file is valid
     if (routeFileDialog.getResult() == GNEDialog::Result::ACCEPT) {
@@ -504,15 +501,11 @@ GNEPythonToolDialogElements::DataArgument::DataArgument(GNEPythonToolDialog* too
 
 long
 GNEPythonToolDialogElements::DataArgument::onCmdOpenFilename(FXObject*, FXSelector, void*) {
-    // get open mode
-    GNEFileDialog::OpenMode openMode = GNEFileDialog::OpenMode::SAVE;
-    if (myOption->getListSeparator() != "") {
-        openMode = GNEFileDialog::OpenMode::LOAD_MULTIPLE;
-    }
     // get data file
     const GNEFileDialog dataFileDialog(myToolDialogParent->getApplicationWindow(), myToolDialogParent,
                                        TL("Data elements file"),
-                                       SUMOXMLDefinitions::EdgeDataFileExtensions.getStrings(), openMode,
+                                       SUMOXMLDefinitions::EdgeDataFileExtensions.getStrings(),
+                                       getOpenMode(myOption),
                                        GNEFileDialog::ConfigType::NETEDIT);
     // check that file is valid
     if (dataFileDialog.getResult() == GNEDialog::Result::ACCEPT) {
@@ -555,15 +548,11 @@ GNEPythonToolDialogElements::SumoConfigArgument::SumoConfigArgument(GNEPythonToo
 
 long
 GNEPythonToolDialogElements::SumoConfigArgument::onCmdOpenFilename(FXObject*, FXSelector, void*) {
-    // get open mode
-    GNEFileDialog::OpenMode openMode = GNEFileDialog::OpenMode::SAVE;
-    if (myOption->getListSeparator() != "") {
-        openMode = GNEFileDialog::OpenMode::LOAD_MULTIPLE;
-    }
     // get sumoConfig file
     const GNEFileDialog sumoConfigFileDialog(myToolDialogParent->getApplicationWindow(), myToolDialogParent,
             TL("sumo config file"),
-            SUMOXMLDefinitions::SumoConfigFileExtensions.getStrings(), openMode,
+            SUMOXMLDefinitions::SumoConfigFileExtensions.getStrings(),
+            getOpenMode(myOption),
             GNEFileDialog::ConfigType::NETEDIT);
     // check that file is valid
     if (sumoConfigFileDialog.getResult() == GNEDialog::Result::ACCEPT) {

@@ -548,4 +548,6 @@ public:
         /// @brief Invalidated assignment operator.
         BoolArgument& operator=(const IntArgument&) = delete;
     };
+
+    static GNEFileDialog::OpenMode getOpenMode(const Option* o);
 };
