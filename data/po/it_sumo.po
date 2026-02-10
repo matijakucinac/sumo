@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-05 20:19+0000\n"
+"PO-Revision-Date: 2026-02-10 18:07+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/it/>\n"
@@ -12131,7 +12131,7 @@ msgstr "Non ho potuto caricare il poligono della relazione '%' (mancano \"ways\"
 
 #: src/polyconvert/PCLoaderOSM.cpp:204
 msgid ", (front-to-back dist: %)"
-msgstr ""
+msgstr ", (distanza tra fronte e retro: %)"
 
 #: src/polyconvert/PCLoaderOSM.cpp:206
 msgid "Assembled polygon from relation '%' (name:%)%"
@@ -13047,11 +13047,11 @@ msgstr ""
 
 #: src/tools/emissionsMap_main.cpp:203
 msgid "The emission class (-e) must be given."
-msgstr "SI deve provvedere una classe di emissioni (-e)."
+msgstr "Si deve provvedere una classe di emissioni (-e)."
 
 #: src/tools/emissionsMap_main.cpp:206
 msgid "The output file (-o) must be given."
-msgstr "SI deve provvedere un file di uscita (-o)."
+msgstr "Si deve provvedere un file di uscita (-o)."
 
 #: src/traci-server/TraCIServer.cpp:534
 msgid "Starting TraCI without using internal lanes!"
@@ -14366,6 +14366,8 @@ msgstr "Non ho potuto caricare il file elenco '%'."
 #, c-format
 msgid "In internal test file, value '%' cannot be parsed to int."
 msgstr ""
+"Il valore '%' del file interno di prova non può essere analizzato come "
+"valore intero."
 
 #: src/utils/tests/InternalTest.cpp:349 src/utils/tests/InternalTest.cpp:399
 #: src/utils/tests/InternalTest.cpp:434
@@ -14376,6 +14378,8 @@ msgstr "Non ho potuto aprire il file di posizioni vedute '%'."
 #, c-format
 msgid "In internal test file, mainMenu value '%' cannot be parsed to int."
 msgstr ""
+"Il valore '%' del menu principale contenuto nel file interno di prova non "
+"può essere analizzato come valore intero."
 
 #: src/utils/tests/InternalTest.cpp:379
 #, c-format
@@ -14714,6 +14718,8 @@ msgid ""
 "Ignoring from % '%' used in % '%' and using instead the previous end element"
 " % '%'"
 msgstr ""
+"L'origine % '%' utilizzata in % '%' verrà scambiata per la destinazione "
+"dell'elemento precedente % '%'"
 
 #: src/utils/xml/CommonXMLStructure.cpp:1220
 msgid "Trying to get undefined parent '%' in SUMOBaseObject '%'"
@@ -14950,7 +14956,7 @@ msgstr "Video MP4"
 
 #: src/utils/xml/SUMOXMLDefinitions.cpp:1731
 msgid "Portable"
-msgstr ""
+msgstr "Portatile"
 
 #: src/utils/xml/SUMOXMLDefinitions.cpp:1737
 msgid "Plain text"
