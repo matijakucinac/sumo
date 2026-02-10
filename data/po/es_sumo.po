@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-09 14:14+0000\n"
+"PO-Revision-Date: 2026-02-10 14:47+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -12026,19 +12026,23 @@ msgstr ""
 
 #: src/polyconvert/polyconvert_main.cpp:300
 msgid "In order to prune the input on the net, you have to supply a network."
-msgstr ""
+msgstr "Para recortar la entrada en la red, debe proporcionarse una red."
 
 #: src/router/ROEdge.cpp:228
 msgid ""
 "No interval matches passed time=% in edge '%'.\n"
 " Using edge's length / max speed."
 msgstr ""
+"Ningún intervalo coincide con el tiempo transcurrido=% en la arista '%'.\n"
+" Se usará la longitud de arista / velocidad máxima."
 
 #: src/router/ROEdge.cpp:253
 msgid ""
 "No interval matches passed time=% in edge '%'.\n"
 " Using edge's length / edge's speed."
 msgstr ""
+"Ningún intervalo coincide con el tiempo transcurrido=% en la arista '%'.\n"
+" Se usará la longitud de arista / velocidad de la arista."
 
 #: src/router/ROEdge.cpp:478
 msgid ""
@@ -12068,7 +12072,7 @@ msgstr "Usar FILE como red de SUMO para las rutas"
 
 #: src/router/ROFrame.cpp:66
 msgid "Write vehicles that reference routes by their id"
-msgstr ""
+msgstr "Escribir vehículos que referencian rutas por su ID"
 
 #: src/router/ROFrame.cpp:73
 msgid "Read additional network data (districts, bus stops) from FILE(s)"
@@ -12165,7 +12169,7 @@ msgstr ""
 
 #: src/router/ROFrame.cpp:192
 msgid "Interpolate edge weights at interval boundaries"
-msgstr ""
+msgstr "Interpolar los pesos de aristas en los límites de los intervalos"
 
 #: src/router/ROFrame.cpp:196
 msgid "Expand the end of the last loaded weight interval to infinity"
@@ -14293,6 +14297,7 @@ msgstr ""
 #: src/utils/xml/CommonXMLStructure.cpp:1220
 msgid "Trying to get undefined parent '%' in SUMOBaseObject '%'"
 msgstr ""
+"Intentando obtener el padre no definido '%' en el objeto 'SUMOBaseObject' '%'"
 
 #: src/utils/xml/CommonXMLStructure.cpp:1237
 msgid "Undefined vehicleType parameter"
