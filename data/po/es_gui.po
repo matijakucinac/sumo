@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-10 14:47+0000\n"
+"PO-Revision-Date: 2026-02-11 09:45+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/es/>\n"
@@ -12879,11 +12879,11 @@ msgstr "Simplificar forma"
 
 #: src/netedit/elements/network/GNENetworkElement.cpp:341
 msgid "Open junction's shape"
-msgstr ""
+msgstr "Abrir la forma del cruce"
 
 #: src/netedit/elements/network/GNENetworkElement.cpp:343
 msgid "Close junction's shape"
-msgstr ""
+msgstr "Cerrar la forma del cruce"
 
 #: src/netedit/elements/network/GNENetworkElement.cpp:346
 msgid "Straighten shape"
