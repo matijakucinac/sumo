@@ -625,7 +625,7 @@ public:
     virtual void replaceVehicleType(const MSVehicleType* type);
 
     virtual std::unique_ptr<MFXOptionalLock> getScopeLock() {
-        return std::make_unique<MFXNoOpLock>();
+        return std::unique_ptr<MFXOptionalLock>(new MFXNoOpLock());
     }
 
     /** @brief Replaces the current vehicle type with a new one used by this vehicle only

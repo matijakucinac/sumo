@@ -177,7 +177,7 @@ public:
     void rerouteDRTStop(MSStoppingPlace* busStop);
 
     std::unique_ptr<MFXOptionalLock> getScopeLock() override {
-        return std::make_unique<MFXLock>(myLock);
+        return std::unique_ptr<MFXOptionalLock>(new MFXLock(myLock));
     }
 
 
