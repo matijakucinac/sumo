@@ -36,3 +36,6 @@ action_step_offset
 
 # 4  zipper links in multiple conflicts
 4links
+
+# see #17624
+highspeed
