@@ -127,6 +127,8 @@ edges:edges.edg.xml
 nodes:nodes.nod.xml
 edges:edges.xml
 nodes:nodes.xml
+edges:out.edg.xml
+nodes:out.nod.xml
 net:net.net.xml
 connections:connections.xml
 fixed:routes.rou.xml.fixed
@@ -290,6 +292,8 @@ routes:<!-- generated on{[->]}-->
 routesA:<!-- generated on{[->]}-->
 routesB:<!-- generated on{[->]}-->
 xml:<!-- generated on{[->]}-->
+edges:<!-- generated on{[->]}-->
+nodes:<!-- generated on{[->]}-->
 toolcfg:<!-- generated on{[->]}-->
 created_shapes:<!-- generated on{[->]}-->
 deleted_shapes:<!-- generated on{[->]}-->

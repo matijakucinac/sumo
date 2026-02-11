@@ -30,3 +30,4 @@ remap_renamed
 remap_network
 netduplicate
 patchRailConflicts
+generateStationEdges
