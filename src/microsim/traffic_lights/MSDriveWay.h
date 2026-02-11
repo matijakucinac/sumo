@@ -272,7 +272,7 @@ protected:
     /* @brief find switches that threaten this driveway
      * @param[out] flankSwitches collect the switches
      */
-    void checkFlanks(const MSLink* originLink, const std::vector<const MSLane*>& lanes, const LaneVisitedMap& visited, bool allFoes, std::set<MSLink*>& flankSwitches) const;
+    void checkFlanks(const MSLink* originLink, const std::vector<const MSLane*>& lanes, const LaneVisitedMap& visited, bool allFoes, bool movingBlock, std::set<MSLink*>& flankSwitches) const;
 
     /* @brief find links that cross the driveway without entering it
      * @param[out] flankSwitches collect the switches

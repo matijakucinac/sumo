@@ -46,7 +46,6 @@
 //#define DEBUG_CHECK_FLANKS
 //#define DEBUG_SIGNALSTATE_PRIORITY
 //#define DEBUG_SIGNALSTATE
-//#define DEBUG_FIND_PROTECTION
 //#define DEBUG_MOVEREMINDER
 //#define DEBUG_MATCH
 
@@ -1127,7 +1126,7 @@ MSDriveWay::isSwitch(const MSLink* link) {
 
 
 void
-MSDriveWay::checkFlanks(const MSLink* originLink, const std::vector<const MSLane*>& lanes, const LaneVisitedMap& visited, bool allFoes, std::set<MSLink*>& flankSwitches) const {
+MSDriveWay::checkFlanks(const MSLink* originLink, const std::vector<const MSLane*>& lanes, const LaneVisitedMap& visited, bool allFoes, bool movingBlock, std::set<MSLink*>& flankSwitches) const {
 #ifdef DEBUG_CHECK_FLANKS
     std::cout << " checkFlanks lanes=" << toString(lanes) << " allFoes=" << allFoes << "\n";
 #endif
@@ -1150,7 +1149,8 @@ MSDriveWay::checkFlanks(const MSLink* originLink, const std::vector<const MSLane
             if (ili.viaLink == originLink
                     || ili.viaLink == reverseOriginLink
                     || ili.viaLink->getDirection() == LinkDirection::TURN
-                    || ili.viaLink->getDirection() == LinkDirection::TURN_LEFTHAND) {
+                    || ili.viaLink->getDirection() == LinkDirection::TURN_LEFTHAND
+                    || (originLink == nullptr && i == 0 && movingBlock)) {
                 continue;
             }
             if (ili.lane != prev && ili.lane != next) {
@@ -1327,9 +1327,15 @@ MSDriveWay::buildDriveWay(const std::string& id, const MSLink* link, MSRouteIter
     }
     dw->buildRoute(link, first, end, visited, flankSwitches);
     dw->myCoreSize = (int)dw->myRoute.size();
-    dw->checkFlanks(link, dw->myForward, visited, true, flankSwitches);
-    dw->checkFlanks(link, dw->myBidi, visited, false, flankSwitches);
-    dw->checkFlanks(link, before, visited, true, flankSwitches);
+
+    MSRailSignal* rs = link ? const_cast<MSRailSignal*>(static_cast<const MSRailSignal*>(link->getTLLogic())) : nullptr;
+    const bool movingBlock = (rs && rs->isMovingBlock()) || (!rs &&
+            (OptionsCont::getOptions().getBool("railsignal-moving-block")
+             || MSRailSignalControl::isMovingBlock((*first)->getPermissions())));
+
+    dw->checkFlanks(link, dw->myForward, visited, true, movingBlock, flankSwitches);
+    dw->checkFlanks(link, dw->myBidi, visited, false, movingBlock, flankSwitches);
+    dw->checkFlanks(link, before, visited, true, movingBlock, flankSwitches);
     for (MSLink* fsLink : flankSwitches) {
 #ifdef DEBUG_ADD_FOES
         if (DEBUG_COND_DW(dw)) {
@@ -1339,7 +1345,7 @@ MSDriveWay::buildDriveWay(const std::string& id, const MSLink* link, MSRouteIter
         dw->findFlankProtection(fsLink, fsLink, dw->myFlank);
     }
     std::set<MSLink*> flankSwitchesBidiExtended;
-    dw->checkFlanks(link, dw->myBidiExtended, visited, false, flankSwitchesBidiExtended);
+    dw->checkFlanks(link, dw->myBidiExtended, visited, false, movingBlock, flankSwitchesBidiExtended);
     for (MSLink* const flink : flankSwitchesBidiExtended) {
 #ifdef DEBUG_ADD_FOES
         if (DEBUG_COND_DW(dw)) {
@@ -1348,10 +1354,6 @@ MSDriveWay::buildDriveWay(const std::string& id, const MSLink* link, MSRouteIter
 #endif
         dw->findFlankProtection(flink, flink, dw->myBidiExtended);
     }
-    MSRailSignal* rs = link ? const_cast<MSRailSignal*>(static_cast<const MSRailSignal*>(link->getTLLogic())) : nullptr;
-    const bool movingBlock = (rs && rs->isMovingBlock()) || (!rs && 
-            (OptionsCont::getOptions().getBool("railsignal-moving-block")
-             || MSRailSignalControl::isMovingBlock((*first)->getPermissions())));
 #ifdef DEBUG_BUILD_DRIVEWAY
     if (DEBUG_COND_DW(dw)) {
         std::cout << SIMTIME << " buildDriveWay " << dw->myID << " link=" << (link == nullptr ? "NULL" : link->getDescription())
@@ -1466,7 +1468,7 @@ MSDriveWay::buildDriveWay(const std::string& id, const MSLink* link, MSRouteIter
     }
 #ifdef DEBUG_BUILD_DRIVEWAY
     if (DEBUG_COND_DW(dw)) {
-        std::cout << dw->myID << " finalFoes " << toString(dw->myFoes) << "\n";
+        std::cout << dw->myID << " mb=" << movingBlock << " finalFoes " << toString(dw->myFoes) << "\n";
     }
 #endif
     return dw;
