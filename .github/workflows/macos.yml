@@ -35,30 +35,14 @@ jobs:
         # to work around actions/checkout#1467
         ref: ${{ github.ref }}
 
-    - name: Preparing Build System
-      run: |
-        brew update
-        brew install --cask xquartz
-        brew install xerces-c fox proj gdal gl2ps ccache googletest fmt swig eigen apache-arrow
-
-    - name: Cloning jupedsim
-      uses: actions/checkout@v6
-      with:
-        repository: PedestrianDynamics/jupedsim
-        ref: ${{ matrix.jps_version }}
-        path: jupedsim
-
     - name: ccache
       if: github.event_name != 'schedule'
       uses: hendrikmuhs/ccache-action@v1.2
       with:
         key: ${{ matrix.os }}
 
-    - name: Building libjupedsim
-      run: |
-        cmake -B jupedsim-build -D CMAKE_C_COMPILER_LAUNCHER=ccache -D CMAKE_CXX_COMPILER_LAUNCHER=ccache jupedsim
-        cmake --build jupedsim-build -j4 --config Release
-        sudo cmake --install jupedsim-build --config Release
+    - name: Installing dependencies
+      run: sumo/build_config/install_dependencies.sh
 
     - name: Building SUMO
       run: |
