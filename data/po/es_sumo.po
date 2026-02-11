@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-10 14:47+0000\n"
+"PO-Revision-Date: 2026-02-11 09:45+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -13843,11 +13843,11 @@ msgstr "Arista de llegada '%' no encontrada en la red intermodal."
 
 #: src/utils/router/IntermodalNetwork.h:680
 msgid "Ignoring unordered stop at '%' until % for vehicle '%'."
-msgstr ""
+msgstr "Ignorando la parada desordenada en '%' hasta % para el vehículo '%'."
 
 #: src/utils/router/IntermodalNetwork.h:692
 msgid "Ignoring stop at '%' until % for vehicle '%'."
-msgstr ""
+msgstr "Ignorando la parada en '%' hasta % para el vehículo '%'."
 
 #: src/utils/router/IntermodalNetwork.h:697
 #, c-format
@@ -13880,12 +13880,16 @@ msgstr "La arista destino '%' no permite peatones."
 #: src/utils/shapes/ShapeHandler.cpp:85
 msgid "Error parsing key from shape generic parameter. Key cannot be empty"
 msgstr ""
+"Error al procesar la clave del parámetro genérico de forma. La clave no "
+"puede estar vacía"
 
 #: src/utils/shapes/ShapeHandler.cpp:87
 msgid ""
 "Error parsing key from shape generic parameter. Key contains invalid "
 "characters"
 msgstr ""
+"Error al procesar la clave del parámetro genérico de forma. La clave "
+"contiene caracteres no válidos"
 
 #: src/utils/shapes/ShapeHandler.cpp:144
 msgid "Invalid characters for PoI ID '%'"
@@ -13966,12 +13970,16 @@ msgstr ""
 #, c-format
 msgid "In internal test file, x value '%' cannot be parsed to int."
 msgstr ""
+"En el archivo de prueba interno, el valor de la coordenada x '%' no pudo "
+"convertirse a entero."
 
 #: src/utils/tests/InternalTest.cpp:417 src/utils/tests/InternalTest.cpp:456
 #: src/utils/tests/InternalTest.cpp:458 src/utils/tests/InternalTest.cpp:460
 #, c-format
 msgid "In internal test file, y value '%' cannot be parsed to int."
 msgstr ""
+"En el archivo de prueba interno, el valor de la coordenada y '%' no pudo "
+"convertirse a entero."
 
 #: src/utils/traction_wire/Circuit.cpp:44
 #, c-format
@@ -14013,6 +14021,8 @@ msgstr "El nodo negativo de la fuente de corriente no es la tierra."
 #: src/utils/traction_wire/Circuit.cpp:523
 msgid "Results deployment during circuit evaluation was unsuccessful."
 msgstr ""
+"La transferencia de resultados durante la evaluación del circuito no fue "
+"exitosa."
 
 #: src/utils/traction_wire/Circuit.cpp:573
 msgid ""
@@ -14057,6 +14067,8 @@ msgid ""
 "Circuit Node with id '-1' is not the grounded, please adjust the definition "
 "of the section (with substation '%')."
 msgstr ""
+"El nodo del circuito con ID '-1' no es el nodo a tierra; por favor ajuste la "
+"definición de la sección (con la subestación '%')."
 
 #: src/utils/traction_wire/Circuit.cpp:961
 msgid ""
