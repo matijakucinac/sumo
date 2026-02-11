@@ -6,6 +6,37 @@ title: ChangeLog
 
 ### Bugfixes
 
+- sumo-gui
+  - Fixed crash when drawing persons #17616
+
+- netedit
+  - python tool dialogs now permit selecting multiple files #17615, #17619 (regression in 1.25.0)
+  
+- netconvert
+  - NEMA computation now works for 4-arm junction without right-turns (also affects some signal plans of non-NEMA junctions) #17610  
+
+- TraCI
+  - `trafficlight.getSpentDuration` now works correctly after calling `setRedYellowGreenState` #17598
+
+- tools
+  - osmWebWizard.py: fixed various platform issues that prevent running. #17503
+  - patchRailConflicts.py: no longer declaring rail signals that do not control any links #17588
+  - plotXMLAttributes.py: fixed missing labels on barplots with a non-numerical axis #17611
+
+
+### Enhancements
+
+- meso
+  - edge-type specific meso parameters now support `edgeLength` #17582
+
+
+- tools
+  - osmWebWizard.py: now automatically saves osmGet configuration for easier updating of a scenario #17570
+  - osmWebWizard.py: now permits selection of public transport modes to import #8628
+  - osmWebWizadr.py: now permits to set a 'verbose' checkbox which gets forward to all applications #17573
+  - osmGet.py: now attempts to download again after timeout and tries to use proxies (also affects osmWebWizard) #17597
+  - plotXMLAttrbutes.py: added option **--join** to configure the separator when joining values or labels #17612
+
 
 ## Version 1.26.0 (29.01.2026)
 
