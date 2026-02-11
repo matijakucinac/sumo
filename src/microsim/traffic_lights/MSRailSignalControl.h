@@ -99,7 +99,7 @@ public:
     }
 
     static bool isMovingBlock(SVCPermissions svc) {
-        return (myMBClasses & svc) == svc;
+        return (myMBClasses & svc & SVC_RAIL_CLASSES) == (svc & SVC_RAIL_CLASSES);
     }
 
     static void initSignalized(SVCPermissions svc, SVCPermissions mbSvc) {
