@@ -14099,7 +14099,7 @@ msgstr "Para TAZ"
 
 #: src/netedit/frames/data/GNETAZRelDataFrame.cpp:177
 #, c-format
-msgid "A % must be defined within an dataSet."
+msgid "A % must be defined within a dataSet."
 msgstr ""
 
 #: src/netedit/frames/data/GNETAZRelDataFrame.cpp:179

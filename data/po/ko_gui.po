@@ -16191,7 +16191,7 @@ msgstr "도착 TAZ"
 
 #: src/netedit/frames/data/GNETAZRelDataFrame.cpp:177
 #, fuzzy, c-format
-msgid "A % must be defined within an dataSet."
+msgid "A % must be defined within a dataSet."
 msgstr "%는 데이터셋 내에서 정의되어야 함."
 
 #: src/netedit/frames/data/GNETAZRelDataFrame.cpp:179
