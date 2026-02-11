@@ -159,7 +159,7 @@ class Builder(object):
 
         self.origDir = os.getcwd()
         print("Building scenario in '%s'." % self.tmp)
-        
+
     def report(self, message):
         pass
 
@@ -223,7 +223,7 @@ class Builder(object):
             self.additionalFiles.append(self.files["poly"])
         if self.data.get("verbose"):
             options.append("--verbose")
-        
+
         typefiles = [typemaps["net"]]
         # leading space ensures that arguments starting with -- are not
         # misinterpreted as options
