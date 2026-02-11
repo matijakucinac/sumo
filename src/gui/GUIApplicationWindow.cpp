@@ -2405,16 +2405,16 @@ GUIApplicationWindow::updateTimeLCD(SUMOTime time) {
     str << std::setfill('0');
     const bool hideFraction = myAmGaming || DELTA_T % 1000 == 0;
     if (myShowTimeAsHMS) {
-        SUMOTime day = time / 86400000;
+        SUMOTime day = time / SUMOTime_DAY;
         if (day > 0) {
             str << day << '-';
-            time %= 86400000;
+            time %= SUMOTime_DAY;
         }
         str << std::setw(2);
-        str << time / 3600000 << '-';
-        time %= 3600000;
-        str << std::setw(2) << time / 60000 << '-';
-        time %= 60000;
+        str << time / SUMOTime_HOUR << '-';
+        time %= SUMOTime_HOUR;
+        str << std::setw(2) << time / SUMOTime_MINUTE << '-';
+        time %= SUMOTime_MINUTE;
     }
     str << std::setw(2) << time / 1000;
     if (!hideFraction) {

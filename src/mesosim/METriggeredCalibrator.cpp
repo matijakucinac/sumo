@@ -110,7 +110,7 @@ METriggeredCalibrator::execute(SUMOTime currentTime) {
         }
         if (myCurrentStateInterval == myIntervals.end()) {
             // keep calibrator alive but do not call again
-            return TIME2STEPS(86400);
+            return SUMOTime_DAY;
         }
         return myFrequency;
     }
