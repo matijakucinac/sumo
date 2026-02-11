@@ -33,6 +33,7 @@ SCRIPT_DIR=$(dirname $0)
 case "$ID" in
     macOS)
         brew update && brew bundle --file=$SCRIPT_DIR/Brewfile --no-upgrade
+        SUDO=sudo
         ;;
     ubuntu|debian)
         export DEBIAN_FRONTEND=noninteractive
@@ -89,8 +90,10 @@ curl -LO https://github.com/PedestrianDynamics/jupedsim/archive/refs/tags/v$JUPE
 tar xf v$JUPEDSIM_VERSION.tar.gz
 cmake -B jupedsim-build -DCMAKE_BUILD_TYPE=Release jupedsim-$JUPEDSIM_VERSION
 cmake --build jupedsim-build -j2
-cmake --install jupedsim-build
+$SUDO cmake --install jupedsim-build
 rm -rf v$JUPEDSIM_VERSION.tar.gz jupedsim-$JUPEDSIM_VERSION jupedsim-build
 
-# see https://github.com/pypa/manylinux/issues/1421
-pipx install -f patchelf==0.16.1.0
+if [[ "$ID" != "macOS" ]]; then
+    # see https://github.com/pypa/manylinux/issues/1421
+    pipx install -f patchelf==0.16.1.0
+fi
