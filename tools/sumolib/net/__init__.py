@@ -48,6 +48,7 @@ except ImportError:
 import sumolib
 from . import lane, edge, netshiftadaptor, node, connection, roundabout  # noqa
 from .connection import Connection
+from sumolib.miscutils import intIfPossible
 
 
 class TLS:
@@ -914,12 +915,14 @@ class NetReader(handler.ContentHandler):
         # netconvert... (Leo)
         elif self._withPhases and name == 'tlLogic':
             self._currentProgram = self._net.addTLSProgram(
-                attrs['id'], attrs['programID'], float(attrs['offset']), attrs['type'], self._latestProgram)
+                attrs['id'], attrs['programID'],
+                intIfPossible(float(attrs['offset'])), attrs['type'], self._latestProgram)
         elif self._withPhases and name == 'phase':
             self._currentProgram.addPhase(
-                attrs['state'], int(attrs['duration']),
-                int(attrs['minDur']) if 'minDur' in attrs else -1,
-                int(attrs['maxDur']) if 'maxDur' in attrs else -1,
+                attrs['state'],
+                intIfPossible(float(attrs['duration'])),
+                intIfPossible(float(attrs['minDur'])) if 'minDur' in attrs else -1,
+                intIfPossible(float(attrs['maxDur'])) if 'maxDur' in attrs else -1,
                 list(map(int, attrs['next'].split())) if 'next' in attrs else [],
                 attrs['name'] if 'name' in attrs else ""
             )
