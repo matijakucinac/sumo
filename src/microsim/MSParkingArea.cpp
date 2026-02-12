@@ -339,6 +339,7 @@ MSParkingArea::getLotIndex(const SUMOVehicle* veh) const {
 
 void
 MSParkingArea::enter(SUMOVehicle* veh, const bool /* parking */) {
+    removeSpaceReservation(veh);
     double beg = veh->getPositionOnLane() + veh->getVehicleType().getMinGap();
     double end = veh->getPositionOnLane() - veh->getVehicleType().getLength();
     if (myUpdateEvent == nullptr) {
@@ -363,6 +364,24 @@ MSParkingArea::enter(SUMOVehicle* veh, const bool /* parking */) {
     veh->setNumberParkingReroutes(0);
 }
 
+
+void
+MSParkingArea::addSpaceReservation(const SUMOVehicle* veh) {
+    myRemoteReservedVehicles.insert(veh);
+    if (myUpdateEvent == nullptr) {
+        myUpdateEvent = new WrappingCommand<MSParkingArea>(this, &MSParkingArea::updateOccupancy);
+        MSNet::getInstance()->getEndOfTimestepEvents()->addEvent(myUpdateEvent);
+    }
+}
+
+void
+MSParkingArea::removeSpaceReservation(const SUMOVehicle* veh) {
+    myRemoteReservedVehicles.erase(veh);
+    if (myUpdateEvent == nullptr) {
+        myUpdateEvent = new WrappingCommand<MSParkingArea>(this, &MSParkingArea::updateOccupancy);
+        MSNet::getInstance()->getEndOfTimestepEvents()->addEvent(myUpdateEvent);
+    }
+}
 
 void
 MSParkingArea::leaveFrom(SUMOVehicle* what) {
@@ -391,6 +410,7 @@ MSParkingArea::leaveFrom(SUMOVehicle* what) {
 SUMOTime
 MSParkingArea::updateOccupancy(SUMOTime /* currentTime */) {
     myLastStepOccupancy = getOccupancy();
+    myLastRemoteReservedVehicles = myRemoteReservedVehicles;
     myUpdateEvent = nullptr;
     return 0;
 }
@@ -590,16 +610,31 @@ MSParkingArea::getOccupancyIncludingBlocked() const {
 
 int
 MSParkingArea::getOccupancyIncludingReservations(const SUMOVehicle* forVehicle) const {
-    if (myReservedVehicles.count(forVehicle) != 0) {
-        return (int)myEndPositions.size();
-    } else {
-        return (int)myEndPositions.size() + myReservations;
-    }
+    const bool reservedLocal = myReservedVehicles.count(forVehicle) != 0;
+    const bool reservedRemote = myRemoteReservedVehicles.count(forVehicle) != 0;
+    return ((int)myEndPositions.size()
+        + (reservedLocal ? 0 : myReservations)
+        + (reservedRemote ? 0 : myRemoteReservedVehicles.size()));
 }
+
+
+int
+MSParkingArea::getOccupancyIncludingRemoteReservations(const SUMOVehicle* forVehicle) const {
+    const bool reservedRemote = myRemoteReservedVehicles.count(forVehicle) != 0;
+    return getOccupancy() - (int)myRemoteReservedVehicles.size() + (reservedRemote ? 1 : 0);
+}
+
 
 int
 MSParkingArea::getLastStepOccupancy() const {
     return myLastStepOccupancy;
+}
+
+
+int
+MSParkingArea::getLastStepOccupancyIncludingRemoteReservations(const SUMOVehicle* forVehicle) const {
+    const bool reservedRemote = myLastRemoteReservedVehicles.count(forVehicle) != 0;
+    return myLastStepOccupancy - (int)myLastRemoteReservedVehicles.size() + (reservedRemote ? 1 : 0);
 }
 
 

@@ -136,6 +136,11 @@ public:
     /// @brief whether vehicles park on the road
     bool parkOnRoad() const;
 
+    /// @brief whether vehicles may reserve a slot for this parkingArea
+    inline bool isReservable() const {
+        return myReservable;
+    }
+
     /// @brief compute lot for this vehicle
     int getLotIndex(const SUMOVehicle* veh) const;
 
@@ -152,8 +157,12 @@ public:
 
     int getOccupancyIncludingReservations(const SUMOVehicle* forVehicle) const;
 
+    int getOccupancyIncludingRemoteReservations(const SUMOVehicle* forVehicle) const;
+
     /// @brief Returns the area occupancy at the end of the last simulation step
     int getLastStepOccupancy() const;
+
+    int getLastStepOccupancyIncludingRemoteReservations(const SUMOVehicle* forVehicle) const;
 
     /// @brief Add a badge to the accepted set
     void accept(std::string badge);
@@ -189,6 +198,12 @@ public:
      * @see computeLastFreePos
      */
     void leaveFrom(SUMOVehicle* what);
+
+    /// @brief api for reserving spaces at this parkingArea
+    /// @{
+    void addSpaceReservation(const SUMOVehicle* veh);
+    void removeSpaceReservation(const SUMOVehicle* veh);
+    /// @}
 
     /** @brief Called at the end of the time step
      *
@@ -350,8 +365,12 @@ protected:
     double myReservationMaxLength;
     double myLastReservationMaxLength;
 
-    /// @brief the set of vehicles that performed a reservation in this step
+    /// @brief the set of vehicles that performed a local reservation in this step
     std::set<const SUMOVehicle*> myReservedVehicles;
+    /// @brief the set of vehicles that performed a remote reservation
+    std::set<const SUMOVehicle*> myRemoteReservedVehicles;
+    /// @brief a copy from the last step is needed to achieve thread/lane ordering independence
+    std::set<const SUMOVehicle*> myLastRemoteReservedVehicles;
 
     /// @brief maximum length of all parked vehicles
     double myMaxVehLength;
