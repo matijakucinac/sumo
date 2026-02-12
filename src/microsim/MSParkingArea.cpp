@@ -50,11 +50,12 @@ MSParkingArea::MSParkingArea(const std::string& id, const std::vector<std::strin
                              const std::vector<std::string>& badges, MSLane& lane,
                              double begPos, double endPos, int capacity, double width, double length,
                              double angle, const std::string& name, bool onRoad,
-                             const std::string& departPos, bool lefthand) :
+                             const std::string& departPos, bool lefthand, bool reservable) :
     MSStoppingPlace(id, SUMO_TAG_PARKING_AREA, lines, lane, begPos, endPos, name),
     myRoadSideCapacity(capacity),
     myCapacity(0),
     myOnRoad(onRoad),
+    myReservable(reservable),
     myWidth(width),
     myLength(length),
     myAngle(lefthand ? -angle : angle),

@@ -122,7 +122,7 @@ public:
                   double width, double length, double angle, const std::string& name,
                   bool onRoad,
                   const std::string& departPos,
-                  bool lefthand);
+                  bool lefthand, bool reservable);
 
     /// @brief Destructor
     virtual ~MSParkingArea();
@@ -313,6 +313,9 @@ protected:
 
     /// @brief Whether vehicles stay on the road
     bool myOnRoad;
+
+    /// @brief Whether this parkingarea may receive reservations by vehicles that are on their way
+    bool myReservable;
 
     /// @brief The default width of each parking space
     double myWidth;

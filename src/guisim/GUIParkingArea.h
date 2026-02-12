@@ -77,7 +77,7 @@ public:
                    double width, double length, double angle, const std::string& name,
                    bool onRoad,
                    const std::string& departPos,
-                   bool lefthand);
+                   bool lefthand, bool reservable);
 
 
     /// @brief Destructor

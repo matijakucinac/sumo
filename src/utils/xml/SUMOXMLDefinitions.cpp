@@ -1254,6 +1254,7 @@ SequentialStringBijection::Entry SUMOXMLDefinitions::attrs[] = {
     { "origin",                 SUMO_ATTR_ORIGIN },
     { "destination",            SUMO_ATTR_DESTINATION },
     { "visible",                SUMO_ATTR_VISIBLE },
+    { "reservable",             SUMO_ATTR_RESERVABLE },
     { "main",                   SUMO_ATTR_MAIN },
     { "siding",                 SUMO_ATTR_SIDING },
     { "minSaving",              SUMO_ATTR_MINSAVING },
