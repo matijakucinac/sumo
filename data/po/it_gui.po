@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-05 20:19+0000\n"
+"PO-Revision-Date: 2026-02-12 20:10+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/it/>\n"
@@ -3185,7 +3185,7 @@ msgstr "% elementi addizionali da '%'."
 #: src/netedit/GNEApplicationWindow.cpp:4943
 #, c-format
 msgid "% of '%' failed."
-msgstr ""
+msgstr "% di '%' sono falliti."
 
 #: src/netedit/GNEApplicationWindow.cpp:4925
 msgid "% demand elements from '%'"
@@ -3207,7 +3207,7 @@ msgstr "% elementi di dati da '%'."
 #: src/netedit/GNEApplicationWindow.cpp:5039
 #, c-format
 msgid "% of % failed."
-msgstr ""
+msgstr "% di % falliti."
 
 #: src/netedit/GNEApplicationWindow.cpp:5021
 msgid "% meanData elements from '%'"
@@ -4580,6 +4580,8 @@ msgid ""
 "If enabled, automatically save a netconvert configuration after saving a "
 "netedit config"
 msgstr ""
+"Se impostato una configurazione netconvert sarà salvata automaticamente dopo "
+"salvare una configurazione netedit"
 
 #: src/netedit/GNELoadThread.cpp:348
 msgid "Load element selection"
@@ -4633,6 +4635,8 @@ msgid ""
 "If enabled, loaded elements will be saved regardless of whether they have "
 "been edited or not (usually used in netedit test)"
 msgstr ""
+"Se impostato degli elementi caricati saranno salvati indipendentemente di "
+"essere stati modificati o meno (utilizzato frequentemente nei test netedit)"
 
 #: src/netedit/GNELoadThread.cpp:390
 msgid "Prefix for node naming"
@@ -5337,6 +5341,8 @@ msgstr "Se questo nodo si trova al bordo della rete"
 #: src/netedit/GNETagPropertiesDatabase.cpp:624
 msgid "Whether this junction may be considered when guessing roundabouts"
 msgstr ""
+"Se questo incrocio può essere considerato nel processo di indovinare le "
+"rotatorie"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:633
 msgid "An optional type for the traffic light algorithm"
@@ -7438,20 +7444,24 @@ msgid ""
 "The path to the file to save this element (not editable for network "
 "elements)"
 msgstr ""
+"Il percorso del file nel quale questo elemento deve esssere salvato (non "
+"modificabile per elementi di rete)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6185
 #: src/netedit/GNETagPropertiesDatabase.cpp:6192
 #: src/netedit/GNETagPropertiesDatabase.cpp:6199
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6190
 msgid "The path to the file to save this element (the same of their parent)"
 msgstr ""
+"Il percorso del file nel quale questo elemento deve essere salvato (lo "
+"stesso del suo elemento padre)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6197
 msgid "The path to the file to save this element"
-msgstr ""
+msgstr "Il percorso del file nel quale questo elemento deve essere salvato"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6207
 msgid "Toggle front element"
@@ -8724,7 +8734,7 @@ msgstr ""
 #: src/netedit/GNETagPropertiesDatabase.cpp:8042
 #: src/netedit/GNETagPropertiesDatabase.cpp:8048
 msgid "The probability when being added to a distribution"
-msgstr ""
+msgstr "La probabilità all'interno di una distribuzione"
 
 #: src/netedit/GNEUndoList.cpp:469
 msgid "Disabled undo"
@@ -9044,11 +9054,11 @@ msgstr "stacca punto di interesse dalla corsia"
 
 #: src/netedit/GNEViewNet.cpp:3075
 msgid "transform to POI"
-msgstr ""
+msgstr "trasforma in punto di interesse"
 
 #: src/netedit/GNEViewNet.cpp:3100
 msgid "transform to POI GEO"
-msgstr ""
+msgstr "trasforma in punto di interesse GEO"
 
 #: src/netedit/GNEViewNet.cpp:3116
 msgid "reverse % '%'"
@@ -10112,7 +10122,7 @@ msgstr "reimposta i valori anteriori"
 
 #: src/netedit/dialogs/GNEHelpAttributesDialog.cpp:33
 msgid "Attributes of %"
-msgstr ""
+msgstr "Attributi di %"
 
 #: src/netedit/dialogs/GNEHelpAttributesDialog.cpp:45
 msgid "Attribute"
@@ -10505,7 +10515,7 @@ msgstr "Nessun itinerario nella rete"
 
 #: src/netedit/dialogs/elements/GNEDistributionRefDialog.cpp:59
 msgid "Add % reference"
-msgstr ""
+msgstr "Aggiungi una referenza %"
 
 #: src/netedit/dialogs/elements/GNEDistributionRefDialog.cpp:150
 #: src/netedit/elements/demand/GNERouteHandler.cpp:260
@@ -10987,15 +10997,15 @@ msgstr ""
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:107
 #, c-format
 msgid "change % of invalid additionals"
-msgstr ""
+msgstr "% elementi addizionali invalidi rettificati"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:115
 msgid "fix positions of invalid additionals"
-msgstr ""
+msgstr "rettifica le posizioni degli elementi addizionali invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:123
 msgid "select invalid additionals"
-msgstr ""
+msgstr "seleziona elementi addizionali invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:169
 msgid "Select a solution for Multilane E2 detectors"
@@ -11023,7 +11033,7 @@ msgstr ""
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:282
 msgid "Fix additional problems"
-msgstr ""
+msgstr "Risolvi problemi degli elementi addizionali"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:63
 #: src/netedit/frames/common/GNESelectorFrame.cpp:115
@@ -11046,7 +11056,7 @@ msgstr "Salva itinerari invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:76
 msgid "Select invalid routes"
-msgstr ""
+msgstr "Seleziona itinerari invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:77
 msgid "Select invalid routes and stop saving"
@@ -11065,12 +11075,12 @@ msgstr ""
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:131
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:245
 msgid "select invalid routes"
-msgstr ""
+msgstr "seleziona itinerari invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:151
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:265
 msgid "delete invalid stops"
-msgstr ""
+msgstr "rimuovi fermate invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:190
 msgid "Remove invalid vehicles"
@@ -11087,7 +11097,7 @@ msgstr "Salva veicoli invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:200
 msgid "Select invalid vehicles"
-msgstr ""
+msgstr "Seleziona veicoli invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:201
 msgid "Select invalid vehicles and stop saving"
@@ -11099,7 +11109,7 @@ msgstr "Rimuovi fermate dall'itinerario del veicolo"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:233
 msgid "delete invalid vehicles"
-msgstr ""
+msgstr "rimuovi veicoli invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:301
 msgid "Stop positions"
