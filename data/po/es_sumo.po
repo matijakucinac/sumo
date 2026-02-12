@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-11 09:45+0000\n"
+"PO-Revision-Date: 2026-02-12 15:28+0000\n"
 "Last-Translator: Angelo Banse <Olaf.BanseBueno@dlr.de>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/es/>\n"
@@ -5615,7 +5615,7 @@ msgstr "Condición no soportada '%'"
 
 #: src/microsim/traffic_lights/MSActuatedTrafficLightLogic.cpp:1284
 msgid "Parsing expressions with % elements ('%') is not supported"
-msgstr ""
+msgstr "No se admite procesar expresiones con % elementos ('%')"
 
 #: src/microsim/traffic_lights/MSActuatedTrafficLightLogic.cpp:1315
 msgid "Division by 0 in condition '%'"
@@ -5818,7 +5818,7 @@ msgstr ""
 #: src/microsim/traffic_lights/MSTrafficLightLogic.cpp:263
 #, c-format
 msgid " Overall % lanes in % phases are unsafe."
-msgstr ""
+msgstr " En total, % carriles en % fases son inseguros."
 
 #: src/microsim/traffic_lights/MSTrafficLightLogic.cpp:264
 msgid ""
@@ -6365,7 +6365,7 @@ msgstr ""
 
 #: src/microsim/trigger/MSTriggeredRerouter.cpp:321
 msgid "rerouter '%': stopping place '%' is not known."
-msgstr ""
+msgstr "rerouter '%': el sitio de parada '%' no es conocido."
 
 #: src/microsim/trigger/MSTriggeredRerouter.cpp:685
 #, c-format
@@ -6815,6 +6815,7 @@ msgstr ""
 #: src/netbuild/NBEdgeCont.cpp:558
 msgid "Split at '%' lies beyond the edge's length (edge '%')."
 msgstr ""
+"La división en '%' está más allá de la longitud de la arista (arista '%')."
 
 #: src/netbuild/NBEdgeCont.cpp:641
 msgid "Could not insert edge '%' before split of edge '%'."
@@ -6944,7 +6945,7 @@ msgstr "La longitud predeterminada al sobrescribir las longitudes de conexión"
 
 #: src/netbuild/NBFrame.cpp:107
 msgid "Whether/where connections should have an internal junction"
-msgstr ""
+msgstr "Si las conexiones deben tener un cruce interno y dónde debería ubicarse"
 
 #: src/netbuild/NBFrame.cpp:110
 msgid ""
@@ -10562,7 +10563,7 @@ msgstr "No se pueden proyectar coordenadas para el carril '%'."
 
 #: src/netimport/NIXMLEdgesHandler.cpp:473
 msgid "Ignoring 'split' because it cannot be assigned to an edge"
-msgstr ""
+msgstr "Ignorando 'split' porque no se puede asignar a una arista"
 
 #: src/netimport/NIXMLEdgesHandler.cpp:482
 msgid "Edge '%' has a split at invalid position %."
@@ -10608,7 +10609,7 @@ msgstr "Posición faltante (en el nodo con ID='%')."
 
 #: src/netimport/NIXMLNodesHandler.cpp:186
 msgid "Could not insert node though checked this before (id='%')."
-msgstr ""
+msgstr "No se pudo insertar el nodo aunque se había verificado antes (ID='%')."
 
 #: src/netimport/NIXMLNodesHandler.cpp:215
 msgid "Unable to project node shape at node '%'."
@@ -10906,7 +10907,7 @@ msgstr ""
 
 #: src/netload/NLBuilder.cpp:164
 msgid "State was written at a different time=% than the begin time %!"
-msgstr ""
+msgstr "¡El estado se escribió en un tiempo=% distinto del tiempo de inicio %!"
 
 #: src/netload/NLBuilder.cpp:198 src/router/RONet.cpp:272
 #, c-format
