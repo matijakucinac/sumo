@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-11 09:45+0000\n"
+"PO-Revision-Date: 2026-02-12 12:09+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -7498,7 +7498,7 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6357
 msgid "the times will be shifted forward by 'cycleTime' on each repeat"
-msgstr ""
+msgstr "Os horários serão adiantados em 'cycleTime' a cada repetição"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6368
 msgid "An abstract vehicle class"
@@ -8031,6 +8031,8 @@ msgid ""
 "Minimum lateral gap when encroaching laterally on other drives (alternative "
 "way to define lcPushy)"
 msgstr ""
+"Lacuna lateral mínima ao invadir lateralmente outros condutores (forma "
+"alternativa de definir lcPushy)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7073
 msgid "Willingness to accept lower front and rear gaps on the target lane."
@@ -8093,7 +8095,7 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7134
 msgid "Time threshold for the willingness to change right."
-msgstr ""
+msgstr "Limiar de tempo para a disposição de mudar para a direita."
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7140
 msgid ""
@@ -8127,7 +8129,7 @@ msgstr "Duração mínima da parada"
 #: src/netedit/GNETagPropertiesDatabase.cpp:7202
 #: src/netedit/GNETagPropertiesDatabase.cpp:7570
 msgid "The time step at which the route continues"
-msgstr ""
+msgstr "O passo de tempo em que a rota continua"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7208
 msgid ""
@@ -8446,7 +8448,7 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7779
 msgid "The maximum speed to consider a vehicle halting;"
-msgstr ""
+msgstr "A velocidade máxima para considerar que um veículo está parado;"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7785
 msgid "space separated list of vehicle type ids to consider"
@@ -8563,7 +8565,7 @@ msgstr ""
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7978
 msgid "Detect persons instead of vehicles (pedestrians or passengers)"
-msgstr ""
+msgstr "Detectar pessoas em vez de veículos (pedestres ou passageiros)"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7989
 #, c-format
@@ -8681,7 +8683,7 @@ msgstr "Localizar semáforo dentro da rede. (Shift+T)"
 
 #: src/netedit/GNEViewNet.cpp:432
 msgid "Locate an additional structure within the network. (Shift+A)"
-msgstr ""
+msgstr "Localiar uma estrutura adicional na rede. (Shift+A)"
 
 #: src/netedit/GNEViewNet.cpp:436
 msgid "Locate a PoI within the network. (Shift+O)"
@@ -8747,7 +8749,7 @@ msgstr ""
 
 #: src/netedit/GNEViewNet.cpp:1055
 msgid "% lanes will be restricted to %. Continue?"
-msgstr ""
+msgstr "% faixas serão retringidas a %. Continuar?"
 
 #: src/netedit/GNEViewNet.cpp:1074
 msgid "restrict lane to "
@@ -8765,7 +8767,7 @@ msgstr ""
 
 #: src/netedit/GNEViewNet.cpp:1123
 msgid "% restrictions to % will be added. Continue?"
-msgstr ""
+msgstr "% restrições a % serão adicionadas. Continuar?"
 
 #: src/netedit/GNEViewNet.cpp:1132
 msgid "add restrictions for "
@@ -8786,7 +8788,7 @@ msgstr ""
 
 #: src/netedit/GNEViewNet.cpp:1205
 msgid "% restrictions to % will be removed. Continue?"
-msgstr ""
+msgstr "% restrições a % serão removidas. Continuar?"
 
 #: src/netedit/GNEViewNet.cpp:1224
 msgid "Remove vclass for "
@@ -8993,7 +8995,7 @@ msgstr "reiniciar pontos finais da aresta"
 #: src/netedit/GNEViewNet.cpp:3642 src/netedit/GNEViewNet.cpp:3908
 #: src/netedit/GNEViewNet.cpp:3943 src/netedit/GNEViewNet.cpp:3966
 msgid "Grid is still active, press ctrl+g to deactivate"
-msgstr ""
+msgstr "A grade ainda está ativa, pressione Ctrl+G para desativá-la"
 
 #: src/netedit/GNEViewNet.cpp:3661
 msgid "reset custom junction shapes"
@@ -9195,7 +9197,7 @@ msgstr "Alternar entre mostrar/esconder formato das junções. (Ctrl+J)"
 
 #: src/netedit/GNEViewNetHelper.cpp:2729
 msgid "Draw vehicles spread in lane or depart position"
-msgstr ""
+msgstr "Desenhar veículos espalhados na faixa ou na posição de partida"
 
 #: src/netedit/GNEViewNetHelper.cpp:2729 src/netedit/GNEViewNetHelper.cpp:3013
 msgid "Draw vehicles spread in lane or in depart position."
@@ -9277,7 +9279,7 @@ msgstr "Aresta na direção oposta"
 
 #: src/netedit/GNEViewNetHelper.cpp:2804
 msgid "Automatically create an edge in the opposite direction."
-msgstr ""
+msgstr "Criar uma aresta na direção oposta automaticamente."
 
 #: src/netedit/GNEViewNetHelper.cpp:2811
 msgid "Move elevation"
@@ -9418,7 +9420,7 @@ msgstr "Modo de semáforos"
 
 #: src/netedit/GNEViewNetHelper.cpp:3879
 msgid "Mode for editing traffic lights over junctions. (T)"
-msgstr ""
+msgstr "Modo para editar semáforos sobre junções. (T)"
 
 #: src/netedit/GNEViewNetHelper.cpp:3884
 msgid "Connection mode"
@@ -9426,7 +9428,7 @@ msgstr "Modo de conexão"
 
 #: src/netedit/GNEViewNetHelper.cpp:3884
 msgid "Mode for editing connections between lanes. (C)"
-msgstr ""
+msgstr "Modo para editar conexões entre faixas. (C)"
 
 #: src/netedit/GNEViewNetHelper.cpp:3889
 msgid "Prohibition mode"
@@ -9499,7 +9501,7 @@ msgstr "Modo de distribuição de rota"
 
 #: src/netedit/GNEViewNetHelper.cpp:4032
 msgid "Mode for creating and editing rout distributions. (W)"
-msgstr ""
+msgstr "Modo para criar e editar distribuições de rotas. (W)"
 
 #: src/netedit/GNEViewNetHelper.cpp:4037
 msgid "Vehicle mode"
@@ -9523,7 +9525,7 @@ msgstr "Modo de distribuição de tipo"
 
 #: src/netedit/GNEViewNetHelper.cpp:4047
 msgid "Mode for creating and editing type distribution. (U)"
-msgstr ""
+msgstr "Modo para criar e editar distribuições de tipos. (U)"
 
 #: src/netedit/GNEViewNetHelper.cpp:4052
 msgid "Stop mode"
@@ -9684,7 +9686,7 @@ msgstr "Refazer deletamento "
 #: src/netedit/changes/GNEChange_Attribute.cpp:50
 #: src/netedit/changes/GNEChange_Attribute.cpp:71
 msgid "change '%' attribute in % '%' to '%'"
-msgstr ""
+msgstr "trocar o atributo '%' em % '%' para '%'"
 
 #: src/netedit/changes/GNEChange_Attribute.cpp:163
 msgid "Undo change "
@@ -10272,7 +10274,7 @@ msgstr "Veículo de uma agência de segurança nacional"
 
 #: src/netedit/dialogs/GNEVClassesDialog.cpp:331
 msgid "A civilian security armored car used by VIPs"
-msgstr ""
+msgstr "Um carro blindado de segurança civil utilizado por VIPs"
 
 #: src/netedit/dialogs/GNEVClassesDialog.cpp:332
 msgid "High-Occupancy Vehicle (two or more passengers)"
@@ -10385,7 +10387,7 @@ msgstr "adicionar % em '%'"
 
 #: src/netedit/dialogs/elements/GNERerouterDialog.cpp:58
 msgid "Rerouter intervals of % '%' cannot be saved"
-msgstr ""
+msgstr "Intervalos do reroteador de % '%' não podem ser salvos"
 
 #: src/netedit/dialogs/elements/GNERerouterDialog.cpp:59
 msgid ". There are overlapping intervals."
@@ -10397,7 +10399,7 @@ msgstr "Erro ao atulizar % de % '%'"
 
 #: src/netedit/dialogs/elements/GNERerouterIntervalDialog.cpp:77
 msgid "% of % '%' cannot be updated because"
-msgstr ""
+msgstr "% de % '%' não pode ser atualizado porque"
 
 #: src/netedit/dialogs/elements/GNERerouterIntervalDialog.cpp:83
 #, c-format
@@ -10433,7 +10435,7 @@ msgstr "trocar % valores"
 
 #: src/netedit/dialogs/elements/GNEVariableSpeedSignDialog.cpp:58
 msgid "VariableSpeedSign steps of % '%' cannot be saved"
-msgstr ""
+msgstr "Etapas de VariableSpeedSign de % '%' não podem ser salvas"
 
 #: src/netedit/dialogs/elements/GNEVariableSpeedSignDialog.cpp:59
 msgid "Steps has to be sorted."
@@ -10797,7 +10799,7 @@ msgstr "Alternar a exibição de arquivos e diretórios ocultos"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:54
 msgid "Select a solution for StoppingPlaces and E2 detectors"
-msgstr ""
+msgstr "Selecionar uma solução para StoppingPlaces e detectores E2"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:57
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:182
@@ -10864,7 +10866,7 @@ msgstr "Criar conexões entre faixas"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:173
 msgid "New connections will be created between non-connected lanes"
-msgstr ""
+msgstr "Novas conexões serão criadas entre faixas não conectadas"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:177
 msgid "Remove invalid E2 detectors"
@@ -11876,7 +11878,7 @@ msgstr "Adicionar % inverso"
 #: src/netedit/elements/demand/GNEDemandElementPlan.cpp:1231
 #: src/netedit/elements/demand/GNEDemandElementPlan.cpp:1244
 msgid "Edge '%' is not consecutive with edge '%'"
-msgstr ""
+msgstr "A aresta '%' não é consecutiva à aresta '%'"
 
 #: src/netedit/elements/demand/GNEPlanParents.cpp:94
 msgid "Invalid from edge '%' used in % of % '%'"
@@ -11952,7 +11954,7 @@ msgstr ""
 
 #: src/netedit/elements/demand/GNERoute.cpp:288
 msgid "Cannot repeat in routes with only one edge"
-msgstr ""
+msgstr "Não é possível repetir rotas com apenas uma aresta"
 
 #: src/netedit/elements/demand/GNERoute.cpp:292
 msgid "Cannot repeat route; front and last edge aren't connected"
@@ -12034,11 +12036,11 @@ msgstr ""
 #: src/netedit/elements/demand/GNERouteHandler.cpp:972
 #: src/netedit/elements/demand/GNERouteHandler.cpp:1006
 msgid "Invalid vehicle type '%' used in % '%'."
-msgstr ""
+msgstr "Tipo de veículo inválido '%' usado em % '%'."
 
 #: src/netedit/elements/demand/GNERouteHandler.cpp:1231
 msgid "Containers don't support stops at busStops or trainStops"
-msgstr ""
+msgstr "Containers não podem parar em paradas de ônibus ou trens"
 
 #: src/netedit/elements/demand/GNERouteHandler.cpp:1238
 msgid "Persons don't support stops at containerStops"
@@ -12345,7 +12347,7 @@ msgstr "Suavizar formato da junção"
 
 #: src/netedit/elements/network/GNEConnection.cpp:667
 msgid "Could not set attribute '%' (tls is broken)"
-msgstr ""
+msgstr "Não foi possível definir o atributo '%' (o semáforo não é valido)"
 
 #: src/netedit/elements/network/GNEConnection.cpp:944
 msgid "Cannot restore attribute '%=%' for computed connection from lane '%'"
@@ -12365,11 +12367,11 @@ msgstr ""
 
 #: src/netedit/elements/network/GNEEdge.cpp:2346
 msgid "Could not compute smooth shape for edge '%'"
-msgstr ""
+msgstr "Não foi possível calcular um formato suave para a aresta '%'"
 
 #: src/netedit/elements/network/GNEEdge.cpp:2364
 msgid "Could not compute smooth elevation for edge '%'"
-msgstr ""
+msgstr "Não foi possível calcular uma elevação suave para a aresta '%'"
 
 #: src/netedit/elements/network/GNEInternalLane.cpp:303
 msgid "invalid link state='%'"
@@ -12418,7 +12420,7 @@ msgstr "Selecionar rotatória"
 
 #: src/netedit/elements/network/GNEJunction.cpp:535
 msgid "Convert to roundabout (using junction attribute radius %)"
-msgstr ""
+msgstr "Converter para rotatória (usando o atributo de raio da junção %)"
 
 #: src/netedit/elements/network/GNEJunction.cpp:544
 #, c-format
@@ -12475,7 +12477,7 @@ msgstr "Reestabelecer pontos finais das arestas"
 
 #: src/netedit/elements/network/GNELane.cpp:567
 msgid "Select state for all links from this edge:"
-msgstr ""
+msgstr "Selecionar estado para todos os cruzamentos dessa aresta:"
 
 #: src/netedit/elements/network/GNELane.cpp:577
 msgid "Additional options available in 'Inspect Mode'"
@@ -12890,15 +12892,15 @@ msgstr "Cancelar desenho"
 
 #: src/netedit/frames/GNEDrawingShape.cpp:58
 msgid "'Start drawing' or ENTER to create a shape."
-msgstr ""
+msgstr "'Iniciar desenho' ou ENTER para criar a forma."
 
 #: src/netedit/frames/GNEDrawingShape.cpp:59
 msgid "'Stop drawing' or ENTER to finish shape creation."
-msgstr ""
+msgstr "'Parar de desenhar' ou ENTER para finalizar a criação do formato."
 
 #: src/netedit/frames/GNEDrawingShape.cpp:60
 msgid "'Abort drawing' or ESC to abort shape creation."
-msgstr ""
+msgstr "'Cancelar desenho' ou ESC para cancelar a criação da forma."
 
 #: src/netedit/frames/GNEDrawingShape.cpp:61
 msgid "'Shift + Click' to remove the last inserted point."
@@ -15558,7 +15560,7 @@ msgstr "A catenária selecionada atualmente não é válida."
 #: src/netedit/frames/network/GNEWireFrame.cpp:119
 #, c-format
 msgid "A % needs at least two lane positions"
-msgstr ""
+msgstr "Um % precisa de pelo menos duas posições de faixa"
 
 #: src/netedit/frames/network/GNEWireFrame.cpp:232
 msgid "Currently unsupported. Create VSS steps elements using VSS dialog"
@@ -15691,7 +15693,7 @@ msgstr "Abrir em um novo rastreador"
 
 #: src/utils/gui/div/GUISelectedStorage.cpp:223
 msgid "Ignoring item '%' because of invalid type %\n"
-msgstr ""
+msgstr "Ignorando elemento '%' devido ao tipo inválido %\n"
 
 #: src/utils/gui/div/GUISelectedStorage.cpp:237
 #, c-format
@@ -17445,6 +17447,8 @@ msgstr "Reinício necessário"
 #: src/utils/gui/windows/GUIMainWindow.cpp:439
 msgid "Changing display language needs restart to take effect."
 msgstr ""
+"A alteração do idioma de exibição requer a reinicialização para entrar em "
+"vigor."
 
 #: src/utils/gui/windows/GUIMainWindow.cpp:442
 msgid ""
