@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-12 15:28+0000\n"
+"PO-Revision-Date: 2026-02-12 20:10+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -12078,7 +12078,7 @@ msgstr ""
 
 #: src/netedit/elements/demand/GNERouteHandler.cpp:1277
 msgid "A stop requires only a stoppingPlace, edge or lane"
-msgstr ""
+msgstr "Uma parada requer apenas um local de parada, aresta ou faixa"
 
 #: src/netedit/elements/demand/GNERouteHandler.cpp:1649
 msgid ""
@@ -12087,7 +12087,7 @@ msgstr ""
 
 #: src/netedit/elements/demand/GNERouteHandler.cpp:2686
 msgid "% with id '%' doesn't exist in % '%'"
-msgstr ""
+msgstr "% com id '%' não existe em % '%'"
 
 #: src/netedit/elements/demand/GNERouteHandler.cpp:2692
 msgid "invalid probability % in % '%'"
@@ -12369,7 +12369,7 @@ msgstr "Definir formato personalizado da faixa de pedestres"
 
 #: src/netedit/elements/network/GNEEdge.cpp:163
 msgid "Parent junctions are in the same position: %, %"
-msgstr ""
+msgstr "Cruzamentos pai estão na mesma posição: %, %"
 
 #: src/netedit/elements/network/GNEEdge.cpp:2346
 msgid "Could not compute smooth shape for edge '%'"
@@ -12540,7 +12540,7 @@ msgstr ""
 
 #: src/netedit/elements/network/GNELane.cpp:1998
 msgid "Split edge in both directions here (no opposite edge)"
-msgstr ""
+msgstr "Dividir aresta em ambas as direções aqui (sem aresta oposta)"
 
 #: src/netedit/elements/network/GNELane.cpp:2005
 msgid "Split edge in both directions here"
@@ -12767,7 +12767,7 @@ msgstr "Abrir janela para selecionar um arquivo existente"
 
 #: src/netedit/frames/GNEAttributesEditorRow.cpp:716
 msgid "Open dialog to select or create an existent file"
-msgstr ""
+msgstr "Abrir janela para selecionar ou criar arquivo"
 
 #: src/netedit/frames/GNEAttributesEditorType.cpp:85
 msgid "Open element dialog"
@@ -12910,7 +12910,7 @@ msgstr "'Cancelar desenho' ou ESC para cancelar a criação da forma."
 
 #: src/netedit/frames/GNEDrawingShape.cpp:61
 msgid "'Shift + Click' to remove the last inserted point."
-msgstr ""
+msgstr "'Shift + Clique' para remover o último ponto inserido."
 
 #: src/netedit/frames/GNEDrawingShape.cpp:133
 msgid "A new point cannot be added if drawing wasn't started"
