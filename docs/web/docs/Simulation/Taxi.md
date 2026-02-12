@@ -23,7 +23,7 @@ For instance, a single vehicle can configured as taxi as in the following minima
     </vehicle>
 ```
 
-The following table gives the full list of possible parameters for the taxi device (all parameter names have to be prepended with "device.taxi"):
+The following table gives the full list of possible sumo options for the taxi device (all option names have to be prepended with "--device.taxi." when set from the command line):
 
 | Parameter                        | Type             | Range                                                        | Default          | Description                                                                         |
 | -------------------------------- | ---------------- | ------------------------------------------------------------ | ---------------- | ----------------------------------------------------------------------------------- |
