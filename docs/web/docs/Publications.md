@@ -67,8 +67,8 @@ Alvarez Lopez, P., Banse, A., Barthauer, M., Behrisch, M., Couéraud, B., Erdman
 # Publications using SUMO
 
 Most of the following entries and many more can also be found in this
-[bibtex-file](https://sourceforge.net/projects/sumo/files/traffic_data/sumo.bib/download).
-We advice to use [JabRef](https://jabref.sourceforge.net/) for editing
+[bibtex-file](https://github.com/eclipse-sumo/sumo/blob/main/docs/sumo.bib).
+We advice to use [JabRef](https://www.jabref.org/) for editing
 this list of publications.
 
 | Topic                                       | Authors          | Title            | Publication                        | Year |
