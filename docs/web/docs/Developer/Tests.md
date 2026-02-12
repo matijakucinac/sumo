@@ -67,7 +67,7 @@ sudo apt-get install meld geany
 Download and install from
 [Geany project page](https://www.geany.org/) by following the provided installation instructions.
 
-After installing these tools, you need to configure TextTest to use them by creating or editing `$HOME/.texttest/config` (see [Customize configuration](#customize-configuration) section below).
+After installing these tools, you need to configure TextTest to use them by creating or editing `$HOME/.texttest/config` (see [Customize configuration](#customize_configuration) section below).
 
 **Alternative (TextTest defaults):** If you prefer, you can install `tkdiff` and `emacs` instead, which are TextTest's default programs and don't require additional configuration. However, we recommend using meld and geany for a better experience.
 
