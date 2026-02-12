@@ -8,6 +8,6 @@
 		<stop index="0" parkingArea="ParkAreaA" duration="200"/>
     </route>
 
-    <flow id="flow1" begin="0" end="35" number="7" route="route1"/>
+    <flow id="flow1" begin="0" end="35" number="8" route="route1"/>
 	
 </routes>
