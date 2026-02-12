@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-12 14:33+0000\n"
+"PO-Revision-Date: 2026-02-12 15:28+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -8395,11 +8395,11 @@ msgstr "Relação das TAZs"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7681
 msgid "The name of the TAZ the TAZRel starts at"
-msgstr ""
+msgstr "O nome da TAZ em que a TAZRel começa"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7686
 msgid "The name of the TAZ the TAZRel ends at"
-msgstr ""
+msgstr "O nome da TAZ em que a TAZRel termina"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:7697
 msgid "MeanDataEdge"
@@ -9203,7 +9203,7 @@ msgstr "Desenhar veículos espalhados na faixa ou na posição de partida"
 
 #: src/netedit/GNEViewNetHelper.cpp:2729 src/netedit/GNEViewNetHelper.cpp:3013
 msgid "Draw vehicles spread in lane or in depart position."
-msgstr ""
+msgstr "Desenhar veículos espalhados na faixa ou na posição de partida."
 
 #: src/netedit/GNEViewNetHelper.cpp:2736 src/netedit/GNEViewNetHelper.cpp:3297
 msgid "Toggle show demand elements."
@@ -9217,6 +9217,8 @@ msgstr "Clica nas faixas de alvo"
 msgid ""
 "Toggle whether clicking should inspect/select/delete lanes instead of edges."
 msgstr ""
+"Alternar se o clique deve inspecionar/selecionar/excluir faixas em vez de "
+"arestas."
 
 #: src/netedit/GNEViewNetHelper.cpp:2749
 msgid "Toggle show connections over junctions."
@@ -9289,7 +9291,7 @@ msgstr "Mover elevação"
 
 #: src/netedit/GNEViewNetHelper.cpp:2811
 msgid "Apply mouse movement to elevation instead of x,y position."
-msgstr ""
+msgstr "Aplicar o movimento do mouse à elevação em vez da posição x,y."
 
 #: src/netedit/GNEViewNetHelper.cpp:2818
 msgid "Show bubbles"
@@ -9305,7 +9307,7 @@ msgstr "Mostrar/esconder formas (shapes) (Polígonos e pontos de interesse)."
 
 #: src/netedit/GNEViewNetHelper.cpp:3027
 msgid "Toggle show all trips (requires updated demand - F5)."
-msgstr ""
+msgstr "Alternar mostrar todas as viagens (requer demanda atualizada - F5)."
 
 #: src/netedit/GNEViewNetHelper.cpp:3034
 msgid "Toggle show all person plans."
@@ -9382,7 +9384,7 @@ msgstr "Modo de Inspeção"
 
 #: src/netedit/GNEViewNetHelper.cpp:3803
 msgid "Mode to inspect elements and change their attributes. (I)"
-msgstr ""
+msgstr "Modo para inspecionar elementos e alterar seus atributos. (I)"
 
 #: src/netedit/GNEViewNetHelper.cpp:3808
 msgid "Delete mode"
@@ -10823,7 +10825,7 @@ msgstr "Salvar posições inválidas"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:63
 msgid "Save stopping places and E2 detectors with invalid positions"
-msgstr ""
+msgstr "Salvar locais de parada e detectores E2 com posições inválidas"
 
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:67
 #: src/netedit/dialogs/fix/GNEFixAdditionalElementsDialog.cpp:187
@@ -11133,7 +11135,7 @@ msgstr "Ativar/desativar dicas de menu"
 #: src/netedit/dialogs/tools/GNEPythonToolDialog.cpp:68
 #: src/utils/gui/windows/GUIGlChildWindow.cpp:145
 msgid "Toggles whether tooltips in the menu shall be shown."
-msgstr ""
+msgstr "Alternar se as dicas de ferramenta no menu devem ser exibidas."
 
 #: src/netedit/dialogs/options/GNEOptionsEditor.cpp:79
 msgid "Save options"
@@ -11604,7 +11606,7 @@ msgstr "adicionar faixa POI '%'"
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:1726
 #, c-format
 msgid "Could not build POI with ID '%' in netedit"
-msgstr ""
+msgstr "Não foi possível criar o ponto de interesse com ID '%' no netedit"
 
 #: src/netedit/elements/additional/GNEAdditionalHandler.cpp:1726
 msgid "Network requires a geo projection."
@@ -11642,15 +11644,16 @@ msgstr ""
 
 #: src/netedit/elements/additional/GNEMultiEntryExitDetector.cpp:134
 msgid "' needs at least one entry and one exit"
-msgstr ""
+msgstr "' precisa de pelo menos uma entrada e uma saída"
 
 #: src/netedit/elements/additional/GNEMultiEntryExitDetector.cpp:354
 msgid "An entry-exit detector needs at least one entry detector"
 msgstr ""
+"Um detector de entrada-saída precisa de pelo menos um detector de entrada"
 
 #: src/netedit/elements/additional/GNEMultiEntryExitDetector.cpp:357
 msgid "An entry-exit detector needs at least one exit detector"
-msgstr ""
+msgstr "Um detector de entrada-saída precisa de pelo menos um detector de saída"
 
 #: src/netedit/elements/additional/GNEPOI.cpp:337
 msgid "Release from lane"
@@ -11747,7 +11750,7 @@ msgstr "Polígono já fechado"
 
 #: src/netedit/elements/additional/GNEPoly.cpp:459
 msgid "Selected point must be different of the first point"
-msgstr ""
+msgstr "O ponto selecionado deve ser diferente do primeiro"
 
 #: src/netedit/elements/additional/GNEPoly.cpp:520
 msgid "Polygon already simplified"
@@ -11801,7 +11804,7 @@ msgstr ""
 
 #: src/netedit/elements/data/GNEDataHandler.cpp:224
 msgid "There is already a TAZ rel defined in '%'."
-msgstr ""
+msgstr "Já existe uma TAZRel definida em '%'."
 
 #: src/netedit/elements/data/GNEDataHandler.cpp:228
 #: src/netedit/elements/data/GNEDataHandler.cpp:240
@@ -11961,7 +11964,7 @@ msgstr "Não é possível repetir rotas com apenas uma aresta"
 
 #: src/netedit/elements/demand/GNERoute.cpp:292
 msgid "Cannot repeat route; front and last edge aren't connected"
-msgstr ""
+msgstr "Não é possível repetir a rota; primeira e última arestas não conectadas"
 
 #: src/netedit/elements/demand/GNERoute.cpp:734
 #: src/netedit/elements/demand/GNEVehicle.cpp:1892
