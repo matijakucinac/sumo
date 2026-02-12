@@ -130,6 +130,7 @@ nodes:nodes.xml
 edges:out.edg.xml
 nodes:out.nod.xml
 net:net.net.xml
+net:out.net.xml
 connections:connections.xml
 fixed:routes.rou.xml.fixed
 activityfile:activityfile.tcl
@@ -145,6 +146,7 @@ routesA:outA.rou.xml
 routesB:outB.rou.xml
 tripinfos:004/tripinfo_004.xml
 additional:out.add.xml
+additional:out_stops.add.xml
 additional2:out2.add.xml
 additional_overwrite:in_out.add.xml
 diff_nod:diff.nod.xml
