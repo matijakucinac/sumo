@@ -28,6 +28,7 @@
 #include <utils/geom/GeomHelper.h>
 #include <microsim/MSEventControl.h>
 #include <microsim/MSNet.h>
+#include <microsim/MSEdge.h>
 #include <microsim/MSVehicle.h>
 #include <microsim/MSVehicleType.h>
 #include "MSLane.h"
@@ -184,6 +185,29 @@ MSParkingArea::getLastFreePos(const SUMOVehicle& forVehicle, double brakePos) co
         }
 #endif
         return myLastFreePos - forVehicle.getVehicleType().getMinGap() - POSITION_EPS;
+    } else if (myOnRoad
+            && ((myLane.getEdge().getNumLanes() < myLane.getIndex() + 2) || !myLane.allowsChangingLeft(forVehicle.getVClass()))
+            && (myLane.getIndex() == 0 || !myLane.allowsChangingRight(forVehicle.getVClass()))) {
+        // vehicles cannot overtake so we must fill from the downstream end
+        int skipN = SIMSTEP == myReservationTime ? myReservations - 1 : 0;
+        //std::cout << SIMTIME << " v=" << forVehicle.getID() << " t=" << SIMTIME << " resTime=" << STEPS2TIME(myReservationTime) << " myR=" << myReservations << " skip=" << skipN << " rV=" << toString(myReservedVehicles) << "\n";
+        for (auto it_lsd = mySpaceOccupancies.rbegin(); it_lsd != mySpaceOccupancies.rend(); it_lsd++) {
+            if (it_lsd->vehicle == nullptr) {
+                if (skipN > 0) {
+                    // skip reservations
+                    skipN--;
+                    continue;
+                }
+#ifdef DEBUG_GET_LAST_FREE_POS
+                if (DEBUG_COND2(forVehicle)) {
+                    std::cout << SIMTIME << " getLastFreePos (onRoad-upstream) veh=" << forVehicle.getID() << " brakePos=" << brakePos << " myEndPos=" << myEndPos << " nextFreePos=" << it_lsd->endPos << "\n";
+                }
+#endif
+                return it_lsd->endPos;
+            }
+        }
+        // should not happen
+        return myEndPos;
     } else {
         const double minPos = MIN2(myEndPos, brakePos);
         if (myLastFreePos >= minPos) {
@@ -679,6 +703,8 @@ MSParkingArea::setRoadsideCapacity(int capacity) {
         // update endPos
         mySpaceOccupancies.back().endPos = MIN2(myEndPos, myBegPos + MAX2(POSITION_EPS, spaceDim * (i + 1)));
     }
+    // recompute after modifying the last endPos
+    computeLastFreePos();
 }
 
 /****************************************************************************/
