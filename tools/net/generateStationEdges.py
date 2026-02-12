@@ -21,6 +21,7 @@ edge in otherwise pure railway networks
 """
 from __future__ import absolute_import
 from __future__ import print_function
+from collections import defaultdict
 import sys
 import os
 
@@ -43,6 +44,8 @@ def parse_args():
                   help="length of generated solitary edges")
     ap.add_option("-w", "--width", type=float, default=8.,
                   help="width of generated solitary edges")
+    ap.add_option("-j", "--join-stations", action="store_true", dest="join", default=False,
+                    help="Create a single edge for all stops with the same name")
     # optParser.add_option("-d", "--cluster-dist", type=float, default=500., help="length of generated edges")
     options = ap.parse_args()
     return options
@@ -51,23 +54,46 @@ def parse_args():
 def main(options):
     net = sumolib.net.readNet(options.netfile, withConnections=False, withFoes=False)
     l2 = options.length / 2
+    station_stops = defaultdict(list)  # name -> id
+    stop_coords = {}  # id -> x,y
+    for stop in sumolib.xml.parse(options.stopfile, ['busStop', 'trainStop'], heterogeneous=True):
+        x, y = sumolib.geomhelper.positionAtShapeOffset(
+            net.getLane(stop.lane).getShape(),
+            (float(stop.startPos) + float(stop.endPos)) / 2)
+        station_stops[stop.attr_name].append(stop.id)
+        stop_coords[stop.id] = (x, y)
+
+
     with open(options.outfile + ".edg.xml", 'w') as out_e:
         with open(options.outfile + ".nod.xml", 'w') as out_n:
-            sumolib.writeXMLHeader(out_e, "$Id$")  # noqa
-            sumolib.writeXMLHeader(out_n, "$Id$")  # noqa
-            out_e.write('<edges>\n')
-            out_n.write('<nodes>\n')
-            for stop in sumolib.xml.parse(options.stopfile, ['busStop', 'trainStop'], heterogeneous=True):
-                edge_id = stop.id + "_access"
-                x, y = sumolib.geomhelper.positionAtShapeOffset(
-                    net.getLane(stop.lane).getShape(),
-                    (float(stop.startPos) + float(stop.endPos)) / 2)
-                from_id = edge_id + '_from'
-                to_id = edge_id + '_to'
-                out_n.write('    <node id="%s" x="%s" y="%s"/>\n' % (from_id, x - l2, y))
-                out_n.write('    <node id="%s" x="%s" y="%s"/>\n' % (to_id, x + l2, y))
-                out_e.write('    <edge id="%s" from="%s" to="%s" allow="pedestrian" width="%s"/>\n' % (
-                    edge_id, from_id, to_id, options.width))
+            sumolib.writeXMLHeader(out_e, "$Id$", "edges", options=options)
+            sumolib.writeXMLHeader(out_n, "$Id$", "nodes", options=options)
+            for name, stopIDs in station_stops.items():
+                if options.join:
+                    mean_x, mean_y = 0, 0
+                    for stopID in stopIDs:
+                        x, y = stop_coords[stopID]
+                        mean_x += x
+                        mean_y += y
+                    mean_x /= len(stopIDs)
+                    mean_y /= len(stopIDs)
+                    edge_id = name + "_access"
+                    from_id = edge_id + '_from'
+                    to_id = edge_id + '_to'
+                    out_n.write('    <node id="%s" x="%s" y="%s"/>\n' % (from_id, mean_x - l2, mean_y))
+                    out_n.write('    <node id="%s" x="%s" y="%s"/>\n' % (to_id, mean_x + l2, mean_y))
+                    out_e.write('    <edge id="%s" from="%s" to="%s" allow="pedestrian" width="%s"/>\n' % (
+                        edge_id, from_id, to_id, options.width))
+                else:
+                    for stopID in stopIDs:
+                        x, y = stop_coords[stopID]
+                        edge_id = stopID + "_access"
+                        from_id = edge_id + '_from'
+                        to_id = edge_id + '_to'
+                        out_n.write('    <node id="%s" x="%s" y="%s"/>\n' % (from_id, x - l2, y))
+                        out_n.write('    <node id="%s" x="%s" y="%s"/>\n' % (to_id, x + l2, y))
+                        out_e.write('    <edge id="%s" from="%s" to="%s" allow="pedestrian" width="%s"/>\n' % (
+                            edge_id, from_id, to_id, options.width))
             out_e.write('</edges>\n')
             out_n.write('</nodes>\n')
 
