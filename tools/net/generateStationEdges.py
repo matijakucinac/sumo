@@ -21,14 +21,16 @@ edge in otherwise pure railway networks
 """
 from __future__ import absolute_import
 from __future__ import print_function
-from collections import defaultdict
 import sys
 import os
+from collections import defaultdict
+import subprocess
 
 if 'SUMO_HOME' in os.environ:
     sys.path.append(os.path.join(os.environ['SUMO_HOME'], 'tools'))
 import sumolib  # noqa
 from sumolib.options import ArgumentParser  # noqa
+from sumolib.miscutils import euclidean  # noqa
 
 
 def parse_args():
@@ -46,6 +48,12 @@ def parse_args():
                   help="width of generated solitary edges")
     ap.add_option("-j", "--join-stations", action="store_true", dest="join", default=False,
                     help="Create a single edge for all stops with the same name")
+    ap.add_option("-b", "--build", action="store_true", default=False,
+                    help="Build a new network and stop file")
+    ap.add_option("-f", "--access-factor", type=float, dest="accessFactor", default=0,
+                    help="Declare factor that computes access distance as a factor of airline-distance (default 0)")
+    ap.add_option("--access-radius", type=float, dest="accessRadius",
+                    help="Overrides access search distance")
     # optParser.add_option("-d", "--cluster-dist", type=float, default=500., help="length of generated edges")
     options = ap.parse_args()
     return options
@@ -63,9 +71,14 @@ def main(options):
         station_stops[stop.attr_name].append(stop.id)
         stop_coords[stop.id] = (x, y)
 
+    autoRadius = options.accessRadius is None
+    if autoRadius and options.join:
+        options.accessRadius = 1
 
-    with open(options.outfile + ".edg.xml", 'w') as out_e:
-        with open(options.outfile + ".nod.xml", 'w') as out_n:
+    edgeFile = options.outfile + ".edg.xml"
+    nodeFile = options.outfile + ".nod.xml"
+    with open(edgeFile, 'w') as out_e:
+        with open(nodeFile, 'w') as out_n:
             sumolib.writeXMLHeader(out_e, "$Id$", "edges", options=options)
             sumolib.writeXMLHeader(out_n, "$Id$", "nodes", options=options)
             for name, stopIDs in station_stops.items():
@@ -77,6 +90,11 @@ def main(options):
                         mean_y += y
                     mean_x /= len(stopIDs)
                     mean_y /= len(stopIDs)
+                    if autoRadius:
+                        for stopID in stopIDs:
+                            x, y = stop_coords[stopID]
+                            options.accessRadius = max(options.accessRadius,
+                                    euclidean((x, y), (mean_x, mean_y)))
                     edge_id = name + "_access"
                     from_id = edge_id + '_from'
                     to_id = edge_id + '_to'
@@ -96,6 +114,22 @@ def main(options):
                             edge_id, from_id, to_id, options.width))
             out_e.write('</edges>\n')
             out_n.write('</nodes>\n')
+
+    NETCONVERT = sumolib.checkBinary('netconvert')
+    if options.build:
+        netOutFile = options.outfile + ('.net.xml.gz' if options.netfile[-3:] == '.gz' else '.net.xml')
+        args = [NETCONVERT,
+                '-s', options.netfile,
+                '--ptstop-files', options.stopfile,
+                '-e', edgeFile,
+                '-n', nodeFile,
+                '-o', netOutFile,
+                '--ptstop-output', options.outfile + '_stops.add.xml',
+                '--railway.access-factor', str(options.accessFactor)]
+
+        if options.accessRadius is not None:
+            args += ['--railway.access-distance', str(options.accessRadius + 1)]
+        subprocess.call(args)
 
 
 if __name__ == "__main__":
