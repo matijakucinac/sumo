@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-02-13T14:42:36.123526+01:00 by Eclipse SUMO sumo v1_26_0+0201-4971bf8c88b
+<!-- generated on 2026-02-13T14:50:35.322585+01:00 by Eclipse SUMO sumo v1_26_0+0209-4b99ad2a7da
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -49,43 +49,43 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <person id="p.0" depart="100.00" arrival="343.00">
+    <person id="p.0" depart="100.00" arrival="340.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
-    <person id="p.1" depart="300.00" arrival="520.00">
+    <person id="p.1" depart="300.00" arrival="518.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
-    <person id="p.2" depart="500.00" arrival="778.00">
+    <person id="p.2" depart="500.00" arrival="761.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
-    <person id="p.3" depart="700.00" arrival="945.00">
+    <person id="p.3" depart="700.00" arrival="944.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
-    <person id="p.4" depart="900.00" arrival="1125.00">
+    <person id="p.4" depart="900.00" arrival="1126.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
-    <person id="p.5" depart="1100.00" arrival="1383.00">
+    <person id="p.5" depart="1100.00" arrival="1359.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
-    <person id="p.6" depart="1300.00" arrival="1543.00">
+    <person id="p.6" depart="1300.00" arrival="1540.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
-    <person id="p.7" depart="1500.00" arrival="1721.00">
+    <person id="p.7" depart="1500.00" arrival="1740.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
-    <person id="p.8" depart="1700.00" arrival="1980.00">
+    <person id="p.8" depart="1700.00" arrival="1979.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
-    <person id="p.9" depart="1900.00" arrival="2139.00">
+    <person id="p.9" depart="1900.00" arrival="2140.00">
         <ride from="D1E1" to="C2B2" arrivalPos="285.60" lines="taxi"/>
     </person>
 
@@ -94,18 +94,24 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
             <route replacedOnEdge="A0B0" reason="taxi:taxistand" replacedAtTime="0.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="120.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="120.00" probability="0" edges="A0B0 B0C0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="343.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:taxistand" replacedAtTime="1208.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="taxi:taxistand" replacedAtTime="1807.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:taxistand" replacedAtTime="2531.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="taxi:taxistand" replacedAtTime="3750.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="taxi:taxistand" replacedAtTime="4973.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="32" reason="taxi:taxistand" replacedAtTime="6195.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="340.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:taxistand" replacedAtTime="677.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="15" reason="taxi:prepare_dispatch" replacedAtTime="1320.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="15" reason="taxi:dispatch" replacedAtTime="1320.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 D1E1 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="22" reason="taxi:taxistand" replacedAtTime="1540.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:taxistand" replacedAtTime="2075.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="30" reason="taxi:taxistand" replacedAtTime="2989.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="34" reason="taxi:taxistand" replacedAtTime="4208.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="38" reason="taxi:taxistand" replacedAtTime="5428.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="42" reason="taxi:taxistand" replacedAtTime="6651.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
         </routeDistribution>
         <stop parkingArea="pa_0" actType="idling"/>
         <stop lane="D1E1_1" permitted="p.0" actType="pickup p.0 (0)"/>
         <stop lane="C2B2_1" actType="dropOff p.0 (0)"/>
+        <stop parkingArea="pa_0" index="4" actType="idling"/>
+        <stop lane="D1E1_1" permitted="p.6" actType="pickup p.6 (6)"/>
+        <stop lane="C2B2_1" actType="dropOff p.6 (6)"/>
     </vehicle>
 
     <vehicle id="taxi.1" type="taxi" depart="3.00">
@@ -113,52 +119,43 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
             <route replacedOnEdge="A0B0" reason="taxi:taxistand" replacedAtTime="3.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="300.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="300.00" probability="0" edges="A0B0 B0C0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="520.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
-            <route replacedOnEdge="B1B0" replacedOnIndex="10" reason="taxi:prepare_dispatch" replacedAtTime="540.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="B1B0" replacedOnIndex="10" reason="taxi:dispatch" replacedAtTime="540.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="18" reason="taxi:taxistand" replacedAtTime="778.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="21" reason="taxi:prepare_dispatch" replacedAtTime="1500.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="21" reason="taxi:dispatch" replacedAtTime="1500.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="28" reason="taxi:taxistand" replacedAtTime="1721.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
-            <route replacedOnEdge="B1B0" replacedOnIndex="30" reason="taxi:prepare_dispatch" replacedAtTime="1740.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="B1B0" replacedOnIndex="30" reason="taxi:dispatch" replacedAtTime="1740.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="38" reason="taxi:taxistand" replacedAtTime="1980.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="42" reason="taxi:taxistand" replacedAtTime="2836.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="46" reason="taxi:taxistand" replacedAtTime="4055.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="50" reason="taxi:taxistand" replacedAtTime="5277.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="54" reason="taxi:taxistand" replacedAtTime="6499.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="518.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="11" reason="taxi:prepare_dispatch" replacedAtTime="1140.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="11" reason="taxi:dispatch" replacedAtTime="1140.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 D1E1 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="18" reason="taxi:taxistand" replacedAtTime="1359.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="taxi:taxistand" replacedAtTime="1770.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:taxistand" replacedAtTime="2379.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="30" reason="taxi:taxistand" replacedAtTime="3598.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="34" reason="taxi:taxistand" replacedAtTime="4818.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="38" reason="taxi:taxistand" replacedAtTime="6039.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
         </routeDistribution>
         <stop parkingArea="pa_0" actType="idling"/>
         <stop lane="D1E1_1" permitted="p.1" actType="pickup p.1 (1)"/>
         <stop lane="C2B2_1" actType="dropOff p.1 (1)"/>
-        <stop lane="D1E1_1" permitted="p.2" actType="pickup p.2 (2)"/>
-        <stop lane="C2B2_1" actType="dropOff p.2 (2)"/>
         <stop parkingArea="pa_0" actType="idling"/>
-        <stop lane="D1E1_1" permitted="p.7" actType="pickup p.7 (7)"/>
-        <stop lane="C2B2_1" actType="dropOff p.7 (7)"/>
-        <stop lane="D1E1_1" permitted="p.8" actType="pickup p.8 (8)"/>
-        <stop lane="C2B2_1" actType="dropOff p.8 (8)"/>
+        <stop lane="D1E1_1" permitted="p.5" actType="pickup p.5 (5)"/>
+        <stop lane="C2B2_1" actType="dropOff p.5 (5)"/>
     </vehicle>
 
     <vehicle id="taxi.2" type="taxi" depart="6.00">
         <routeDistribution>
             <route replacedOnEdge="A0B0" reason="taxi:taxistand" replacedAtTime="6.00" probability="0" edges="A0B0 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="720.00" probability="0" edges="A0B0 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="720.00" probability="0" edges="A0B0 B0C0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="945.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="540.00" probability="0" edges="A0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="540.00" probability="0" edges="A0B0 B0C0 D1E1 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="761.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="11" reason="taxi:prepare_dispatch" replacedAtTime="1920.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="11" reason="taxi:dispatch" replacedAtTime="1920.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="18" reason="taxi:taxistand" replacedAtTime="2139.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="taxi:taxistand" replacedAtTime="3141.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:taxistand" replacedAtTime="4361.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="30" reason="taxi:taxistand" replacedAtTime="5582.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="34" reason="taxi:taxistand" replacedAtTime="6805.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="18" reason="taxi:taxistand" replacedAtTime="2140.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="taxi:taxistand" replacedAtTime="3294.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:taxistand" replacedAtTime="4513.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="30" reason="taxi:taxistand" replacedAtTime="5734.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="34" reason="taxi:taxistand" replacedAtTime="6957.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
             <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
         </routeDistribution>
         <stop parkingArea="pa_0" actType="idling"/>
-        <stop lane="D1E1_1" permitted="p.3" actType="pickup p.3 (3)"/>
-        <stop lane="C2B2_1" actType="dropOff p.3 (3)"/>
+        <stop lane="D1E1_1" permitted="p.2" actType="pickup p.2 (2)"/>
+        <stop lane="C2B2_1" actType="dropOff p.2 (2)"/>
         <stop parkingArea="pa_0" actType="idling"/>
         <stop lane="D1E1_1" permitted="p.9" actType="pickup p.9 (9)"/>
         <stop lane="C2B2_1" actType="dropOff p.9 (9)"/>
@@ -167,38 +164,43 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
     <vehicle id="taxi.3" type="taxi" depart="9.00">
         <routeDistribution>
             <route replacedOnEdge="A0B0" reason="taxi:taxistand" replacedAtTime="9.00" probability="0" edges="A0B0 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="900.00" probability="0" edges="A0B0 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="900.00" probability="0" edges="A0B0 B0C0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="1125.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
-            <route replacedOnEdge="B1B0" replacedOnIndex="10" reason="taxi:prepare_dispatch" replacedAtTime="1140.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="B1B0" replacedOnIndex="10" reason="taxi:dispatch" replacedAtTime="1140.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="18" reason="taxi:taxistand" replacedAtTime="1383.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
-            <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="720.00" probability="0" edges="A0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="720.00" probability="0" edges="A0B0 B0C0 D1E1 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="944.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
         </routeDistribution>
         <stop parkingArea="pa_0" actType="idling"/>
-        <stop lane="D1E1_1" permitted="p.4" actType="pickup p.4 (4)"/>
-        <stop lane="C2B2_1" actType="dropOff p.4 (4)"/>
-        <stop lane="D1E1_1" permitted="p.5" actType="pickup p.5 (5)"/>
-        <stop lane="C2B2_1" actType="dropOff p.5 (5)"/>
+        <stop lane="D1E1_1" permitted="p.3" actType="pickup p.3 (3)"/>
+        <stop lane="C2B2_1" actType="dropOff p.3 (3)"/>
         <stop parkingArea="pa_0" actType="idling"/>
     </vehicle>
 
     <vehicle id="taxi.4" type="taxi" depart="12.00">
         <routeDistribution>
             <route replacedOnEdge="A0B0" reason="taxi:taxistand" replacedAtTime="12.00" probability="0" edges="A0B0 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="1320.00" probability="0" edges="A0B0 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="1320.00" probability="0" edges="A0B0 B0C0 D1E1 C2B2"/>
-            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="1543.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:taxistand" replacedAtTime="2227.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="taxi:taxistand" replacedAtTime="3445.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:taxistand" replacedAtTime="4667.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="taxi:taxistand" replacedAtTime="5888.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="taxi:taxistand" replacedAtTime="7109.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
-            <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="900.00" probability="0" edges="A0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="900.00" probability="0" edges="A0B0 B0C0 D1E1 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="8" reason="taxi:taxistand" replacedAtTime="1126.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:taxistand" replacedAtTime="1464.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="B1B0" replacedOnIndex="14" reason="taxi:prepare_dispatch" replacedAtTime="1500.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="B1B0" replacedOnIndex="14" reason="taxi:dispatch" replacedAtTime="1500.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 D1E1 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="22" reason="taxi:taxistand" replacedAtTime="1740.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="22" reason="taxi:prepare_dispatch" replacedAtTime="1740.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="22" reason="taxi:dispatch" replacedAtTime="1740.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 D1E1 C2B2"/>
+            <route replacedOnEdge="C2B2" replacedOnIndex="30" reason="taxi:taxistand" replacedAtTime="1979.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="34" reason="taxi:taxistand" replacedAtTime="2684.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="38" reason="taxi:taxistand" replacedAtTime="3904.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="42" reason="taxi:taxistand" replacedAtTime="5123.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="46" reason="taxi:taxistand" replacedAtTime="6345.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
+            <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1C1 C1D1 D1E1 E1E2 E2D2 D2C2 C2B2 B2B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1B1 B1B0 B0C0 C0C1 C1C2 C2B2"/>
         </routeDistribution>
         <stop parkingArea="pa_0" actType="idling"/>
-        <stop lane="D1E1_1" permitted="p.6" actType="pickup p.6 (6)"/>
-        <stop lane="C2B2_1" actType="dropOff p.6 (6)"/>
+        <stop lane="D1E1_1" permitted="p.4" actType="pickup p.4 (4)"/>
+        <stop lane="C2B2_1" actType="dropOff p.4 (4)"/>
+        <stop lane="D1E1_1" permitted="p.7" actType="pickup p.7 (7)"/>
+        <stop lane="C2B2_1" actType="dropOff p.7 (7)"/>
+        <stop lane="D1E1_1" permitted="p.8" actType="pickup p.8 (8)"/>
+        <stop lane="C2B2_1" actType="dropOff p.8 (8)"/>
     </vehicle>
 
 </routes>
