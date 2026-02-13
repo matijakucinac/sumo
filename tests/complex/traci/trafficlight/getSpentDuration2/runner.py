@@ -32,6 +32,8 @@ step = 0
 while traci.simulation.getMinExpectedNumber() > 0 or step < 180:
     if step == 100:
         logic = traci.trafficlight.setRedYellowGreenState(tlsID, "rrrrrrrrrrrrrrrrrrrr")
+    if step == 110:
+        traci.trafficlight.setProgram(tlsID, "0")
     traci.simulationStep()
     step += 1
     print(traci.simulation.getTime(),
