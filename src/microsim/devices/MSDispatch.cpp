@@ -305,12 +305,12 @@ MSDispatch::fulfilledReservation(const Reservation* res) {
 SUMOTime
 MSDispatch::computePickupTime(SUMOTime t, const MSDevice_Taxi* taxi, const Reservation& res, SUMOAbstractRouter<MSEdge, SUMOVehicle>& router) {
     ConstMSEdgeVector edges;
-    router.compute(taxi->getHolder().getEdge(), taxi->getHolder().getPositionOnLane() - NUMERICAL_EPS,
-                   res.from, res.fromPos, &taxi->getHolder(), t, edges, true);
+    const double fromPos = taxi->getHolder().getPositionOnLane() - NUMERICAL_EPS;
+    router.compute(taxi->getHolder().getEdge(), fromPos, res.from, res.fromPos, &taxi->getHolder(), t, edges, true);
     if (edges.empty()) {
         return SUMOTime_MAX;
     } else {
-        return TIME2STEPS(router.recomputeCosts(edges, &taxi->getHolder(), t));
+        return TIME2STEPS(router.recomputeCostsPos(edges, &taxi->getHolder(), fromPos, res.fromPos, t));
     }
 }
 
