@@ -1,0 +1,57 @@
+Warning: Teleporting vehicle 'taxi.0'; waited too long (blocked), lane='B0C0_1', time=1208.00.
+Warning: Vehicle 'taxi.0' skips stop on lane 'B0C0_1' time=1208.00.
+Warning: Vehicle 'taxi.0' ends teleporting on edge 'C0C1', time=1208.00.
+Warning: Teleporting vehicle 'taxi.0'; waited too long (blocked), lane='B0C0_1', time=1807.00.
+Warning: Vehicle 'taxi.0' skips stop on lane 'B0C0_1' time=1807.00.
+Warning: Vehicle 'taxi.0' ends teleporting on edge 'C0C1', time=1807.00.
+Warning: Teleporting vehicle 'taxi.4'; waited too long (blocked), lane='B0C0_1', time=2227.00.
+Warning: Vehicle 'taxi.4' skips stop on lane 'B0C0_1' time=2227.00.
+Warning: Vehicle 'taxi.4' ends teleporting on edge 'C0C1', time=2227.00.
+Warning: Teleporting vehicle 'taxi.0'; waited too long (blocked), lane='B0C0_1', time=2531.00.
+Warning: Vehicle 'taxi.0' skips stop on lane 'B0C0_1' time=2531.00.
+Warning: Vehicle 'taxi.0' ends teleporting on edge 'C0C1', time=2531.00.
+Warning: Teleporting vehicle 'taxi.1'; waited too long (blocked), lane='B0C0_1', time=2836.00.
+Warning: Vehicle 'taxi.1' skips stop on lane 'B0C0_1' time=2836.00.
+Warning: Vehicle 'taxi.1' ends teleporting on edge 'C0C1', time=2836.00.
+Warning: Teleporting vehicle 'taxi.2'; waited too long (blocked), lane='B0C0_1', time=3141.00.
+Warning: Vehicle 'taxi.2' skips stop on lane 'B0C0_1' time=3141.00.
+Warning: Vehicle 'taxi.2' ends teleporting on edge 'C0C1', time=3141.00.
+Warning: Teleporting vehicle 'taxi.4'; waited too long (blocked), lane='B0C0_1', time=3445.00.
+Warning: Vehicle 'taxi.4' skips stop on lane 'B0C0_1' time=3445.00.
+Warning: Vehicle 'taxi.4' ends teleporting on edge 'C0C1', time=3445.00.
+Warning: Teleporting vehicle 'taxi.0'; waited too long (blocked), lane='B0C0_1', time=3750.00.
+Warning: Vehicle 'taxi.0' skips stop on lane 'B0C0_1' time=3750.00.
+Warning: Vehicle 'taxi.0' ends teleporting on edge 'C0C1', time=3750.00.
+Warning: Teleporting vehicle 'taxi.1'; waited too long (blocked), lane='B0C0_1', time=4055.00.
+Warning: Vehicle 'taxi.1' skips stop on lane 'B0C0_1' time=4055.00.
+Warning: Vehicle 'taxi.1' ends teleporting on edge 'C0C1', time=4055.00.
+Warning: Teleporting vehicle 'taxi.2'; waited too long (blocked), lane='B0C0_1', time=4361.00.
+Warning: Vehicle 'taxi.2' skips stop on lane 'B0C0_1' time=4361.00.
+Warning: Vehicle 'taxi.2' ends teleporting on edge 'C0C1', time=4361.00.
+Warning: Teleporting vehicle 'taxi.4'; waited too long (blocked), lane='B0C0_1', time=4667.00.
+Warning: Vehicle 'taxi.4' skips stop on lane 'B0C0_1' time=4667.00.
+Warning: Vehicle 'taxi.4' ends teleporting on edge 'C0C1', time=4667.00.
+Warning: Teleporting vehicle 'taxi.0'; waited too long (blocked), lane='B0C0_1', time=4973.00.
+Warning: Vehicle 'taxi.0' skips stop on lane 'B0C0_1' time=4973.00.
+Warning: Vehicle 'taxi.0' ends teleporting on edge 'C0C1', time=4973.00.
+Warning: Teleporting vehicle 'taxi.1'; waited too long (blocked), lane='B0C0_1', time=5277.00.
+Warning: Vehicle 'taxi.1' skips stop on lane 'B0C0_1' time=5277.00.
+Warning: Vehicle 'taxi.1' ends teleporting on edge 'C0C1', time=5277.00.
+Warning: Teleporting vehicle 'taxi.2'; waited too long (blocked), lane='B0C0_1', time=5582.00.
+Warning: Vehicle 'taxi.2' skips stop on lane 'B0C0_1' time=5582.00.
+Warning: Vehicle 'taxi.2' ends teleporting on edge 'C0C1', time=5582.00.
+Warning: Teleporting vehicle 'taxi.4'; waited too long (blocked), lane='B0C0_1', time=5888.00.
+Warning: Vehicle 'taxi.4' skips stop on lane 'B0C0_1' time=5888.00.
+Warning: Vehicle 'taxi.4' ends teleporting on edge 'C0C1', time=5888.00.
+Warning: Teleporting vehicle 'taxi.0'; waited too long (blocked), lane='B0C0_1', time=6195.00.
+Warning: Vehicle 'taxi.0' skips stop on lane 'B0C0_1' time=6195.00.
+Warning: Vehicle 'taxi.0' ends teleporting on edge 'C0C1', time=6195.00.
+Warning: Teleporting vehicle 'taxi.1'; waited too long (blocked), lane='B0C0_1', time=6499.00.
+Warning: Vehicle 'taxi.1' skips stop on lane 'B0C0_1' time=6499.00.
+Warning: Vehicle 'taxi.1' ends teleporting on edge 'C0C1', time=6499.00.
+Warning: Teleporting vehicle 'taxi.2'; waited too long (blocked), lane='B0C0_1', time=6805.00.
+Warning: Vehicle 'taxi.2' skips stop on lane 'B0C0_1' time=6805.00.
+Warning: Vehicle 'taxi.2' ends teleporting on edge 'C0C1', time=6805.00.
+Warning: Teleporting vehicle 'taxi.4'; waited too long (blocked), lane='B0C0_1', time=7109.00.
+Warning: Vehicle 'taxi.4' skips stop on lane 'B0C0_1' time=7109.00.
+Warning: Vehicle 'taxi.4' ends teleporting on edge 'C0C1', time=7109.00.

@@ -15,3 +15,6 @@ rerouting
 
 # on idling pick the closest taxi stand
 closest_stand
+
+# idling taxis should advance in the queue when parking is onRoad
+advance_queue
