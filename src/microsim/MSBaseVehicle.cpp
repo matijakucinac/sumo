@@ -2904,6 +2904,14 @@ MSBaseVehicle::sawBlockedChargingStation(const MSStoppingPlace* cs, bool local) 
 }
 
 
+void
+MSBaseVehicle::cleanupParkingReservation() {
+    if (hasStops() && myStops.front().parkingarea != nullptr && myStops.front().parkingarea->isReservable()) {
+        myStops.front().parkingarea->removeSpaceReservation(this);
+    }
+}
+
+
 #ifdef _DEBUG
 void
 MSBaseVehicle::initMoveReminderOutput(const OptionsCont& oc) {

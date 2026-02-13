@@ -690,6 +690,10 @@ public:
         return !myStops.empty();
     }
 
+
+    /// @brief unregisters from a parking reservation when changing or skipping stops
+    void cleanupParkingReservation();
+
     /** @brief replace the current parking area stop with a new stop with merge duration
      */
     bool replaceParkingArea(MSParkingArea* parkingArea, std::string& errorMsg);

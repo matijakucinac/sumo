@@ -1027,9 +1027,7 @@ MSVehicle::MSVehicle(SUMOVehicleParameter* pars, ConstMSRoutePtr route,
 
 
 MSVehicle::~MSVehicle() {
-    if (hasStops() && myStops.front().parkingarea != nullptr && myStops.front().parkingarea->isReservable()) {
-        myStops.front().parkingarea->removeSpaceReservation(this);
-    }
+    cleanupParkingReservation();
     cleanupFurtherLanes();
     delete myLaneChangeModel;
     if (myType->isVehicleSpecific()) {
@@ -5748,9 +5746,7 @@ MSVehicle::enterLaneAtInsertion(MSLane* enteredLane, double pos, double speed, d
                 && myStops.front().pars.endPos < pos) {
             WRITE_WARNINGF(TL("Vehicle '%' skips stop on lane '%' time=%."), getID(), myStops.front().lane->getID(),
                            time2string(MSNet::getInstance()->getCurrentTimeStep()));
-            if (myStops.front().parkingarea != nullptr && myStops.front().parkingarea->isReservable()) {
-                myStops.front().parkingarea->removeSpaceReservation(this);
-            }
+            cleanupParkingReservation();
             myStops.pop_front();
         }
         // avoid startup-effects after teleport
@@ -5841,10 +5837,8 @@ MSVehicle::leaveLane(const MSMoveReminder::Notification reason, const MSLane* ap
         while (!myStops.empty() && myStops.front().edge == myCurrEdge && &myStops.front().lane->getEdge() == &myLane->getEdge()) {
             if (myStops.front().getSpeed() <= 0) {
                 WRITE_WARNINGF(TL("Vehicle '%' skips stop on lane '%' time=%."), getID(), myStops.front().lane->getID(),
-                               time2string(MSNet::getInstance()->getCurrentTimeStep()))
-                if (myStops.front().parkingarea != nullptr && myStops.front().parkingarea->isReservable()) {
-                    myStops.front().parkingarea->removeSpaceReservation(this);
-                }
+                               time2string(MSNet::getInstance()->getCurrentTimeStep()));
+                cleanupParkingReservation();
                 if (MSStopOut::active()) {
                     // clean up if stopBlocked was called
                     MSStopOut::getInstance()->stopNotStarted(this);
