@@ -310,6 +310,9 @@ protected:
     /// @brief overwrite the capacity (caution: will delete ANY previous parking space definitions)
     void setRoadsideCapacity(int capactity);
 
+    /// @brief whether overtaking on this lane is impossible for the given vehicle class
+    bool cannotChange(SUMOVehicleClass svc) const; 
+
 protected:
 
 
