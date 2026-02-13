@@ -52,8 +52,12 @@ plugins:
         log_level: WARNING
   - redirects:
       redirect_maps:
+          "Car-Following-Models.md" : "Car-Following-Models/index.md"
           "ChangeLog/index.md" : "ChangeLog.md"
           "Contact.md" : "https://eclipse.dev/sumo/contact/"
+          "Contributed/SUMOPy.md" : "Contributed/SUMOPy/index.md"
+          "Networks/Import.md" : "Networks/Import/index.md"
+          "TraCI.md" : "TraCI/index.md"
 #  - spellcheck:
 #      backends:  # the backends you want to use
 #      - codespell:  # or nested configs

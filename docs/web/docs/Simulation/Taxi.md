@@ -222,7 +222,7 @@ By default, vehicle stops will have attribute `parking="true"` which means that 
 param "device.taxi.parking" to "false".
 
 # TraCI
-To couple an external dispatch algorithm to SUMO, the following [TraCI](../TraCI.md) functions are provided:
+To couple an external dispatch algorithm to SUMO, the following [TraCI](../TraCI/index.md) functions are provided:
 
 !!! note
     To make use of these functions, the option **--device.taxi.dispatch-algorithm traci** must be set

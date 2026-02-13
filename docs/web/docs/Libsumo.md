@@ -5,7 +5,7 @@ title: Libsumo
 # Libsumo
 
 The main way to interact with a running simulation is
-[TraCI](TraCI.md) which gives the complete flexibility of doing
+[TraCI](TraCI/index.md) which gives the complete flexibility of doing
 cross-platform, cross-language, and networked interaction with
 [sumo](sumo.md) acting as a server. One major drawback is the
 communication overhead due to the protocol and the socket communication.
@@ -15,7 +15,7 @@ following properties:
 
 - C++ interface based on static functions and a few simple wrapper
   classes for results which can be linked directly to the client code
-- Function signatures similar to [TraCI](TraCI.md)
+- Function signatures similar to [TraCI](TraCI/index.md)
 - Pre-built language bindings for Java and Python (using
   [SWIG](https://www.swig.org/))
 - Support for other programming languages via

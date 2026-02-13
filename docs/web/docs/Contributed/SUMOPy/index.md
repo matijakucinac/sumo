@@ -12,7 +12,7 @@ and in the [proceedings of the SUMO2013](https://sumo.dlr.de/2013/SUMO2013_15-17
 A further scope of SUMOPy is to manage the huge amount of data necessary
 to run complex multi-modal simulations. This includes different demand
 generation methods such as support for OD matrices, turnflows and a
-synthetic (or virtual population. Also different services such as
+synthetic (or virtual population). Also different services such as
 Personal Rapid Transit (PRT) or self-driving taxis are supported.
 
 Essentially, SUMOPy consists of a GUI interface, network editor as well
@@ -89,8 +89,8 @@ choice of packages for different operating systems. In general, the
 32-bit version is preferred as there are more pre-compiled packages
 available, but this may change over time.
 
-- [Installation requirements for Windows](../Contributed/SUMOPy/Installation/Windows.md)
-- [Installation requirements for Linux](../Contributed/SUMOPy/Installation/Linux.md)
+- [Installation requirements for Windows](Installation/Windows.md)
+- [Installation requirements for Linux](Installation/Linux.md)
 
 # The graphical user interface
 
@@ -98,17 +98,17 @@ The graphical user interface of SUMOPY cane be launched by running the
 script sumopy_gui.py, which is located in SUMOPy's main directory. The
 following documents describe the basic functioning of the GUI.
 
-- [Getting started\!](../Contributed/SUMOPy/GUI/Getting_Started.md)
-- [Demand modelling with GUI](../Contributed/SUMOPy/GUI/Demand_Modelling.md)
-  - [Zone to zone demand flows](../Contributed/SUMOPy/Demand/Zone_To_Zone.md)
-  - [Turn flows](../Contributed/SUMOPy/Demand/Turn_Flows.md)
+- [Getting started\!](GUI/Getting_Started.md)
+- [Demand modelling with GUI](GUI/Demand_Modelling.md)
+  - [Zone to zone demand flows](Demand/Zone_To_Zone.md)
+  - [Turn flows](Demand/Turn_Flows.md)
 
 # Simulation processes
 
 This section addresses the different simulation methods.
 
-- [Simulating Sublanes](../Contributed/SUMOPy/Simulation/Sublanes.md)
+- [Simulating Sublanes](Simulation/Sublanes.md)
 
 # Tutorials
 
-[Opening and simulating a scenario](../Contributed/SUMOPy/Tutorials/Open_and_Simulate.md)
+[Opening and simulating a scenario](Tutorials/Open_and_Simulate.md)

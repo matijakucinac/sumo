@@ -2,7 +2,7 @@
 title: Protocol
 ---
 
-This page details the [TraCI](../TraCI.md) protocol. Please see
+This page details the [TraCI](../TraCI/index.md) protocol. Please see
 there for a general introduction.
 
 ## Basic Flow

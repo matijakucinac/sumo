@@ -174,7 +174,7 @@ always use the latest version of SUMO.
   may allow us to diagnose the problem at a single glance). When sending screenshots of sumo-gui, please include the whole screen so the application version and simulation time are visible.
 - the complete input files for reproducing the error (i.e. a .sumocfg
   and all files referenced therein) in a zip-archive.
-- if your use case involves [TraCI](TraCI.md), please reduce your script to the bare minimum that is needed to show the problem. Then either include the script itself or [generate a log of all traci commands](TraCI/Interfacing_TraCI_from_Python.md#generating_a_log_of_all_traci_commands) and include this.
+- if your use case involves [TraCI](TraCI/index.md), please reduce your script to the bare minimum that is needed to show the problem. Then either include the script itself or [generate a log of all traci commands](TraCI/Interfacing_TraCI_from_Python.md#generating_a_log_of_all_traci_commands) and include this.
 - Please remove
   unnecessary inputs (i.e. only 2 vehicles instead of 2000) and try to
   find the minimum input example which still shows the problem. This includes
@@ -256,7 +256,7 @@ according to the above suggestions.
 
 ## TraCI
 
-### My [TraCI](TraCI.md)-program is to slow. What can I do?
+### My [TraCI](TraCI/index.md)-program is to slow. What can I do?
 
   TraCI communicates over sockets and this communication is slow. You can often reduce the number of TraCI commands via the following strategies.
 
@@ -265,7 +265,7 @@ according to the above suggestions.
 
    Even larger gains can be hand by switching to [libsumo](Libsumo.md). This can be done with a single line of code and completely eliminates the slow socket communication.
 
-### My [TraCI](TraCI.md)-program is not working as intended. Can you help me debug it?
+### My [TraCI](TraCI/index.md)-program is not working as intended. Can you help me debug it?
 
   Unfortunately, we do not have the resources to debug other peoples
   code. If you suspect a bug in TraCI itself, the [general rules of bug-reporting](FAQ.md#how_do_i_report_erroneous_behavior_of_a_sumo_application)
@@ -274,7 +274,7 @@ according to the above suggestions.
   who wants to reproduce your problem needs all your input files to do
   so.
 
-### My [TraCI](TraCI.md)-program is not working as intended. How do I debug it?
+### My [TraCI](TraCI/index.md)-program is not working as intended. How do I debug it?
 
 When using TraCI there are two processes that can raise errors: SUMO and
 the TraCI script being run. Here are some guidelines for figuring out
@@ -314,7 +314,7 @@ client version and SUMO version match. When using SUMO version 1.0.0 or larger y
 ### Is it possible to connect SUMO to an external application (f.e. ns-2)?
 
   There are several approaches to do this, see
-  [TraCI](TraCI.md) and [Topics/V2X](Topics/V2X.md)
+  [TraCI](TraCI/index.md) and [Topics/V2X](Topics/V2X.md)
 
 ### Can SUMO simulate lefthand traffic?
 
@@ -348,7 +348,7 @@ client version and SUMO version match. When using SUMO version 1.0.0 or larger y
 ### Can SUMO simulate driving in reverse?
 
   No. While it is possible to move a vehicle backwards using
-  [TraCI](TraCI.md), other vehicles will not react in a
+  [TraCI](TraCI/index.md), other vehicles will not react in a
   sensible manner to this.
 
 ### Can SUMO simulate driving through the oncoming lane?
@@ -775,7 +775,7 @@ see [inspecting connections](Netedit/editModesCommon.md#inspecting_connections)
   Another small script which helps here is
   [Tools/Routes\#tracemapper.py](Tools/Routes.md#tracemapperpy).
   You can also use the map matching plugin from
-  [Contributed/SUMOPy](Contributed/SUMOPy.md) here.
+  [Contributed/SUMOPy](Contributed/SUMOPy/index.md) here.
 
   For more complex cases (i.e. large temporal gaps or spatial errors)
   the problem is known as [Map Matching](https://en.wikipedia.org/wiki/Map_matching). Open source
@@ -806,7 +806,7 @@ SUMO automatically detects [vehicle collisions](Simulation/Safety.md#collisions)
 model aims to be accident free, some effort must be taken to [create accidents](Simulation/Safety.md#deliberately_causing_collisions).
 
 Often, the effects of an accident are required instead of the accident
-itself. Without using [TraCI](TraCI.md) the following approaches
+itself. Without using [TraCI](TraCI/index.md) the following approaches
 may be useful:
 
 1. Let a vehicle halt on the lane for some time (see [Definition of Vehicles, Vehicle Types, and Routes\#Stops and waypoints](Definition_of_Vehicles,_Vehicle_Types,_and_Routes.md#stops_and_waypoints)).

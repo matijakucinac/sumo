@@ -10,7 +10,7 @@ core".
 
 The following extensions became a core part of the SUMO package.
 
-- [TraCI](../TraCI.md)
+- [TraCI](../TraCI/index.md)
 
     online interaction with the simulation
 
@@ -24,7 +24,7 @@ supported.
     a tool by Gunnar Flötteröd which adapts the simulate flows to the
     real flows in a known net
 
-- [SUMOPy](SUMOPy.md)
+- [SUMOPy](SUMOPy/index.md)
 
     a tool by Joerg Schweizer supporting the whole SUMO toolchain with a
     GUI especially for demand modelling
@@ -97,11 +97,11 @@ The following extensions are managed and supported by other parties.
 
 - [TraCI4Matlab](https://mathworks.com/matlabcentral/fileexchange/44805-traci4matlab)
 
-    A Matlab interface for connecting and extending information via [TraCI](../TraCI.md)
+    A Matlab interface for connecting and extending information via [TraCI](../TraCI/index.md)
 
 - [TraaS](../TraCI/TraaS.md)
 
-    A SOAP(webservice) interface for connecting and extending information via [TraCI](../TraCI.md). Also a Java TraCI client library
+    A SOAP(webservice) interface for connecting and extending information via [TraCI](../TraCI/index.md). Also a Java TraCI client library
 
 - [ocit2SUMO](https://github.com/DLR-TS/sumo-ocit)
 

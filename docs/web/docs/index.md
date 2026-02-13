@@ -36,7 +36,7 @@ This Documentation is continuously updated and always refers to the latest devel
 - [Abstract networks generation](Networks/Abstract_Network_Generation.md)
 - Importing networks with [netconvert](netconvert.md)
   - [Defining own networks using XML](Networks/PlainXML.md)
-  - [Importing non-SUMO networks](Networks/Import.md)
+  - [Importing non-SUMO networks](Networks/Import/index.md)
     - [from OpenStreetMap](Networks/Import/OpenStreetMap.md)
       - [3-Click Scenario Generator](Networks/Import/OpenStreetMap.md#3-click_scenario_generation)
     - [from VISUM](Networks/Import/VISUM.md)
@@ -93,7 +93,7 @@ This Documentation is continuously updated and always refers to the latest devel
 - [Simulation output overview](Simulation/Output/index.md)
 
 ## TraCI (On-line Interaction)
-- [TraCI overview](TraCI.md) - The **Tra**ffic **C**ontrol **I**nterface
+- [TraCI overview](TraCI/index.md) - The **Tra**ffic **C**ontrol **I**nterface
 - [Libsumo](Libsumo.md) - Using sumo as a library
 
 ## Traffic Management and Other Structures

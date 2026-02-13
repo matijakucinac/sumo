@@ -8,7 +8,7 @@ TraCI is the short term for "**Tra**ffic **C**ontrol **I**nterface".
 Giving access to a running road traffic simulation, it allows to
 retrieve values of simulated objects and to manipulate their behavior
 "on-line". If performance is an issue you should consider using
-[libsumo](Libsumo.md) instead. You can also start with TraCI and switch
+[libsumo](../Libsumo.md) instead. You can also start with TraCI and switch
 to libsumo later, since the function signatures are the same.
 
 ## Using TraCI
@@ -16,19 +16,19 @@ to libsumo later, since the function signatures are the same.
 ### SUMO startup
 
 TraCI uses a TCP based client/server architecture to provide access to
-[sumo](sumo.md). Thereby, [sumo](sumo.md) acts as server
+[sumo](../sumo.md). Thereby, [sumo](../sumo.md) acts as server
 that is started with additional command-line options: **--remote-port** {{DT_INT}} where {{DT_INT}} is the
-port [sumo](sumo.md) will listen on for incoming connections.
+port [sumo](../sumo.md) will listen on for incoming connections.
 
-When started with the **--remote-port** {{DT_INT}} option, [sumo](sumo.md) only prepares the
+When started with the **--remote-port** {{DT_INT}} option, [sumo](../sumo.md) only prepares the
 simulation and waits for all external applications to connect and take
 over the control. Please note, that the **--end** {{DT_TIME}} option is ignored when
-[sumo](sumo.md) runs as a TraCI server, [sumo](sumo.md)
+[sumo](../sumo.md) runs as a TraCI server, [sumo](../sumo.md)
 runs until the client demands a simulation end.
 
-When using [sumo-gui](sumo-gui.md) as a server, the simulation
+When using [sumo-gui](../sumo-gui.md) as a server, the simulation
 must either be started by using the [*play*
-button](sumo-gui.md#usage_description) or by setting the option **--start**
+button](../sumo-gui.md#usage_description) or by setting the option **--start**
 before TraCI commands will be processed.
 
 ### Multiple clients
@@ -37,7 +37,7 @@ The number of clients which can connect can be given as an additional
 option **--num-clients** {{DT_INT}}, where 1 is the default. Please note that in multi client
 scenarios you must explicitly specify the execution order of the clients
 using the
-[*SetOrder*-command](TraCI/Control-related_commands.md#command_0x03_setorder).
+[*SetOrder*-command](Control-related_commands.md#command_0x03_setorder).
 
 Each client must specify a unique (but otherwise arbitrary) integer value
 and the client commands will be handled in the order from the lowest to
@@ -50,128 +50,128 @@ The clients are automatically synchronized after every simulation step. This mea
 
 ### Protocol specification
 
-Please see the [TraCI Protocol Specification](TraCI/Protocol.md)
-(including [Basic Flow](TraCI/Protocol.md#basic_flow),
-[Messages](TraCI/Protocol.md#messages), [Data
-Types](TraCI/Protocol.md#data_types)).
+Please see the [TraCI Protocol Specification](Protocol.md)
+(including [Basic Flow](Protocol.md#basic_flow),
+[Messages](Protocol.md#messages), [Data
+Types](Protocol.md#data_types)).
 
 ### Shutdown
 
-When using TraCI, the **--end** option of [sumo](sumo.md) is ignored.
+When using TraCI, the **--end** option of [sumo](../sumo.md) is ignored.
 Instead the simulation is closed by issuing the [*close*
-command](TraCI/Control-related_commands.md#command_0x7f_close).
+command](Control-related_commands.md#command_0x7f_close).
 To detect whether all route files have been exhausted and all vehicles
 have left the simulation, one can check whether the command
-[getMinExpectedNumber](TraCI/Simulation_Value_Retrieval.md)
+[getMinExpectedNumber](Simulation_Value_Retrieval.md)
 returns 0. The simulation will end as soon as all clients have sent the
 *close* command.
 
 It is also possible to reload the simulation with a new list of
 arguments by using the
-[*load*-command](TraCI/Control-related_commands.md#command_0x01_load).
+[*load*-command](Control-related_commands.md#command_0x01_load).
 
 ## TraCI Commands
 
-- [Control-related commands](TraCI/Control-related_commands.md): perform a
+- [Control-related commands](Control-related_commands.md): perform a
   simulation step, close the connection, reload the simulation.
-- [Generic Parameters](TraCI/GenericParameters.md)
+- [Generic Parameters](GenericParameters.md)
 
 For the following APIs, the ID is equal to the ID defined in
-[sumo](sumo.md)'s input files. Here, you find their [general
-structure](TraCI/SUMO_ID_Commands_Structure.md).
+[sumo](../sumo.md)'s input files. Here, you find their [general
+structure](SUMO_ID_Commands_Structure.md).
 
 ### Value Retrieval
 
 - Traffic Objects
-  - [Vehicle Value Retrieval](TraCI/Vehicle_Value_Retrieval.md) retrieve
+  - [Vehicle Value Retrieval](Vehicle_Value_Retrieval.md) retrieve
     information about vehicles
-  - [Person Value Retrieval](TraCI/Person_Value_Retrieval.md) retrieve
+  - [Person Value Retrieval](Person_Value_Retrieval.md) retrieve
     information about persons
-  - [Vehicle Type Value Retrieval](TraCI/VehicleType_Value_Retrieval.md)
+  - [Vehicle Type Value Retrieval](VehicleType_Value_Retrieval.md)
     retrieve information about vehicle types
-  - [Route Value Retrieval](TraCI/Route_Value_Retrieval.md)
+  - [Route Value Retrieval](Route_Value_Retrieval.md)
     retrieve information about routes
 - Detectors and Outputs
-  - [Induction Loop Value Retrieval](TraCI/Induction_Loop_Value_Retrieval.md)
+  - [Induction Loop Value Retrieval](Induction_Loop_Value_Retrieval.md)
     retrieve information about induction loops
-  - [Lane Area Detector Value Retrieval](TraCI/Lane_Area_Detector_Value_Retrieval.md)
+  - [Lane Area Detector Value Retrieval](Lane_Area_Detector_Value_Retrieval.md)
     retrieve information about lane area detectors
-  - [Multi-Entry-Exit Detectors Value Retrieval](TraCI/Multi-Entry-Exit_Detectors_Value_Retrieval.md)
+  - [Multi-Entry-Exit Detectors Value Retrieval](Multi-Entry-Exit_Detectors_Value_Retrieval.md)
     retrieve information about multi-entry/multi-exit detectors
-  - [Calibrator Value Retrieval](TraCI/Calibrator.md)
+  - [Calibrator Value Retrieval](Calibrator.md)
     retrieve information about calibrators
-  - [RouteProbe](TraCI/RouteProbe.md)
+  - [RouteProbe](RouteProbe.md)
     retrieve information about the RouteProbe
 - Network
-  - [Junction Value Retrieval](TraCI/Junction_Value_Retrieval.md) retrieve
+  - [Junction Value Retrieval](Junction_Value_Retrieval.md) retrieve
     information about junctions
-  - [Edge Value Retrieval](TraCI/Edge_Value_Retrieval.md)
+  - [Edge Value Retrieval](Edge_Value_Retrieval.md)
     retrieve information about edges
-  - [Lane Value Retrieval](TraCI/Lane_Value_Retrieval.md)
+  - [Lane Value Retrieval](Lane_Value_Retrieval.md)
     retrieve information about lanes
 - Infrastructure
-  - [Traffic Lights Value Retrieval](TraCI/Traffic_Lights_Value_Retrieval.md)
+  - [Traffic Lights Value Retrieval](Traffic_Lights_Value_Retrieval.md)
     retrieve information about traffic lights
-  - [BusStop Value Retrieval](TraCI/BusStop.md)
+  - [BusStop Value Retrieval](BusStop.md)
     retrieve information about BusStops
-  - [Charging Station Value Retrieval](TraCI/ChargingStation.md)
+  - [Charging Station Value Retrieval](ChargingStation.md)
     retrieve information about charging stations
-  - [Parking Area Value Retrieval](TraCI/ParkingArea.md)
+  - [Parking Area Value Retrieval](ParkingArea.md)
     retrieve information about parking areas
-  - [Overhead Wire Value Retrieval](TraCI/OverheadWire.md)
+  - [Overhead Wire Value Retrieval](OverheadWire.md)
     retrieve information about overhead wires
-  - [Rerouter](TraCI/Rerouter.md)
+  - [Rerouter](Rerouter.md)
     retrieve information about the rerouter
 - Misc
-  - [Simulation Value Retrieval](TraCI/Simulation_Value_Retrieval.md) retrieve
+  - [Simulation Value Retrieval](Simulation_Value_Retrieval.md) retrieve
     information about the simulation
-  - [GUI Value Retrieval](TraCI/GUI_Value_Retrieval.md)
+  - [GUI Value Retrieval](GUI_Value_Retrieval.md)
     retrieve information about the simulation visualization
-  - [PoI Value Retrieval](TraCI/POI_Value_Retrieval.md)
+  - [PoI Value Retrieval](POI_Value_Retrieval.md)
     retrieve information about points-of-interest
-  - [Polygon Value Retrieval](TraCI/Polygon_Value_Retrieval.md)
+  - [Polygon Value Retrieval](Polygon_Value_Retrieval.md)
     retrieve information about polygons
 
 
 ###  State Changing
 
 - Traffic Objects
-  - [Change Vehicle State](TraCI/Change_Vehicle_State.md)
+  - [Change Vehicle State](Change_Vehicle_State.md)
     change a vehicle's state
-  - [Change Person State](TraCI/Change_Person_State.md)
+  - [Change Person State](Change_Person_State.md)
     change a persons state
   - [Change Vehicle Type
-    State](TraCI/Change_VehicleType_State.md) change a
+    State](Change_VehicleType_State.md) change a
     vehicle type's state
-  - [Change Route State](TraCI/Change_Route_State.md) change
+  - [Change Route State](Change_Route_State.md) change
     a route's state
 - Detectors and Outputs
-  - [Change Calibrator State](TraCI/Change_Calibrator_State.md) change a
+  - [Change Calibrator State](Change_Calibrator_State.md) change a
     calibrator state
-  - [Change Inductionloop State](TraCI/Change_Inductionloop_State.md) change a
+  - [Change Inductionloop State](Change_Inductionloop_State.md) change a
     inductionloop state
-  - [Change Lane Area Detector State](TraCI/Change_Lane_Area_Detector_State.md) change a
+  - [Change Lane Area Detector State](Change_Lane_Area_Detector_State.md) change a
     lane area detector state
 - Network
-  - [Change Edge State](TraCI/Change_Edge_State.md) change
+  - [Change Edge State](Change_Edge_State.md) change
     an edge's state
-  - [Change Lane State](TraCI/Change_Lane_State.md) change a
+  - [Change Lane State](Change_Lane_State.md) change a
     lane's state
 - Infrastructure
   - [Change Traffic Lights
-    State](TraCI/Change_Traffic_Lights_State.md) change a
+    State](Change_Traffic_Lights_State.md) change a
     traffic lights' state
-  - [Change Charging Station State](TraCI/Change_ChargingStation_State.md) change a charging stations's attributes
-  - [Change Parking Area State](TraCI/Change_ParkingArea_State.md) change parking area attributes
+  - [Change Charging Station State](Change_ChargingStation_State.md) change a charging stations's attributes
+  - [Change Parking Area State](Change_ParkingArea_State.md) change parking area attributes
 - Misc
   - [Change Simulation
-    State](TraCI/Change_Simulation_State.md) change the
+    State](Change_Simulation_State.md) change the
     simulation
-  - [Change GUI State](TraCI/Change_GUI_State.md) change the
+  - [Change GUI State](Change_GUI_State.md) change the
     simulation visualization
-  - [Change PoI State](TraCI/Change_PoI_State.md) change a
+  - [Change PoI State](Change_PoI_State.md) change a
     point-of-interest's state (or add/remove one)
-  - [Change Polygon State](TraCI/Change_Polygon_State.md)
+  - [Change Polygon State](Change_Polygon_State.md)
     change a polygon's state (or add/remove one)
 
 ### Subscriptions
@@ -179,11 +179,11 @@ structure](TraCI/SUMO_ID_Commands_Structure.md).
 Subscriptions are a way to get notified repeatedly about changes in variables.
 They are applicable to all variables mentioned in the respective value retrieval section
 of the domain in question unless noted otherwise.
-For details see the separate page on [object variable subscription](TraCI/Object_Variable_Subscription.md).
+For details see the separate page on [object variable subscription](Object_Variable_Subscription.md).
 
 It is also possible to subscribe to values of objects
 surrounding another object (e.g. all vehicles around a certain junction).
-This is called [context subscription](TraCI/Object_Context_Subscription.md).
+This is called [context subscription](Object_Context_Subscription.md).
 
 Subscriptions may be faster than repeated value retrieval, see the section on [Performance](#performance).
 
@@ -192,7 +192,7 @@ Subscriptions may be faster than repeated value retrieval, see the section on [P
 
 Normally, TraCI is used to couple multiple processes: A SUMO server
 process and one or more TraCI client processes. Alternatively,
-[Libsumo](Libsumo.md) can be used to embed SUMO as a library
+[Libsumo](../Libsumo.md) can be used to embed SUMO as a library
 into the client process. This allows using the same method signatures as
 in the client libraries but avoids the overhead of socket communication.
 Libsumo supports generating client libraries using
@@ -203,11 +203,11 @@ bindings are included when downloading a sumo-build.
 ## Example use
 
 - There is a [tutorial on using TraCI for adaptive traffic
-  lights](Tutorials/TraCI4Traffic_Lights.md) (using Python).
-- The [Tutorials/CityMobil](Tutorials/CityMobil.md) tutorial
+  lights](../Tutorials/TraCI4Traffic_Lights.md) (using Python).
+- The [Tutorials/CityMobil](../Tutorials/CityMobil.md) tutorial
   uses TraCI for assigning new routes to vehicles (using Python).
 - The
-  [Tutorials/TraCIPedCrossing](Tutorials/TraCIPedCrossing.md)
+  [Tutorials/TraCIPedCrossing](../Tutorials/TraCIPedCrossing.md)
   tutorial uses TraCI for building a crossing with a pedestrian
   triggered traffic light.
 
@@ -215,17 +215,17 @@ bindings are included when downloading a sumo-build.
 
 ### Interfaces by Programming Language
 
-- Python: [the python module traci](TraCI/Interfacing_TraCI_from_Python.md) allows
-  to interact with [sumo](sumo.md) using Python (This library
+- Python: [the python module traci](Interfacing_TraCI_from_Python.md) allows
+  to interact with [sumo](../sumo.md) using Python (This library
   is part of the sumo source code and all releases, is tested daily and supports all TraCI commands).
   It is also [available on PyPI](https://pypi.org/project/traci/) and can thus be installed
   using `pip install traci`.
-- C++: [libtraci](Libtraci.md) is a client library that is part of the [sumo](sumo.md)-source tree. It is fully API-compatible with [libsumo](Libsumo.md).
-- C++: [The C++ TraCIAPI](TraCI/C++TraCIAPI.md) is a client
-  library that is part of the [sumo](sumo.md)-source tree. (API
+- C++: [libtraci](../Libtraci.md) is a client library that is part of the [sumo](../sumo.md)-source tree. It is fully API-compatible with [libsumo](../Libsumo.md).
+- C++: [The C++ TraCIAPI](C++TraCIAPI.md) is a client
+  library that is part of the [sumo](../sumo.md)-source tree. (API
   coverage is good but this client is no longer updated. Please use libtraci instead.)
 - C++: [The Veins project](https://veins.car2x.org) provides a
-  middle-ware for coupling [sumo](sumo.md) with
+  middle-ware for coupling [sumo](../sumo.md) with
   [OMNET++](https://omnetpp.org/). As part of the infrastructure it
   provides a C++ client library for the TraCI API (API completeness is
   a bit behind the python client).
@@ -240,23 +240,23 @@ bindings are included when downloading a sumo-build.
   {{SUMO}}*/tools/contributed/traci4matlab*
   Not all TraCI commands have been implemented. It is recommended to
   [use the python client](https://mathworks.com/help/matlab/call-python-libraries.html) from inside Matlab instead.
-- Java: [libtraci](Libtraci.md) is a client library that is part of the [sumo](sumo.md)-source tree.
-  It is fully API-compatible with [libsumo](Libsumo.md) and a SUMO release provides pro-compiled Java bindings (via SWIG).
-- Java: [TraaS](TraCI/TraaS.md#java_client) provides a client
-  library that is part of the [sumo](sumo.md)-source tree (API
+- Java: [libtraci](../Libtraci.md) is a client library that is part of the [sumo](../sumo.md)-source tree.
+  It is fully API-compatible with [libsumo](../Libsumo.md) and a SUMO release provides pro-compiled Java bindings (via SWIG).
+- Java: [TraaS](TraaS.md#java_client) provides a client
+  library that is part of the [sumo](../sumo.md)-source tree (API
   coverage is large but this client is no longer updated. Use libtraci instead)
 - Others: Any language that is supported by [SWIG](https://swig.org/) can in principle use the bindings provided by libsumo or libtraci.
 
 ### V2X simulation
 
-TraCI allows to use [sumo](sumo.md) in combination with
+TraCI allows to use [sumo](../sumo.md) in combination with
 communication network simulators for simulating [vehicular
-communication](Topics/V2X.md). See
-[Topics/V2X](Topics/V2X.md) for a list of available solutions.
+communication](../Topics/V2X.md). See
+[Topics/V2X](../Topics/V2X.md) for a list of available solutions.
 
 ### Other Resources
 
-- [sumo](sumo.md)'s TraCI Server is a part of the plain
+- [sumo](../sumo.md)'s TraCI Server is a part of the plain
   distribution. The source code is located in the folder
   `src/traci-server`.
 
@@ -285,7 +285,7 @@ depends on many factors:
 - client language
 
 !!! note
-    Please always consider using [libsumo](Libsumo.md) if performance is important.
+    Please always consider using [libsumo](../Libsumo.md) if performance is important.
     While it is much faster in general, not all optimizations mentioned below are applicable to libsumo as well.
     Especially subscriptions might even turn out to be slower.
 
@@ -304,7 +304,7 @@ while traci.simulation.getMinExpectedNumber() > 0:
 - This script is able to process about 25000 vehicles per second.
 - The same value retrieval can also be sped up to 50000 vehicles per
   second by using
-  [subscriptions](TraCI/Object_Variable_Subscription.md):
+  [subscriptions](Object_Variable_Subscription.md):
 
 ```py
 while traci.simulation.getMinExpectedNumber() > 0:
@@ -315,7 +315,7 @@ while traci.simulation.getMinExpectedNumber() > 0:
 ```
 
 When using this script on the [Bologna
-scenario](Data/Scenarios.md#bologna) (9000 vehicles, 5000
+scenario](../Data/Scenarios.md#bologna) (9000 vehicles, 5000
 simulation steps) the following running times were recorded:
 
 - without TraCI 8s
@@ -355,13 +355,13 @@ the client wait for the simulation to shut down. The bug report was #524
 
 ### Obsolete APIs
 
-There used to be two "generations" of [TraCI](TraCI.md)
+There used to be two "generations" of TraCI
 commands. The first one mainly uses an internal mapping between the
-string-typed IDs used in [sumo](sumo.md) and an external
+string-typed IDs used in [sumo](../sumo.md) and an external
 representation of these which is int-based. The mapping was done
-internally (within [TraCI](TraCI.md)).
+internally (within TraCI).
 The second "generation", the current one uses string-IDs equal to
-those [sumo](sumo.md) reads. If you are bound to the first
+those [sumo](../sumo.md) reads. If you are bound to the first
 generation API (for instance if you want to use TraNS) you can only
-use [sumo](sumo.md) up to version 0.12.3. See
-[FAQ](FAQ.md) about obtaining an old version.
+use [sumo](../sumo.md) up to version 0.12.3. See
+[FAQ](../FAQ.md) about obtaining an old version.

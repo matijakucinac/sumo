@@ -90,7 +90,7 @@ teleported a leave event without occupancy is generated.
 ## Further Notes
 
 - Instantaneous induct loops are not directly supported by
-  [TraCI](../../TraCI.md). As [Simulated induction loops can be
+  [TraCI](../../TraCI/index.md). As [Simulated induction loops can be
   accessed using
   TraCI](../../TraCI/Induction_Loop_Value_Retrieval.md) allows a
   per-second value retrieval from plain [induction
