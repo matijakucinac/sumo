@@ -162,6 +162,7 @@ private:
     double myGapControlGainSpace;
     double myCollisionAvoidanceGainSpeed;
     double myCollisionAvoidanceGainSpace;
+    double myApplyDriverstate;
     double myEmergencyThreshold;
 
 private:
