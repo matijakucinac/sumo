@@ -1996,6 +1996,9 @@ MSBaseVehicle::abortNextStop(int nextStopIndex) {
         } else {
             auto stopIt = myStops.begin();
             std::advance(stopIt, nextStopIndex);
+            if (stopIt->parkingarea != nullptr && stopIt->parkingarea->isReservable()) {
+                stopIt->parkingarea->removeSpaceReservation(this);
+            }
             myStops.erase(stopIt);
         }
         if (!hasDeparted() && (int)myParameter->stops.size() > nextStopIndex) {
@@ -2080,6 +2083,7 @@ MSBaseVehicle::replaceStop(int nextStopIndex, SUMOVehicleParameter::Stop stop, c
         }
     }
 
+    cleanupParkingReservation();
     const_cast<SUMOVehicleParameter::Stop&>(replacedStop.pars) = stop;
     replacedStop.initPars(stop);
     replacedStop.edge = myRoute->end(); // will be patched in replaceRoute
