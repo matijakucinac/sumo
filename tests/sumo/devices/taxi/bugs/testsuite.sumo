@@ -33,3 +33,6 @@ ticket17166b
 
 # default transfer options
 ticket17168
+
+# travelTime estimate must use getRerouteOrigin
+ticket17629
