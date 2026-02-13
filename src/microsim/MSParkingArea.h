@@ -203,6 +203,10 @@ public:
     /// @{
     void addSpaceReservation(const SUMOVehicle* veh);
     void removeSpaceReservation(const SUMOVehicle* veh);
+
+    const std::set<const SUMOVehicle*>& getRemoteReservedVehicles() const {
+        return myRemoteReservedVehicles;
+    }
     /// @}
 
     /** @brief Called at the end of the time step

@@ -137,6 +137,11 @@ public:
         return mySignPos;
     }
 
+
+    /// @brief return list of remote reservation ids
+    int getNumReservations() const;
+    const std::string getReservationString() const;
+
 private:
     /// @brief The rotations of the shape parts
     std::vector<double> myShapeRotations;

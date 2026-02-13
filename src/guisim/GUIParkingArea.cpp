@@ -114,6 +114,10 @@ GUIParkingArea::getParameterWindow(GUIMainWindow& app,
     ret->mkItem(TL("capacity [#]"), false, getCapacity());
     ret->mkItem(TL("alternatives [#]"), false, getNumAlternatives());
     ret->mkItem(TL("access badges"), false, joinToString(myAcceptedBadges, " "));
+    if (isReservable()) {
+        ret->mkItem(TL("reservations [#]"), true, getNumReservations());
+        ret->mkItem(TL("reservation ids"), true, getReservationString());
+    }
     // close building
     ret->closeBuilding();
     return ret;
@@ -232,5 +236,14 @@ GUIParkingArea::getOptionalName() const {
     return myName;
 }
 
+int
+GUIParkingArea::getNumReservations() const {
+    return (int)getRemoteReservedVehicles().size();
+}
+
+const std::string
+GUIParkingArea::getReservationString() const {
+    return toString(getRemoteReservedVehicles());
+}
 
 /****************************************************************************/
