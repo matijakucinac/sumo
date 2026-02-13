@@ -47,13 +47,13 @@ def parse_args():
     ap.add_option("-w", "--width", type=float, default=8.,
                   help="width of generated solitary edges")
     ap.add_option("-j", "--join-stations", action="store_true", dest="join", default=False,
-                    help="Create a single edge for all stops with the same name")
+                  help="Create a single edge for all stops with the same name")
     ap.add_option("-b", "--build", action="store_true", default=False,
-                    help="Build a new network and stop file")
+                  help="Build a new network and stop file")
     ap.add_option("-f", "--access-factor", type=float, dest="accessFactor", default=0,
-                    help="Declare factor that computes access distance as a factor of airline-distance (default 0)")
+                  help="Declare factor that computes access distance as a factor of airline-distance (default 0)")
     ap.add_option("--access-radius", type=float, dest="accessRadius",
-                    help="Overrides access search distance")
+                  help="Overrides access search distance")
     # optParser.add_option("-d", "--cluster-dist", type=float, default=500., help="length of generated edges")
     options = ap.parse_args()
     return options
@@ -94,7 +94,7 @@ def main(options):
                         for stopID in stopIDs:
                             x, y = stop_coords[stopID]
                             options.accessRadius = max(options.accessRadius,
-                                    euclidean((x, y), (mean_x, mean_y)))
+                                                       euclidean((x, y), (mean_x, mean_y)))
                     edge_id = name + "_access"
                     from_id = edge_id + '_from'
                     to_id = edge_id + '_to'
