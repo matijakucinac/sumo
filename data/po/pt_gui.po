@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-12 20:10+0000\n"
+"PO-Revision-Date: 2026-02-13 13:43+0000\n"
 "Last-Translator: João Pedro Egidio da Silva <joao.egidio@joinville.sc.gov.br>"
 "\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/eclipse-sumo/"
@@ -13417,6 +13417,9 @@ msgid ""
 " select at least\n"
 " one element"
 msgstr ""
+"- Esse elemento adicional requer que\n"
+" selecione pelo menos\n"
+" um elemento"
 
 #: src/netedit/frames/GNEViewObjectSelector.cpp:85
 #, c-format
@@ -13753,7 +13756,7 @@ msgstr ""
 
 #: src/netedit/frames/common/GNEMoveFrame.cpp:655
 msgid "Click over edge to create or edit geometry point."
-msgstr ""
+msgstr "Clique sobre a aresta para criar ou editar o ponto geométrico."
 
 #: src/netedit/frames/common/GNEMoveFrame.cpp:656
 msgid "Shift+click over edge to edit start or end geometry point."
@@ -13851,7 +13854,7 @@ msgstr "adicionar"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:158
 msgid "Selected objects are added to the previous selection"
-msgstr ""
+msgstr "Os objetos selecionados serão adicionados à seleção anterior"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:160
 msgid "remove"
@@ -13859,7 +13862,7 @@ msgstr "remover"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:160
 msgid "Selected objects are removed from the previous selection"
-msgstr ""
+msgstr "Os objetos selecionados serão removidos da seleção anterior"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:162
 #: src/netedit/frames/network/GNETAZFrame.cpp:652
@@ -13904,7 +13907,7 @@ msgstr "Inverter estado de seleção de todo os objetos"
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:261
 msgid "Save ids of currently selected objects to a file."
-msgstr ""
+msgstr "Salvar IDs dos objetos selecionados em um arquivo."
 
 #: src/netedit/frames/common/GNESelectorFrame.cpp:263
 msgid "Load ids from a file according to the current modification mode."
@@ -14215,23 +14218,23 @@ msgstr "Shift+Clique para selecionar elemento pai"
 
 #: src/netedit/frames/demand/GNEStopFrame.cpp:77
 msgid "Click over a bus stop to create a stop."
-msgstr ""
+msgstr "Clique sobre uma parada de ônibus para criar uma parada."
 
 #: src/netedit/frames/demand/GNEStopFrame.cpp:83
 msgid "Click over a train stop to create a stop."
-msgstr ""
+msgstr "Clique sobre uma parada de trem para criar uma parada."
 
 #: src/netedit/frames/demand/GNEStopFrame.cpp:89
 msgid "Click over a container stop to create a stop."
-msgstr ""
+msgstr "Clique sobre uma parada de container para criar uma parada."
 
 #: src/netedit/frames/demand/GNEStopFrame.cpp:95
 msgid "Click over a charging station to create a stop."
-msgstr ""
+msgstr "Clique sobre uma estação de carregamento para criar uma parada."
 
 #: src/netedit/frames/demand/GNEStopFrame.cpp:101
 msgid "Click over a parking area to create a stop."
-msgstr ""
+msgstr "Clique sobre uma área de estacionamento para criar uma parada."
 
 #: src/netedit/frames/demand/GNEStopFrame.cpp:107
 msgid "Click over a lane to create a stop."
@@ -14272,7 +14275,7 @@ msgstr "A parada deve ser colocada sobre uma aresta da rota"
 
 #: src/netedit/frames/demand/GNEStopFrame.cpp:389
 msgid "Stop must be placed over an embedded route's edge"
-msgstr ""
+msgstr "A parda deve ser colocada sobre uma aresta da rota integrada"
 
 #: src/netedit/frames/demand/GNETypeDistributionFrame.cpp:30
 msgid "Type Distributions"
@@ -14443,12 +14446,12 @@ msgstr ""
 
 #: src/netedit/frames/network/GNEAdditionalFrame.cpp:286
 msgid "E2 multilane detectors need at least two consecutive lanes"
-msgstr ""
+msgstr "Detectores multifaixa E2 precisam de pelo menos duas faixas cosecutivas"
 
 #: src/netedit/frames/network/GNEAdditionalFrame.cpp:430
 #: src/netedit/frames/network/GNEWireFrame.cpp:204
 msgid "A % must be selected before insertion of %."
-msgstr ""
+msgstr "Um % deve ser selecionado antes da inserção de %."
 
 #: src/netedit/frames/network/GNEConnectorFrame.cpp:69
 #: src/netedit/frames/network/GNEConnectorFrame.cpp:79
@@ -14559,6 +14562,7 @@ msgstr "reestabelecer conexões das faixas selecionadas"
 msgid ""
 "Hold <SHIFT> while clicking to create unyielding connections (pass=true)."
 msgstr ""
+"Segure <SHIFT> enquanto clica para criar conexões com prioridade (pass=true)."
 
 #: src/netedit/frames/network/GNEConnectorFrame.cpp:320
 msgid ""
@@ -14745,7 +14749,7 @@ msgstr "Uma aresta com a mesmo geometria já existe!"
 
 #: src/netedit/frames/network/GNECreateEdgeFrame.cpp:807
 msgid "Start- and endpoint for an edge must be distinct!"
-msgstr ""
+msgstr "O ponto inicial e final de uma aresta devem ser diferentes!"
 
 #: src/netedit/frames/network/GNECrossingFrame.cpp:71
 msgid "Edited"
@@ -14865,7 +14869,7 @@ msgstr "Tem direito de passagem"
 
 #: src/netedit/frames/network/GNEProhibitionFrame.cpp:114
 msgid "Connection has right of way with the selected connection"
-msgstr ""
+msgstr "A conexão tem direito de passagem sobre a conexão selecionada"
 
 #: src/netedit/frames/network/GNEProhibitionFrame.cpp:119
 msgid "Unregulated conflict"
@@ -14874,6 +14878,7 @@ msgstr "Conflito não regulado"
 #: src/netedit/frames/network/GNEProhibitionFrame.cpp:120
 msgid "Connection has an unregulated conflict with the selected connection"
 msgstr ""
+"A conexão possui um conflito não regulamentado com a conexão selecionada"
 
 #: src/netedit/frames/network/GNEProhibitionFrame.cpp:125
 msgid "Mutual conflict"
@@ -14881,7 +14886,7 @@ msgstr "Conflito mútuo"
 
 #: src/netedit/frames/network/GNEProhibitionFrame.cpp:126
 msgid "Connection has a mutual conflict with the selected connection"
-msgstr ""
+msgstr "A conexão tem um conflito mútuo com a conexão selecionada"
 
 #: src/netedit/frames/network/GNEProhibitionFrame.cpp:175
 msgid "Save prohibition modifications (Enter)"
@@ -15416,11 +15421,11 @@ msgstr "O semáforo não pode ser criado"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1580
 msgid "Traffic Light cannot be created because junction must have"
-msgstr ""
+msgstr "O semáforo não pode ser criado porque a junção precisa ter"
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1581
 msgid "at least one incoming edge and one outgoing edge."
-msgstr ""
+msgstr "pelo menos uma aresta de entrada e uma aresta de saída."
 
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1590
 #: src/netedit/frames/network/GNETLSEditorFrame.cpp:1606
@@ -15576,6 +15581,7 @@ msgstr "Um % precisa de pelo menos duas posições de faixa"
 #: src/netedit/frames/network/GNEWireFrame.cpp:232
 msgid "Currently unsupported. Create VSS steps elements using VSS dialog"
 msgstr ""
+"Atualmente não suportado. Crie elementos de passos VSS usando a janela de VSS"
 
 #: src/netedit/netedit_main.cpp:49
 msgid ""
