@@ -42,3 +42,6 @@ getSpentDuration
 
 # the function should still work after calling setRedYellowGreenState  (#17598)
 getSpentDuration2
+
+# the function should reset when switching between programs
+getSpentDuration3
