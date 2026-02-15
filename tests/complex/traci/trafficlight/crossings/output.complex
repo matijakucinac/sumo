@@ -110,7 +110,7 @@ links ((('NC_2', 'CW_2', ':C_0_0'),), (('NC_2', 'CS_2', ':C_1_0'),), (('NC_3', '
 program online
 phase 0
 phaseName ''
-switch 87.0
+switch 86486.0
 duration 86400.0
 set ryg rrrrurgGgGGgrrrrurgGgGGgGrGr
 program online

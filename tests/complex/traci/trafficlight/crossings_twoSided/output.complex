@@ -32,7 +32,7 @@ links ((('EC_0', 'CW_0', ':C_0_0'),), (('EC_1', 'CW_1', ':C_0_1'),), (('WC_0', '
 program online
 phase 0
 phaseName ''
-switch 7.0
+switch 86406.0
 duration 86400.0
 set ryg rrrrurrr
 program online
