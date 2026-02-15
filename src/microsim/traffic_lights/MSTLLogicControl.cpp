@@ -179,6 +179,7 @@ MSTLLogicControl::TLSLogicVariants::setStateInstantiatingOnline(MSTLLogicControl
     MSTrafficLightLogic* logic = getLogic(TRACI_PROGRAM);
     if (logic == nullptr) {
         MSPhaseDefinition* phase = new MSPhaseDefinition(SUMOTime_DAY, state);
+        phase->earliestEnd = SUMOTime_DAY; // prevent immediate switch
         std::vector<MSPhaseDefinition*> phases;
         phases.push_back(phase);
         logic = new MSSimpleTrafficLightLogic(tlc, myCurrentProgram->getID(), TRACI_PROGRAM, 0, TrafficLightType::STATIC, phases, 0,
