@@ -218,7 +218,7 @@ MSIdling_TaxiStand::idle(MSDevice_Taxi* taxi) {
             //std::cout << SIMTIME << " taxistandsVeh=" << veh.getID() << "  driving to parkingArea " << pa->getID() << "\n";
             myRerouter->triggerRouting(veh, MSMoveReminder::NOTIFICATION_PARKING_REROUTE);
         }
-    } else {
+    } else if (!MSGlobals::gUseMesoSim) {
         //std::cout << SIMTIME << " taxistandsVeh=" << veh.getID() << "  already driving to parkingArea\n";
         MSParkingArea* pa = lastStop->parkingarea;
         if (taxi->getHolder().isStopped() && pa->mustAdvance(taxi->getHolder().getVClass())) {
