@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-02-16T11:02:55.888420+01:00 by Eclipse SUMO sumo v1_26_0+0227-cd4ae2d810d
+<!-- generated on 2026-02-16T14:11:40.699473+01:00 by Eclipse SUMO sumo v1_26_0+0231-c31a9327477
 This data file and the accompanying materials
 are made available under the terms of the Eclipse Public License v2.0
 which accompanies this distribution, and is available at
@@ -49,31 +49,43 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <person id="p.0" depart="100.00" arrival="610.00">
+    <person id="p.0" depart="100.00" arrival="360.00">
         <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
     </person>
 
-    <person id="p.1" depart="300.00" arrival="612.00">
+    <person id="p.1" depart="300.00" arrival="536.00">
         <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
     </person>
 
-    <person id="p.2" depart="500.00" arrival="1205.00">
+    <person id="p.2" depart="500.00" arrival="780.00">
         <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
     </person>
 
-    <person id="p.3" depart="700.00" arrival="1569.00">
+    <person id="p.3" depart="700.00" arrival="937.00">
         <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
     </person>
 
-    <person id="p.4" depart="900.00" arrival="1570.00">
+    <person id="p.4" depart="900.00" arrival="1138.00">
         <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
     </person>
 
-    <person id="p.5" depart="1100.00" arrival="1571.00">
+    <person id="p.5" depart="1100.00" arrival="1381.00">
         <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
     </person>
 
-    <person id="p.6" depart="1300.00" arrival="1573.00">
+    <person id="p.6" depart="1300.00" arrival="1558.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.7" depart="1500.00" arrival="1717.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.8" depart="1700.00" arrival="1977.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.9" depart="1900.00" arrival="2159.00">
         <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
     </person>
 
@@ -82,14 +94,15 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
             <route replacedOnEdge="A0B0" reason="taxi:taxistand" replacedAtTime="0.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="120.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="120.00" probability="0" edges="A0B0 B0C0 D1E1 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="610.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="360.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:prepare_dispatch" replacedAtTime="900.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:dispatch" replacedAtTime="900.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 D1E1 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1570.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1138.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1741.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="rr0:parkingAreaReroute" replacedAtTime="1741.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:prepare_dispatch" replacedAtTime="1920.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:dispatch" replacedAtTime="1920.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 D1E1 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="25" reason="taxi:taxistand" replacedAtTime="2159.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
         </routeDistribution>
         <stop parkingArea="pa_0" actType="idling"/>
@@ -101,6 +114,8 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <stop parkingArea="pa_0" actType="idling"/>
         <stop parkingArea="pa_0" actType="idling"/>
         <stop lane="D1E1_1" permitted="p.9" actType="pickup p.9 (9)"/>
+        <stop busStop="bs_0" actType="dropOff p.9 (9)"/>
+        <stop parkingArea="pa_0" actType="idling"/>
     </vehicle>
 
     <vehicle id="taxi.1" type="taxi" depart="3.00">
@@ -110,11 +125,12 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="121.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="300.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="300.00" probability="0" edges="A0B0 B0C0 D1E1 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="612.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="536.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="901.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="rr0:parkingAreaReroute" replacedAtTime="901.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:prepare_dispatch" replacedAtTime="1140.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:dispatch" replacedAtTime="1140.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 D1E1 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1571.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1381.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1741.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="rr0:parkingAreaReroute" replacedAtTime="1741.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1921.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
@@ -141,11 +157,14 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:taxistand" replacedAtTime="301.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:prepare_dispatch" replacedAtTime="540.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:dispatch" replacedAtTime="540.00" probability="0" edges="A0B0 B0C0 D1E1 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="1205.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="780.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="901.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="rr0:parkingAreaReroute" replacedAtTime="901.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="1141.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:prepare_dispatch" replacedAtTime="1320.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:dispatch" replacedAtTime="1320.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 D1E1 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1573.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="rr0:parkingAreaReroute" replacedAtTime="1576.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1558.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="rr0:parkingAreaReroute" replacedAtTime="1561.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0C0 C0B0 B0C0"/>
         </routeDistribution>
         <stop parkingArea="pa_0" actType="idling"/>
@@ -153,6 +172,8 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <stop parkingArea="pa_0" actType="idling"/>
         <stop lane="D1E1_1" permitted="p.2" actType="pickup p.2 (2)"/>
         <stop busStop="bs_0" actType="dropOff p.2 (2)"/>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" actType="idling"/>
         <stop parkingArea="pa_0" actType="idling"/>
         <stop lane="D1E1_1" permitted="p.6" actType="pickup p.6 (6)"/>
         <stop busStop="bs_0" actType="dropOff p.6 (6)"/>
@@ -165,9 +186,10 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="47.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="C0D0" replacedOnIndex="2" reason="taxi:prepare_dispatch" replacedAtTime="720.00" probability="0" edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0"/>
             <route replacedOnEdge="C0D0" replacedOnIndex="2" reason="taxi:dispatch" replacedAtTime="720.00" probability="0" edges="A0B0 B0C0 C0D0 D1E1 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="1569.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="937.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:prepare_dispatch" replacedAtTime="1740.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:dispatch" replacedAtTime="1740.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 D1E1 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="17" reason="taxi:taxistand" replacedAtTime="1977.00" probability="0" edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
             <route edges="A0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
         </routeDistribution>
         <stop parkingArea="pa_1" actType="idling"/>
@@ -175,6 +197,8 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
         <stop busStop="bs_0" actType="dropOff p.3 (3)"/>
         <stop parkingArea="pa_0" actType="idling"/>
         <stop lane="D1E1_1" permitted="p.8" actType="pickup p.8 (8)"/>
+        <stop busStop="bs_0" actType="dropOff p.8 (8)"/>
+        <stop parkingArea="pa_0" actType="idling"/>
     </vehicle>
 
     <vehicle id="taxi.4" type="taxi" depart="12.00">
@@ -182,25 +206,18 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
             <route replacedOnEdge="A0B0" reason="taxi:taxistand" replacedAtTime="12.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="47.00" probability="0" edges="A0B0 B0C0"/>
             <route replacedOnEdge="C0D0" replacedOnIndex="2" reason="taxi:taxistand" replacedAtTime="721.00" probability="0" edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="5" reason="taxi:prepare_dispatch" replacedAtTime="1500.00" probability="0" edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0"/>
-            <route replacedOnEdge="B0C0" replacedOnIndex="5" reason="taxi:dispatch" replacedAtTime="1500.00" probability="0" edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0 D1E1 B0C0"/>
-            <route edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="5" reason="rr0:parkingAreaReroute" replacedAtTime="786.00" probability="0" edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0D0" replacedOnIndex="6" reason="taxi:prepare_dispatch" replacedAtTime="1500.00" probability="0" edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0 C0D0 D0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0D0" replacedOnIndex="6" reason="taxi:dispatch" replacedAtTime="1500.00" probability="0" edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0 C0D0 D1E1 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="13" reason="taxi:taxistand" replacedAtTime="1717.00" probability="0" edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="13" reason="rr0:parkingAreaReroute" replacedAtTime="1719.00" probability="0" edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0"/>
+            <route edges="A0B0 B0C0 C0D0 D0C0 C0B0 B0C0 C0D0 D0D1 D1E1 E1D1 D1C1 C1B1 B1B0 B0C0 C0D0 D0C0 C0B0 B0C0"/>
         </routeDistribution>
         <stop parkingArea="pa_1" actType="idling"/>
-        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_1" index="2" actType="idling"/>
         <stop lane="D1E1_1" permitted="p.7" actType="pickup p.7 (7)"/>
+        <stop busStop="bs_0" actType="dropOff p.7 (7)"/>
+        <stop parkingArea="pa_1" actType="idling"/>
     </vehicle>
-
-    <person id="p.7" depart="1500.00">
-        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
-    </person>
-
-    <person id="p.8" depart="1700.00">
-        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
-    </person>
-
-    <person id="p.9" depart="1900.00">
-        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
-    </person>
 
 </routes>
