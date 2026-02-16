@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:04+0100\n"
-"PO-Revision-Date: 2026-02-10 18:07+0000\n"
+"PO-Revision-Date: 2026-02-16 18:46+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "applications/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16\n"
 
 #: src/activitygen/AGActivityGen.cpp:46
 msgid "Reading input"
@@ -10001,7 +10001,7 @@ msgstr "Il segnale mancante '%' nella centraline '%' viene ignorato."
 #: src/netimport/NIImporter_OpenDrive.cpp:2792
 #, c-format
 msgid "In laneLink-element: incoming road '%' is not known."
-msgstr ""
+msgstr "Nel elemento laneLink: la via entrante '%' è sconosciuta."
 
 #: src/netimport/NIImporter_OpenDrive.cpp:2682
 msgid "Ignoring object without id at edge '%'."
@@ -10103,6 +10103,8 @@ msgstr "Non ho potuto aggiungere l'arco '-%'."
 msgid ""
 "Discarding unknown compound '%' in type '%' (first occurrence for edge '%')."
 msgstr ""
+"L'insieme sconosciuto '%' nel tipo '%' viene scartato (prima apparizione "
+"nell'arco '%')."
 
 #: src/netimport/NIImporter_OpenStreetMap.cpp:1197
 msgid "Discarding unusable type '%' (first occurrence for edge '%')."
@@ -12114,7 +12116,7 @@ msgstr "Manca il nome del punto di interesse."
 
 #: src/polyconvert/PCLoaderDlrNavteq.cpp:191
 msgid "Invalid dlr-navteq-polygon - line: '%'."
-msgstr ""
+msgstr "Linea dlr-navteq-polygon invalida: '%'."
 
 #: src/polyconvert/PCLoaderDlrNavteq.cpp:220
 #, c-format
@@ -12273,6 +12275,8 @@ msgstr "Scrivi poligoni e punti di interesse generati in FILE"
 #: src/polyconvert/polyconvert_main.cpp:163
 msgid "Write generated polygons/pois to a dlr-tdp file with the given prefix"
 msgstr ""
+"Scrivi i poligoni e punti di interesse generato in un file dlr-tdp usando "
+"questo prefisso"
 
 #: src/polyconvert/polyconvert_main.cpp:169
 #: src/polyconvert/polyconvert_main.cpp:173
