@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: sumo\n"
 "Report-Msgid-Bugs-To: sumo-dev@eclipse.org\n"
 "POT-Creation-Date: 2026-01-25 14:16+0100\n"
-"PO-Revision-Date: 2026-02-15 14:00+0000\n"
+"PO-Revision-Date: 2026-02-16 18:46+0000\n"
 "Last-Translator: Mirko Barthauer <mirko.barthauer@dlr.de>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/eclipse-sumo/"
 "sumo-gui-netedit/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16\n"
 
 #: src/gui/GUIApplicationWindow.cpp:314 src/gui/GUIApplicationWindow.cpp:317
 #: src/gui/GUIApplicationWindow.cpp:2298 src/gui/GUIApplicationWindow.cpp:2299
@@ -2836,7 +2836,7 @@ msgstr "Elemento frontale"
 #: src/netedit/frames/GNEAttributesEditorType.cpp:83
 #: src/netedit/frames/GNEAttributesEditorType.cpp:414
 msgid "Mark element to be drawn above everything else"
-msgstr ""
+msgstr "Segna questo elemento per essere disegnato sopra tutto il resto"
 
 #: src/netedit/GNEApplicationWindow.cpp:2830
 msgid "Unfront all element"
@@ -7487,7 +7487,7 @@ msgstr "parametri"
 #: src/netedit/GNETagPropertiesDatabase.cpp:6264
 #, c-format
 msgid "Angle of waiting %s relative to lane angle"
-msgstr ""
+msgstr "Angolo degli elementi %s in attesa relativo all'angolo della corsia"
 
 #: src/netedit/GNETagPropertiesDatabase.cpp:6271
 msgid "Length of %"
@@ -11060,7 +11060,7 @@ msgstr "Seleziona itinerari invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:77
 msgid "Select invalid routes and stop saving"
-msgstr ""
+msgstr "Seleziona itinerari invalidi e cancella salvataggio"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:81
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:82
@@ -11088,7 +11088,7 @@ msgstr "Rimuovi veicoli invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:191
 msgid "Remove invalid vehicles and save"
-msgstr ""
+msgstr "Rimuovi veicoli invalidi e salvali"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:195
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:196
@@ -11101,7 +11101,7 @@ msgstr "Seleziona veicoli invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:201
 msgid "Select invalid vehicles and stop saving"
-msgstr ""
+msgstr "Seleziona veicoli invalidi e cancella salvataggio"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:206
 msgid "Remove stops out of vehicle's route"
@@ -11133,7 +11133,7 @@ msgstr "Salva fermate contraddittorie"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:315
 msgid "Select conflicted stops and abort saving"
-msgstr ""
+msgstr "Seleziona fermate contraddittorie e cancella salvataggio"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:320
 msgid "Fix stop positions and save"
@@ -11154,12 +11154,12 @@ msgstr "seleziona fermate invalide"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:405
 msgid "Person/container plans"
-msgstr ""
+msgstr "Piani di persone/contenitori"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:408
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:409
 msgid "Remove invalid plans"
-msgstr ""
+msgstr "Rimuovi piani invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:413
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:414
@@ -11172,7 +11172,7 @@ msgstr "Seleziona piani contraddittori"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:419
 msgid "Select conflicted plans and abort saving"
-msgstr ""
+msgstr "Seleziona piani contraddittori e cancella salvataggio"
 
 #: src/netedit/dialogs/fix/GNEFixDemandElementsDialog.cpp:444
 msgid "delete invalid person plans"
@@ -11223,7 +11223,7 @@ msgstr "Seleziona archi invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixNetworkElements.cpp:67
 msgid "Select invalid edges and abort saving"
-msgstr ""
+msgstr "Seleziona archi invalidi e cancella salvataggio"
 
 #: src/netedit/dialogs/fix/GNEFixNetworkElements.cpp:92
 msgid "delete invalid edges"
@@ -11249,7 +11249,7 @@ msgstr "Seleziona passaggi pedonali invalidi"
 
 #: src/netedit/dialogs/fix/GNEFixNetworkElements.cpp:153
 msgid "Select invalid crossing and abort saving"
-msgstr ""
+msgstr "Seleziona passaggi pedonali invalidi e cancella salvataggio"
 
 #: src/netedit/dialogs/fix/GNEFixNetworkElements.cpp:185
 msgid "delete invalid crossings"
@@ -11265,11 +11265,11 @@ msgstr "Correggi problemi di elementi di rete"
 
 #: src/netedit/dialogs/options/GNENeteditOptionsDialog.cpp:40
 msgid "Edit netedit options"
-msgstr ""
+msgstr "Modifica opzioni netedit"
 
 #: src/netedit/dialogs/options/GNENetgenerateOptionsDialog.cpp:40
 msgid "Run netgenerate with advanced options"
-msgstr ""
+msgstr "Esegui netgenerate con opzioni avanzate"
 
 #: src/netedit/dialogs/options/GNEOptionsEditor.cpp:77
 #: src/netedit/dialogs/tools/GNEPythonToolDialog.cpp:68
@@ -11324,7 +11324,7 @@ msgstr "Cerchi anche nella descrizione"
 #: src/netedit/dialogs/tools/GNEPythonToolDialog.cpp:144
 #: src/netedit/dialogs/tools/GNEPythonToolDialog.cpp:160
 msgid "options file"
-msgstr ""
+msgstr "fiel di opzioni"
 
 #: src/netedit/dialogs/options/GNEOptionsEditor.cpp:347
 msgid "Could not load configuration '"
@@ -11353,11 +11353,11 @@ msgstr "Seleziona nome di file"
 #: src/netedit/dialogs/options/GNEOptionsEditorRow.cpp:609
 #: src/netedit/dialogs/tools/GNEPythonToolDialogElements.cpp:215
 msgid "XML file"
-msgstr ""
+msgstr "file XML"
 
 #: src/netedit/dialogs/options/GNESumoOptionsDialog.cpp:40
 msgid "Edit SUMO options"
-msgstr ""
+msgstr "Modifica opzioni sumo"
 
 #: src/netedit/dialogs/run/GNERunDialog.cpp:58
 #: src/netedit/dialogs/tools/GNERunNetgenerateDialog.cpp:69
