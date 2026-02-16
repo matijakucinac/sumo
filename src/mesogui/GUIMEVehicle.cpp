@@ -55,7 +55,10 @@ GUIMEVehicle::GUIMEVehicle(SUMOVehicleParameter* pars, ConstMSRoutePtr route,
 #endif
 
 
-GUIMEVehicle::~GUIMEVehicle() { }
+GUIMEVehicle::~GUIMEVehicle() {
+    gSelected.deselect(GLO_VEHICLE, getGlID());
+    cleanupOnDestruction();
+}
 
 
 GUIParameterTableWindow*

@@ -313,6 +313,9 @@ protected:
     /// @brief build basic additional popup options. Used to unify pop-ups menu in netedit and SUMO-GUI
     void buildAdditionalsPopupOptions(GUIMainWindow& app, GUIGLObjectPopupMenu* ret, const std::string& type);
 
+    /// @brief to be called by child class to ensure cleanup in correct order
+    void cleanupOnDestruction();
+
 private:
     /// @brief The numerical id of the object
     const GUIGlID myGlID;
