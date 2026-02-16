@@ -136,6 +136,9 @@ public:
     /// @brief whether vehicles park on the road
     bool parkOnRoad() const;
 
+    /// @brief whether parked vehicles must advance in a queue
+    bool mustAdvance(SUMOVehicleClass svc) const;
+
     /// @brief whether vehicles may reserve a slot for this parkingArea
     inline bool isReservable() const {
         return myReservable;

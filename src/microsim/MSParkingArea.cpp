@@ -186,7 +186,7 @@ MSParkingArea::getLastFreePos(const SUMOVehicle& forVehicle, double brakePos) co
         }
 #endif
         return myLastFreePos - forVehicle.getVehicleType().getMinGap() - POSITION_EPS;
-    } else if (myOnRoad && cannotChange(forVehicle.getVClass())) {
+    } else if (mustAdvance(forVehicle.getVClass())) {
         // vehicles cannot overtake so we must fill from the downstream end
         int skipN = SIMSTEP == myReservationTime ? myReservations - 1 : 0;
         //std::cout << SIMTIME << " v=" << forVehicle.getID() << " t=" << SIMTIME << " resTime=" << STEPS2TIME(myReservationTime) << " myR=" << myReservations << " skip=" << skipN << " rV=" << toString(myReservedVehicles) << "\n";
@@ -239,6 +239,10 @@ MSParkingArea::getLastFreePos(const SUMOVehicle& forVehicle, double brakePos) co
     }
 }
 
+bool
+MSParkingArea::mustAdvance(SUMOVehicleClass svc) const {
+    return myOnRoad && cannotChange(svc);
+}
 
 bool
 MSParkingArea::cannotChange(SUMOVehicleClass svc) const {
