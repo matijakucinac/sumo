@@ -220,6 +220,16 @@ MSIdling_TaxiStand::idle(MSDevice_Taxi* taxi) {
         }
     } else {
         //std::cout << SIMTIME << " taxistandsVeh=" << veh.getID() << "  already driving to parkingArea\n";
+        MSParkingArea* pa = lastStop->parkingarea;
+        if (taxi->getHolder().isStopped() && pa->mustAdvance(taxi->getHolder().getVClass())) {
+            double vehPos = taxi->getHolder().getPositionOnLane();
+            double targetPos = pa->getLastFreePos(taxi->getHolder(), vehPos);
+            //std::cout << SIMTIME << " veh=" << taxi->getHolder().getID() << " vehPos=" << vehPos << " targetPos=" << targetPos << " cap=" << pa->getCapacity() << " occ=" << pa->getOccupancyIncludingBlocked() << "\n";
+            if (targetPos > vehPos + POSITION_EPS) {
+                taxi->getHolder().abortNextStop();
+                idle(taxi);
+            }
+        }
     }
 }
 

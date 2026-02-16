@@ -206,7 +206,7 @@ MSParkingArea::getLastFreePos(const SUMOVehicle& forVehicle, double brakePos) co
             }
         }
         // should not happen
-        return myEndPos;
+        return brakePos;
     } else {
         const double minPos = MIN2(myEndPos, brakePos);
         if (myLastFreePos >= minPos) {
