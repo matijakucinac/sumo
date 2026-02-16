@@ -1826,7 +1826,11 @@ MSVehicle::processNextStop(double currentVelocity) {
                 }
             }
             const double targetPos = myState.myPos + myStopDist + (stop.getSpeed() > 0 ? (stop.pars.startPos - stop.pars.endPos) : 0);
-            const double reachedThreshold = (useStoppingPlace ? targetPos - STOPPING_PLACE_OFFSET : stop.getReachedThreshold()) - NUMERICAL_EPS;
+            double reachedThreshold = (useStoppingPlace ? targetPos - STOPPING_PLACE_OFFSET : stop.getReachedThreshold()) - NUMERICAL_EPS;
+            if (stop.busstop != nullptr && stop.getSpeed() <= 0 && getWaitingTime() > DELTA_T && myLane == stop.lane) {
+                // count (long) busStop as reached when fully within and jammed before the designated spot
+                reachedThreshold = MIN2(reachedThreshold, stop.pars.startPos + getLength());
+            }
 #ifdef DEBUG_STOPS
             if (DEBUG_COND) {
                 std::cout <<  "   pos=" << myState.pos() << " speed=" << currentVelocity << " targetPos=" << targetPos << " fits=" << fitsOnStoppingPlace
