@@ -221,13 +221,27 @@ MSIdling_TaxiStand::idle(MSDevice_Taxi* taxi) {
     } else if (!MSGlobals::gUseMesoSim) {
         //std::cout << SIMTIME << " taxistandsVeh=" << veh.getID() << "  already driving to parkingArea\n";
         MSParkingArea* pa = lastStop->parkingarea;
-        if (taxi->getHolder().isStopped() && pa->mustAdvance(taxi->getHolder().getVClass())) {
+        if (taxi->getHolder().isStoppedTriggered() && pa != nullptr && pa->mustAdvance(taxi->getHolder().getVClass())) {
             double vehPos = taxi->getHolder().getPositionOnLane();
             double targetPos = pa->getLastFreePos(taxi->getHolder(), vehPos);
             //std::cout << SIMTIME << " veh=" << taxi->getHolder().getID() << " vehPos=" << vehPos << " targetPos=" << targetPos << " cap=" << pa->getCapacity() << " occ=" << pa->getOccupancyIncludingBlocked() << "\n";
             if (targetPos > vehPos + POSITION_EPS) {
                 taxi->getHolder().abortNextStop();
                 idle(taxi);
+            } else {
+                auto follower = veh.getFollower();
+                if (follower.first != nullptr && follower.first->getWaitingTime() > DELTA_T) {
+                    // advance in queue to unblock follower
+                    SUMOVehicleParameter::Stop stop = taxi->getHolder().getNextStop().pars;
+                    taxi->getHolder().abortNextStop();
+                    ConstMSEdgeVector loopedRoute;
+                    SUMOAbstractRouter<MSEdge, SUMOVehicle>& router = MSRoutingEngine::getRouterTT(veh.getRNGIndex(), veh.getVClass());
+                    router.computeLooped(veh.getEdge(), veh.getEdge(), &veh, SIMSTEP, loopedRoute);
+                    veh.replaceRouteEdges(loopedRoute, -1, 0, "taxi:idling_unblock", false, false, false);
+                    stop.index = 1;
+                    std::string error;
+                    veh.addStop(stop, error);
+                }
             }
         }
     }
