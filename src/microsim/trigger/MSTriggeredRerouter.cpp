@@ -542,7 +542,7 @@ MSTriggeredRerouter::triggerRouting(SUMOTrafficObject& tObject, MSMoveReminder::
                 p->rerouteParkingArea(oldParkingArea, newParkingArea);
             }
 
-            if (newDestination) {
+            if (newDestination && veh.getParameter().arrivalPosProcedure != ArrivalPosDefinition::DEFAULT) {
                 // update arrival parameters
                 SUMOVehicleParameter* newParameter = new SUMOVehicleParameter();
                 *newParameter = veh.getParameter();
@@ -1166,7 +1166,7 @@ MSTriggeredRerouter::checkStopSwitch(MSBaseVehicle& ego, const MSTriggeredRerout
         //    p->rerouteParkingArea(ego.getNextParkingArea(), newParkingArea);
         //}
 
-        if (newDestination) {
+        if (newDestination && ego.getParameter().arrivalPosProcedure != ArrivalPosDefinition::DEFAULT) {
             // update arrival parameters
             SUMOVehicleParameter* newParameter = new SUMOVehicleParameter();
             *newParameter = ego.getParameter();

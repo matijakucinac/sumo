@@ -7302,7 +7302,7 @@ MSVehicle::rerouteParkingArea(const std::string& parkingAreaID, std::string& err
         edges.insert(edges.end(), edgesFromPark.begin() + 1, edgesFromPark.end());
     }
 
-    if (newDestination) {
+    if (newDestination && getParameter().arrivalPosProcedure != ArrivalPosDefinition::DEFAULT) {
         SUMOVehicleParameter* newParameter = new SUMOVehicleParameter();
         *newParameter = getParameter();
         newParameter->arrivalPosProcedure = ArrivalPosDefinition::GIVEN;
