@@ -779,19 +779,19 @@ pav edge=2fi pos=17.508775308914487 stopState=0
 step 144.0
 pav edge=2fi pos=26.833513307338585 stopState=0
 step 145.0
-pav edge=2fi pos=37.089451186213324 stopState=0
+pav edge=2fi pos=37.09945118621333 stopState=0
 step 146.0
-pav edge=2fi pos=42.845389065088064 stopState=0
+pav edge=2fi pos=42.86538906508808 stopState=0
 step 147.0
-pav edge=2fi pos=44.92678038386333 stopState=0
+pav edge=2fi pos=44.95658157335879 stopState=0
 step 148.0
-pav edge=2fi pos=44.94790128400381 stopState=131
+pav edge=2fi pos=44.97780193098367 stopState=131
 step 149.0
-pav edge=2fi pos=44.97 stopState=131
+pav edge=2fi pos=45.0 stopState=131
 step 150.0
-pav edge=2fi pos=46.27881526512094 stopState=0
+pav edge=2fi pos=46.30881526512094 stopState=0
 step 151.0
-pav edge=2fi pos=49.72649924001191 stopState=0
+pav edge=2fi pos=49.75649924001191 stopState=0
 device.battery.maximumBatteryCapacity from vehicle definition: 35000.00
 has battery device: true
 has vehroute device: true
