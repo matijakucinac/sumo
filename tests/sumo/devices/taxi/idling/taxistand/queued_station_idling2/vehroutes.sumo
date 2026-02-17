@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-17T08:41:54.670052+01:00 by Eclipse SUMO sumo v1_26_0+0239-c56d2baccde
+This data file and the accompanying materials
+are made available under the terms of the Eclipse Public License v2.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v20.html
+This file may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License 2.0 are satisfied: GNU General Public License, version 2
+or later which is available at
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="net.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+        <additional-files value="input_additional.add.xml"/>
+    </input>
+
+    <output>
+        <write-license value="true"/>
+        <tripinfo-output value="tripinfos.xml"/>
+        <tripinfo-output.write-unfinished value="true"/>
+        <vehroute-output value="vehroutes.xml"/>
+        <vehroute-output.write-unfinished value="true"/>
+    </output>
+
+    <time>
+        <end value="1000"/>
+    </time>
+
+    <processing>
+        <default.speeddev value="0"/>
+    </processing>
+
+    <report>
+        <xml-validation value="never"/>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <taxi_device>
+        <device.taxi.idle-algorithm value="taxistand"/>
+    </taxi_device>
+
+</sumoConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <person id="p.0" depart="100.00" arrival="322.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.1" depart="300.00" arrival="504.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.2" depart="500.00" arrival="753.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.3" depart="700.00" arrival="926.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <vehicle id="taxi.0" type="taxi" depart="0.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="0.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="0.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="11.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:idling_unblock" replacedAtTime="33.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="3" reason="rr0:parkingAreaReroute" replacedAtTime="77.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="3" reason="taxi:idling_unblock" replacedAtTime="122.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="5" reason="rr0:parkingAreaReroute" replacedAtTime="166.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="5" reason="taxi:idling_unblock" replacedAtTime="267.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="7" reason="rr0:parkingAreaReroute" replacedAtTime="312.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="7" reason="taxi:idling_unblock" replacedAtTime="449.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="rr0:parkingAreaReroute" replacedAtTime="492.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:idling_unblock" replacedAtTime="698.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="11" reason="rr0:parkingAreaReroute" replacedAtTime="741.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="11" reason="taxi:idling_unblock" replacedAtTime="871.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="13" reason="rr0:parkingAreaReroute" replacedAtTime="916.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+        </routeDistribution>
+        <stop parkingArea="pa_2" actType="idling"/>
+        <stop parkingArea="pa_2" index="2" actType="idling"/>
+        <stop parkingArea="pa_2" index="3" actType="idling"/>
+        <stop parkingArea="pa_2" index="4" actType="idling"/>
+        <stop parkingArea="pa_2" index="5" actType="idling"/>
+        <stop parkingArea="pa_2" index="6" actType="idling"/>
+        <stop parkingArea="pa_2" index="7" actType="idling"/>
+    </vehicle>
+
+    <vehicle id="taxi.1" type="taxi" depart="3.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="3.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="3.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="14.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:idling_unblock" replacedAtTime="29.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="3" reason="rr0:parkingAreaReroute" replacedAtTime="80.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="3" reason="taxi:idling_unblock" replacedAtTime="118.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="5" reason="rr0:parkingAreaReroute" replacedAtTime="169.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="5" reason="taxi:idling_unblock" replacedAtTime="263.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="7" reason="rr0:parkingAreaReroute" replacedAtTime="315.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="7" reason="taxi:idling_unblock" replacedAtTime="445.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="rr0:parkingAreaReroute" replacedAtTime="495.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:idling_unblock" replacedAtTime="694.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="11" reason="rr0:parkingAreaReroute" replacedAtTime="745.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="11" reason="taxi:idling_unblock" replacedAtTime="867.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="13" reason="rr0:parkingAreaReroute" replacedAtTime="919.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+            <route edges="B1B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0 C0B0 B0C0"/>
+        </routeDistribution>
+        <stop parkingArea="pa_2" actType="idling"/>
+        <stop parkingArea="pa_2" index="2" actType="idling"/>
+        <stop parkingArea="pa_2" index="3" actType="idling"/>
+        <stop parkingArea="pa_2" index="4" actType="idling"/>
+        <stop parkingArea="pa_2" index="5" actType="idling"/>
+        <stop parkingArea="pa_2" index="6" actType="idling"/>
+        <stop parkingArea="pa_2" index="7" actType="idling"/>
+    </vehicle>
+
+    <vehicle id="taxi.2" type="taxi" depart="6.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="6.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="6.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="16.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="24.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="rr0:parkingAreaReroute" replacedAtTime="58.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="taxi:idling_unblock" replacedAtTime="73.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="rr0:parkingAreaReroute" replacedAtTime="89.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="taxi:idling_unblock" replacedAtTime="130.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="rr0:parkingAreaReroute" replacedAtTime="143.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="taxi:idling_unblock" replacedAtTime="182.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="rr0:parkingAreaReroute" replacedAtTime="195.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="taxi:idling_unblock" replacedAtTime="252.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="rr0:parkingAreaReroute" replacedAtTime="264.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="taxi:idling_unblock" replacedAtTime="321.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="rr0:parkingAreaReroute" replacedAtTime="334.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:idling_unblock" replacedAtTime="383.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="rr0:parkingAreaReroute" replacedAtTime="396.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="taxi:idling_unblock" replacedAtTime="455.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="rr0:parkingAreaReroute" replacedAtTime="469.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="taxi:idling_unblock" replacedAtTime="530.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C1C0" replacedOnIndex="17" reason="taxi:prepare_dispatch" replacedAtTime="540.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C1C0" replacedOnIndex="17" reason="taxi:dispatch" replacedAtTime="540.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 D1E1 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="25" reason="taxi:taxistand" replacedAtTime="753.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0D0 D0D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="rr0:parkingAreaReroute" replacedAtTime="774.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0D0 D0D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:idling_unblock" replacedAtTime="823.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0D0 D0D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="rr0:parkingAreaReroute" replacedAtTime="836.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0D0 D0D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="taxi:idling_unblock" replacedAtTime="896.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0D0 D0D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="30" reason="rr0:parkingAreaReroute" replacedAtTime="909.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0D0 D0D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="30" reason="taxi:idling_unblock" replacedAtTime="961.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0D0 D0D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="32" reason="rr0:parkingAreaReroute" replacedAtTime="975.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0D0 D0D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0D0 D0D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+        </routeDistribution>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="2" actType="idling"/>
+        <stop parkingArea="pa_0" index="3" actType="idling"/>
+        <stop parkingArea="pa_0" index="4" actType="idling"/>
+        <stop parkingArea="pa_0" index="5" actType="idling"/>
+        <stop parkingArea="pa_0" index="6" actType="idling"/>
+        <stop parkingArea="pa_0" index="7" actType="idling"/>
+        <stop parkingArea="pa_0" index="8" actType="idling"/>
+        <stop lane="D1E1_0" permitted="p.2" actType="pickup p.2 (2)"/>
+        <stop busStop="bs_0" actType="dropOff p.2 (2)"/>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="12" actType="idling"/>
+        <stop parkingArea="pa_0" index="13" actType="idling"/>
+    </vehicle>
+
+    <vehicle id="taxi.3" type="taxi" depart="9.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="9.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="9.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="20.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="24.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="rr0:parkingAreaReroute" replacedAtTime="61.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="taxi:idling_unblock" replacedAtTime="85.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="rr0:parkingAreaReroute" replacedAtTime="98.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="taxi:idling_unblock" replacedAtTime="141.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="rr0:parkingAreaReroute" replacedAtTime="153.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="taxi:idling_unblock" replacedAtTime="211.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="rr0:parkingAreaReroute" replacedAtTime="223.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="taxi:idling_unblock" replacedAtTime="283.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="rr0:parkingAreaReroute" replacedAtTime="295.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="taxi:idling_unblock" replacedAtTime="353.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="rr0:parkingAreaReroute" replacedAtTime="366.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:idling_unblock" replacedAtTime="426.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="rr0:parkingAreaReroute" replacedAtTime="439.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="taxi:idling_unblock" replacedAtTime="500.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="rr0:parkingAreaReroute" replacedAtTime="513.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="taxi:idling_unblock" replacedAtTime="571.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="rr0:parkingAreaReroute" replacedAtTime="584.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="taxi:idling_unblock" replacedAtTime="642.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="rr0:parkingAreaReroute" replacedAtTime="655.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:idling_unblock" replacedAtTime="714.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="rr0:parkingAreaReroute" replacedAtTime="727.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="rr0:parkingAreaReroute" replacedAtTime="795.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="taxi:idling_unblock" replacedAtTime="855.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="rr0:parkingAreaReroute" replacedAtTime="867.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:idling_unblock" replacedAtTime="920.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="rr0:parkingAreaReroute" replacedAtTime="932.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="taxi:idling_unblock" replacedAtTime="981.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="30" reason="rr0:parkingAreaReroute" replacedAtTime="993.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+        </routeDistribution>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="2" actType="idling"/>
+        <stop parkingArea="pa_0" index="3" actType="idling"/>
+        <stop parkingArea="pa_0" index="4" actType="idling"/>
+        <stop parkingArea="pa_0" index="5" actType="idling"/>
+        <stop parkingArea="pa_0" index="6" actType="idling"/>
+        <stop parkingArea="pa_0" index="7" actType="idling"/>
+        <stop parkingArea="pa_0" index="8" actType="idling"/>
+        <stop parkingArea="pa_0" index="9" actType="idling"/>
+        <stop parkingArea="pa_0" index="10" actType="idling"/>
+        <stop parkingArea="pa_0" index="11" actType="idling"/>
+        <stop parkingArea="pa_0" index="12" actType="idling"/>
+        <stop parkingArea="pa_0" index="13" actType="idling"/>
+        <stop parkingArea="pa_0" index="14" actType="idling"/>
+    </vehicle>
+
+    <vehicle id="taxi.4" type="taxi" depart="12.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="12.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="12.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="22.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="24.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="rr0:parkingAreaReroute" replacedAtTime="64.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="taxi:idling_unblock" replacedAtTime="96.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="rr0:parkingAreaReroute" replacedAtTime="110.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="taxi:idling_unblock" replacedAtTime="151.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="rr0:parkingAreaReroute" replacedAtTime="164.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="taxi:idling_unblock" replacedAtTime="222.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="rr0:parkingAreaReroute" replacedAtTime="234.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="taxi:idling_unblock" replacedAtTime="293.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="rr0:parkingAreaReroute" replacedAtTime="305.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="taxi:idling_unblock" replacedAtTime="363.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="rr0:parkingAreaReroute" replacedAtTime="375.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:idling_unblock" replacedAtTime="435.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="rr0:parkingAreaReroute" replacedAtTime="448.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="taxi:idling_unblock" replacedAtTime="509.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="rr0:parkingAreaReroute" replacedAtTime="527.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="rr0:parkingAreaReroute" replacedAtTime="604.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="taxi:idling_unblock" replacedAtTime="663.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="rr0:parkingAreaReroute" replacedAtTime="676.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:idling_unblock" replacedAtTime="730.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="rr0:parkingAreaReroute" replacedAtTime="744.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="taxi:idling_unblock" replacedAtTime="792.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="rr0:parkingAreaReroute" replacedAtTime="805.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="taxi:idling_unblock" replacedAtTime="865.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="rr0:parkingAreaReroute" replacedAtTime="878.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:idling_unblock" replacedAtTime="929.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="rr0:parkingAreaReroute" replacedAtTime="942.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="taxi:idling_unblock" replacedAtTime="990.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+        </routeDistribution>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="2" actType="idling"/>
+        <stop parkingArea="pa_0" index="3" actType="idling"/>
+        <stop parkingArea="pa_0" index="4" actType="idling"/>
+        <stop parkingArea="pa_0" index="5" actType="idling"/>
+        <stop parkingArea="pa_0" index="6" actType="idling"/>
+        <stop parkingArea="pa_0" index="7" actType="idling"/>
+        <stop parkingArea="pa_0" index="8" actType="idling"/>
+        <stop parkingArea="pa_0" index="9" actType="idling"/>
+        <stop parkingArea="pa_0" index="10" actType="idling"/>
+        <stop parkingArea="pa_0" index="11" actType="idling"/>
+        <stop parkingArea="pa_0" index="12" actType="idling"/>
+        <stop parkingArea="pa_0" index="13" actType="idling"/>
+        <stop parkingArea="pa_0" index="14" actType="idling"/>
+    </vehicle>
+
+    <vehicle id="taxi.5" type="taxi" depart="15.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="15.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="15.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="26.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="rr0:parkingAreaReroute" replacedAtTime="66.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="taxi:idling_unblock" replacedAtTime="106.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="rr0:parkingAreaReroute" replacedAtTime="119.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="taxi:idling_unblock" replacedAtTime="162.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="rr0:parkingAreaReroute" replacedAtTime="175.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="taxi:idling_unblock" replacedAtTime="231.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="rr0:parkingAreaReroute" replacedAtTime="245.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="taxi:prepare_dispatch" replacedAtTime="300.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="taxi:dispatch" replacedAtTime="300.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 D1E1 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="15" reason="taxi:taxistand" replacedAtTime="504.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="rr0:parkingAreaReroute" replacedAtTime="525.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="taxi:idling_unblock" replacedAtTime="581.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="rr0:parkingAreaReroute" replacedAtTime="594.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="taxi:idling_unblock" replacedAtTime="653.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="rr0:parkingAreaReroute" replacedAtTime="666.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:prepare_dispatch" replacedAtTime="720.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:dispatch" replacedAtTime="720.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 D1E1 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="27" reason="taxi:taxistand" replacedAtTime="926.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="rr0:parkingAreaReroute" replacedAtTime="948.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="taxi:idling_unblock" replacedAtTime="999.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+        </routeDistribution>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="2" actType="idling"/>
+        <stop parkingArea="pa_0" index="3" actType="idling"/>
+        <stop parkingArea="pa_0" index="4" actType="idling"/>
+        <stop lane="D1E1_0" permitted="p.1" actType="pickup p.1 (1)"/>
+        <stop busStop="bs_0" actType="dropOff p.1 (1)"/>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="8" actType="idling"/>
+        <stop lane="D1E1_0" permitted="p.3" actType="pickup p.3 (3)"/>
+        <stop busStop="bs_0" actType="dropOff p.3 (3)"/>
+        <stop parkingArea="pa_0" actType="idling"/>
+    </vehicle>
+
+    <vehicle id="taxi.6" type="taxi" depart="18.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="18.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="18.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="28.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="rr0:parkingAreaReroute" replacedAtTime="69.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="taxi:idling_unblock" replacedAtTime="116.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="rr0:parkingAreaReroute" replacedAtTime="130.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="taxi:idling_unblock" replacedAtTime="172.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="rr0:parkingAreaReroute" replacedAtTime="185.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="taxi:idling_unblock" replacedAtTime="240.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="rr0:parkingAreaReroute" replacedAtTime="253.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="taxi:idling_unblock" replacedAtTime="310.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="rr0:parkingAreaReroute" replacedAtTime="323.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="taxi:idling_unblock" replacedAtTime="373.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="rr0:parkingAreaReroute" replacedAtTime="386.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:idling_unblock" replacedAtTime="445.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="rr0:parkingAreaReroute" replacedAtTime="458.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="taxi:idling_unblock" replacedAtTime="520.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="rr0:parkingAreaReroute" replacedAtTime="533.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="taxi:idling_unblock" replacedAtTime="601.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="rr0:parkingAreaReroute" replacedAtTime="615.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="taxi:idling_unblock" replacedAtTime="674.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="rr0:parkingAreaReroute" replacedAtTime="687.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:idling_unblock" replacedAtTime="740.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="rr0:parkingAreaReroute" replacedAtTime="753.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="taxi:idling_unblock" replacedAtTime="802.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="rr0:parkingAreaReroute" replacedAtTime="815.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="taxi:idling_unblock" replacedAtTime="876.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="rr0:parkingAreaReroute" replacedAtTime="889.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:idling_unblock" replacedAtTime="940.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="rr0:parkingAreaReroute" replacedAtTime="953.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route edges="B1B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+        </routeDistribution>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="2" actType="idling"/>
+        <stop parkingArea="pa_0" index="3" actType="idling"/>
+        <stop parkingArea="pa_0" index="4" actType="idling"/>
+        <stop parkingArea="pa_0" index="5" actType="idling"/>
+        <stop parkingArea="pa_0" index="6" actType="idling"/>
+        <stop parkingArea="pa_0" index="7" actType="idling"/>
+        <stop parkingArea="pa_0" index="8" actType="idling"/>
+        <stop parkingArea="pa_0" index="9" actType="idling"/>
+        <stop parkingArea="pa_0" index="10" actType="idling"/>
+        <stop parkingArea="pa_0" index="11" actType="idling"/>
+        <stop parkingArea="pa_0" index="12" actType="idling"/>
+        <stop parkingArea="pa_0" index="13" actType="idling"/>
+    </vehicle>
+
+    <vehicle id="taxi.7" type="taxi" depart="20.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="20.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="20.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="32.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:idling_unblock" replacedAtTime="62.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="3" reason="rr0:parkingAreaReroute" replacedAtTime="105.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="rr0:parkingAreaReroute" replacedAtTime="146.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="taxi:idling_unblock" replacedAtTime="192.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="rr0:parkingAreaReroute" replacedAtTime="205.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="taxi:idling_unblock" replacedAtTime="263.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="rr0:parkingAreaReroute" replacedAtTime="276.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="taxi:idling_unblock" replacedAtTime="332.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="rr0:parkingAreaReroute" replacedAtTime="345.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="taxi:idling_unblock" replacedAtTime="406.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="rr0:parkingAreaReroute" replacedAtTime="419.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:idling_unblock" replacedAtTime="478.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="rr0:parkingAreaReroute" replacedAtTime="491.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="taxi:idling_unblock" replacedAtTime="550.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="rr0:parkingAreaReroute" replacedAtTime="563.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="taxi:idling_unblock" replacedAtTime="621.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="rr0:parkingAreaReroute" replacedAtTime="633.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="taxi:idling_unblock" replacedAtTime="694.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="rr0:parkingAreaReroute" replacedAtTime="707.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:idling_unblock" replacedAtTime="762.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="rr0:parkingAreaReroute" replacedAtTime="776.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="taxi:idling_unblock" replacedAtTime="834.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="rr0:parkingAreaReroute" replacedAtTime="847.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="taxi:prepare_dispatch" replacedAtTime="900.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="taxi:dispatch" replacedAtTime="900.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 D1E1 B0C0"/>
+            <route edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0"/>
+        </routeDistribution>
+        <stop parkingArea="pa_2" actType="idling"/>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="3" actType="idling"/>
+        <stop parkingArea="pa_0" index="4" actType="idling"/>
+        <stop parkingArea="pa_0" index="5" actType="idling"/>
+        <stop parkingArea="pa_0" index="6" actType="idling"/>
+        <stop parkingArea="pa_0" index="7" actType="idling"/>
+        <stop parkingArea="pa_0" index="8" actType="idling"/>
+        <stop parkingArea="pa_0" index="9" actType="idling"/>
+        <stop parkingArea="pa_0" index="10" actType="idling"/>
+        <stop parkingArea="pa_0" index="11" actType="idling"/>
+        <stop lane="D1E1_0" permitted="p.4" actType="pickup p.4 (4)"/>
+    </vehicle>
+
+    <vehicle id="taxi.8" type="taxi" depart="24.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="24.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="24.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="35.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="taxi:idling_unblock" replacedAtTime="58.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="3" reason="rr0:parkingAreaReroute" replacedAtTime="109.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="rr0:parkingAreaReroute" replacedAtTime="148.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="4" reason="taxi:idling_unblock" replacedAtTime="201.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="rr0:parkingAreaReroute" replacedAtTime="215.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="6" reason="taxi:idling_unblock" replacedAtTime="273.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="rr0:parkingAreaReroute" replacedAtTime="286.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="8" reason="taxi:idling_unblock" replacedAtTime="342.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="rr0:parkingAreaReroute" replacedAtTime="355.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="taxi:idling_unblock" replacedAtTime="416.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="rr0:parkingAreaReroute" replacedAtTime="429.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:idling_unblock" replacedAtTime="489.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="rr0:parkingAreaReroute" replacedAtTime="501.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="taxi:idling_unblock" replacedAtTime="561.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="rr0:parkingAreaReroute" replacedAtTime="575.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="taxi:idling_unblock" replacedAtTime="632.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="rr0:parkingAreaReroute" replacedAtTime="645.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="taxi:idling_unblock" replacedAtTime="704.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="rr0:parkingAreaReroute" replacedAtTime="717.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:idling_unblock" replacedAtTime="771.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="rr0:parkingAreaReroute" replacedAtTime="784.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="taxi:idling_unblock" replacedAtTime="845.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="rr0:parkingAreaReroute" replacedAtTime="858.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="taxi:idling_unblock" replacedAtTime="909.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="rr0:parkingAreaReroute" replacedAtTime="923.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:idling_unblock" replacedAtTime="971.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="rr0:parkingAreaReroute" replacedAtTime="984.00" probability="0" edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route edges="B1B0 B0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+        </routeDistribution>
+        <stop parkingArea="pa_2" actType="idling"/>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="3" actType="idling"/>
+        <stop parkingArea="pa_0" index="4" actType="idling"/>
+        <stop parkingArea="pa_0" index="5" actType="idling"/>
+        <stop parkingArea="pa_0" index="6" actType="idling"/>
+        <stop parkingArea="pa_0" index="7" actType="idling"/>
+        <stop parkingArea="pa_0" index="8" actType="idling"/>
+        <stop parkingArea="pa_0" index="9" actType="idling"/>
+        <stop parkingArea="pa_0" index="10" actType="idling"/>
+        <stop parkingArea="pa_0" index="11" actType="idling"/>
+        <stop parkingArea="pa_0" index="12" actType="idling"/>
+        <stop parkingArea="pa_0" index="13" actType="idling"/>
+    </vehicle>
+
+    <vehicle id="taxi.9" type="taxi" depart="27.00">
+        <routeDistribution>
+            <route replacedOnEdge="B1B0" reason="taxi:taxistand" replacedAtTime="27.00" probability="0" edges="B1B0 B0B1"/>
+            <route replacedOnEdge="B1B0" reason="rr0:parkingAreaReroute" replacedAtTime="27.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="38.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="1" reason="rr0:parkingAreaReroute" replacedAtTime="55.00" probability="0" edges="B1B0 B0C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="rr0:parkingAreaReroute" replacedAtTime="87.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="taxi:prepare_dispatch" replacedAtTime="120.00" probability="0" edges="B1B0 B0C0 C0C1 C1C0 C0B0 B0B1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="2" reason="taxi:dispatch" replacedAtTime="120.00" probability="0" edges="B1B0 B0C0 C0C1 D1E1 B0C0"/>
+            <route replacedOnEdge="B0C0" replacedOnIndex="9" reason="taxi:taxistand" replacedAtTime="322.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="rr0:parkingAreaReroute" replacedAtTime="343.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="10" reason="taxi:idling_unblock" replacedAtTime="394.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0B0 B0C0"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="rr0:parkingAreaReroute" replacedAtTime="408.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="12" reason="taxi:idling_unblock" replacedAtTime="466.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="rr0:parkingAreaReroute" replacedAtTime="479.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="14" reason="taxi:idling_unblock" replacedAtTime="540.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="rr0:parkingAreaReroute" replacedAtTime="553.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="16" reason="taxi:idling_unblock" replacedAtTime="611.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="rr0:parkingAreaReroute" replacedAtTime="623.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="18" reason="taxi:idling_unblock" replacedAtTime="684.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="rr0:parkingAreaReroute" replacedAtTime="697.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="20" reason="taxi:idling_unblock" replacedAtTime="752.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="rr0:parkingAreaReroute" replacedAtTime="766.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="22" reason="taxi:idling_unblock" replacedAtTime="813.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="rr0:parkingAreaReroute" replacedAtTime="826.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="24" reason="taxi:idling_unblock" replacedAtTime="886.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="rr0:parkingAreaReroute" replacedAtTime="899.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="26" reason="taxi:idling_unblock" replacedAtTime="951.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route replacedOnEdge="C0C1" replacedOnIndex="28" reason="rr0:parkingAreaReroute" replacedAtTime="964.00" probability="0" edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+            <route edges="B1B0 B0C0 C0C1 C1D1 D1E1 E1D1 D1D0 D0C0 C0B0 B0C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1 C1C0 C0C1"/>
+        </routeDistribution>
+        <stop lane="D1E1_0" permitted="p.0" actType="pickup p.0 (0)"/>
+        <stop busStop="bs_0" actType="dropOff p.0 (0)"/>
+        <stop parkingArea="pa_0" actType="idling"/>
+        <stop parkingArea="pa_0" index="4" actType="idling"/>
+        <stop parkingArea="pa_0" index="5" actType="idling"/>
+        <stop parkingArea="pa_0" index="6" actType="idling"/>
+        <stop parkingArea="pa_0" index="7" actType="idling"/>
+        <stop parkingArea="pa_0" index="8" actType="idling"/>
+        <stop parkingArea="pa_0" index="9" actType="idling"/>
+        <stop parkingArea="pa_0" index="10" actType="idling"/>
+        <stop parkingArea="pa_0" index="11" actType="idling"/>
+    </vehicle>
+
+    <person id="p.4" depart="900.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.5" depart="1100.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.6" depart="1300.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.7" depart="1500.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.8" depart="1700.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+    <person id="p.9" depart="1900.00">
+        <ride from="D1E1" to="B0C0" busStop="bs_0" lines="taxi"/>
+    </person>
+
+</routes>

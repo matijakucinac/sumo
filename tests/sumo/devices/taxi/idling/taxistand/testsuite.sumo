@@ -21,3 +21,6 @@ advance_queue
 
 # when idling at delivery spots, spillback must be avoided (when no overtaking is possible)
 queued_station_idling
+
+# on idling pick the closest taxi stand, stands on edges with different lengths
+queued_station_idling2
