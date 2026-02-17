@@ -736,6 +736,7 @@ MSParkingArea::setRoadsideCapacity(int capacity) {
     // Initialize space occupancies if there is a road-side capacity
     // The overall number of lots is fixed and each lot accepts one vehicle regardless of size
     const double spaceDim = myRoadSideCapacity > 0 ? myLane.interpolateLanePosToGeometryPos((myEndPos - myBegPos) / myRoadSideCapacity) : 7.5;
+    const double spaceOffset = myRoadSideCapacity > 0 ? (myEndPos - myBegPos) / myRoadSideCapacity : 7.5;
     if (myLength == 0) {
         myLength = spaceDim;
     }
@@ -749,7 +750,7 @@ MSParkingArea::setRoadsideCapacity(int capacity) {
         // add lotEntry
         addLotEntry(pos.x(), pos.y(), pos.z(), myWidth, myLength, spaceAngle, spaceSlope);
         // update endPos
-        mySpaceOccupancies.back().endPos = MIN2(myEndPos, myBegPos + MAX2(POSITION_EPS, spaceDim * (i + 1)));
+        mySpaceOccupancies.back().endPos = MIN2(myEndPos, myBegPos + MAX2(POSITION_EPS, spaceOffset * (i + 1)));
     }
     // recompute after modifying the last endPos
     computeLastFreePos();
