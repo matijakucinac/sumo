@@ -467,9 +467,7 @@ MSStoppingPlaceRerouter::evaluateDestination(SUMOVehicle& veh, double brakeGap, 
                 WRITE_WARNINGF(TL("Invalid distance computation for vehicle '%' to stopping place '%' at time=%."),
                                veh.getID(), alternative->getID(), time2string(now));
             }
-            const double endPos = getStoppingPlaceOccupancy(alternative, &veh) == getStoppingPlaceCapacity(alternative)
-                                  ? alternative->getLastFreePos(veh, veh.getPositionOnLane() + brakeGap)
-                                  : alternative->getEndLanePosition();
+            const double endPos = alternative->getLastFreePos(veh, veh.getPositionOnLane() + brakeGap);
             const double distToEnd = stoppingPlaceValues["distanceto"] - toPos + endPos;
 
             if (distToEnd < brakeGap) {
